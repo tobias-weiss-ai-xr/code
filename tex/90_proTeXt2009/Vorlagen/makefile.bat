@@ -1,0 +1,1 @@
+texify -p arbeit-hauptdatei.tex

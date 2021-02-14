@@ -1,0 +1,34 @@
+http://www.lrr.in.tum.de/Par/arch/usb/usbdoc/ - Programming Guide for Linux USB Device Drivers
+http://usb.cs.tum.edu, Linux USB Developer Pages 
+http://www.linux-usb.org/
+http://www.libusb.org/
+
+http://libusb.sourceforge.net/doc/examples-code.html
+
+http://hackintoshrao.com/2013/02/03/libusb-1intro-to-libusb-writing-and-compiling-the-hello-world-libusb-code-in-ubuntu/
+
+http://cboard.cprogramming.com/cplusplus-programming/123120-%5Bcplusplus%5D-usb-gadget-driver-unbound-kernel-driver.html
+
+http://www.linux-usb.org/gadget/usb.c
+
+#usb-devices
+T:  Bus=04 Lev=03 Prnt=12 Port=00 Cnt=01 Dev#= 13 Spd=1.5 MxCh= 0
+D:  Ver= 1.10 Cls=00(>ifc ) Sub=00 Prot=00 MxPS= 8 #Cfgs=  1
+P:  Vendor=2123 ProdID=1010 Rev=00.01
+S:  Manufacturer=Syntek
+S:  Product=USB Missile Launcher
+C:  #Ifs= 1 Cfg#= 1 Atr=80 MxPwr=500mA
+I:  If#= 0 Alt= 0 #EPs= 1 Cls=03(HID  ) Sub=00 Prot=00 Driver=usbhid
+
+T:  Bus=04 Lev=03 Prnt=12 Port=01 Cnt=02 Dev#= 14 Spd=12  MxCh= 0
+D:  Ver= 2.00 Cls=ef(misc ) Sub=02 Prot=01 MxPS=64 #Cfgs=  1
+P:  Vendor=0c45 ProdID=6310 Rev=01.00
+S:  Manufacturer=Sonix Technology Co., Ltd.
+S:  Product=USB 2.0 Camera
+C:  #Ifs= 2 Cfg#= 1 Atr=80 MxPwr=98mA
+I:  If#= 0 Alt= 0 #EPs= 1 Cls=0e(video) Sub=01 Prot=00 Driver=uvcvideo
+I:  If#= 1 Alt= 0 #EPs= 0 Cls=0e(video) Sub=02 Prot=00 Driver=uvcvideo
+
+
+#gcc rl.c -o current -L/usr/lib/x86_64-linux-gnu/ -lusb -Wall -g && ./current
+#gcc helloncurses.c -o helloncurses -lncurses -ltinfo

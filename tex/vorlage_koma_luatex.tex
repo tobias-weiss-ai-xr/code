@@ -1,0 +1,101 @@
+% !TeX program = lualatex
+% !TeX encoding = UTF-8 Unicode
+\documentclass[ngerman,11pt,a4paper,paper=a4,oneside,parskip=half+]{scrarticle}
+\usepackage{fontspec}
+\usepackage{microtype}
+%\setmainfont{LibertinusSans}
+% ms arial compatible font
+\setmainfont{Erewhon}
+\usepackage[left=3cm, top=2.5cm, bottom=2.5cm, right=2.5cm% page margins
+    %,showframe% <- only to show the page layout
+]{geometry}
+\usepackage{babel}
+\usepackage[onehalfspacing]{setspace}
+%page numbering right outer
+\usepackage{scrlayer-scrpage}
+\cfoot*{} %asterisk for first page overwrite
+\rofoot*{\pagemark}
+\setlength{\parindent}{0em} % no first line indent (Erstzeileneinzug)
+%\setlength{\parskip}{1em} % gap between paragraphs (Zeilenzwischenraum)
+\RedeclareSectionCommand[
+    beforeskip=.3\baselineskip
+]{paragraph}
+% font and style concerns
+\usepackage{mathtools}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{listings}
+\usepackage{subcaption}
+\usepackage{booktabs}
+\usepackage{url}
+\usepackage{natbib}
+\setcitestyle{aysep={}} %no comma between author and year, e.g. (Scholl 1999, Kap. 1) for \citep citations
+\renewcommand{\bibsection}{} % no bibliography title as section is used
+\usepackage{lipsum} % dummy text
+%algorithm visualisation
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\floatname{algorithm}{Algorithmus}
+%table caption on top
+\usepackage{float}
+\floatstyle{plaintop}
+\restylefloat{table}
+%full size tables
+\usepackage{tabularx}
+%rotate (e.g. table columns)
+\usepackage{rotating}
+%use , as decimal separator (german convention) in math mode
+\usepackage{ziffer}
+%adjust table size or float object positioning like pictures via adjustbox
+\usepackage{adjustbox}
+
+\begin{document}
+\titlehead{MW31.6 -- Data and Knowledge Management}
+\subject{Handout}
+\title{Netzwerkdatenbankmodell}
+%\subtitle{Untertitel}
+\author{Tobias Weiß, Matr.-Nr: 159098\\tobias.weiss@uni-jena.de}
+\date{\today}
+%\publishers{Platz für Betreuer o.\,ä.}
+\maketitle
+\tableofcontents
+% ----------------------------------------------------------------------------
+\section{Motivation}
+Dieser Abschnitt sollte sich mit der Aufgabenstellung befassen. Er kann auch
+Grundlagen behandeln. Es kann jedoch sinnvoll sein, für die Grundlagen einen
+eigenen Abschnitt zu verwenden.
+
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.5\linewidth]{example-image}
+  \caption{Caption}
+  \label{fig:figure}
+\end{figure}
+
+\fbox{
+Test
+}
+
+\begin{equation}
+    \varphi(v_k) = \frac{1}{1+e^{-v_k}} 
+    \qquad
+    \varphi'(v_k) = \varphi(v_k) \cdot (1 - \varphi(v_k))
+\label{eq:sigmoid}
+\end{equation}
+
+\section{Durchführung}
+Hier erzählt man nun, was man alles gemacht hat.
+\section{Schluss}
+Hierher gehört das Fazit und ggf. der Ausblick auf weitere Dinge, die getan
+werden könnten.
+\end{document}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-engine: xetex
+%%% TeX-PDF-mode: t
+%%% coding: utf-8
+%%% TeX-master: t
+%%% End:  

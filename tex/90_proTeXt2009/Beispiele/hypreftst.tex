@@ -1,0 +1,35 @@
+\documentclass[a5paper]{scrbook}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{tocloft}
+\usepackage[bookmarksopen=true,bookmarksnumbered=true,pdfpagelabels=false]{hyperref}
+
+\renewcommand{\cftsecpresnum}{Abschnitt\,}
+\renewcommand{\cftsecfont}{\scshape}
+\renewcommand{\cftsecaftersnum}{:}
+\renewcommand{\cftsecleader}{\qquad Seite}
+\renewcommand{\cftsecafterpnum}{\cftparfillskip}
+\renewcommand{\cftsubsecleader}{%
+  \cftdotfill{\cftdotsep} Seite}
+\renewcommand{\cftsubsecpagefont}{\bfseries}
+\setlength{\cftparskip}{.5\baselineskip}
+\newlength{\mylen}
+\settowidth{\mylen}{%
+  \cftsecfont\cftsecpresnum\cftsecaftersnum} 
+\addtolength{\cftsecnumwidth}{\mylen}
+
+\begin{document}
+\frontmatter
+\tableofcontents
+\thispagestyle{empty}
+
+\mainmatter
+\section{Ein Abschnitt}
+\section{Noch ein Abschnitt}
+\subsection{Ein Unterabschnitt}
+\subsection{Noch ein Unterabschnitt}
+\section{Und noch einer}
+
+\backmatter
+\end{document}

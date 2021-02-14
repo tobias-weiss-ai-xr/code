@@ -1,0 +1,30 @@
+\documentclass[a5paper]{scrartcl}
+\usepackage{savefnmark}
+
+\begin{document}
+\begin{figure}[htbp]
+  \centering
+  Ein Text\footnotemark[1].
+  
+  \caption{Ein Text}
+\label{fig:foo}
+\end{figure}
+\footnotetext[1]{Fussnote foo}
+
+Noch ein Text\footnotemark.
+
+Blafasel\footnote{Eine normale.}\saveFN{\foo}
+
+Dazwischen\footnote{dazwischen}.
+
+Und noch einer\useFN{\foo}.
+
+Blafasel\footnote{Eine normale.}
+\footnotetext{Fussnote bar}
+
+\end{document}
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: t
+%%% End: 

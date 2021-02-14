@@ -1,0 +1,5 @@
+# I anonymized the vendor/product IDs here                                
+SUBSYSTEM !="usb_device", ACTION !="add", GOTO="rocket_rules_end"
+SYSFS{idVendor} =="2123", SYSFS{idProduct} =="1010", SYMLINK+="rocket"
+MODE="0666", OWNER="homaar", GROUP="adm"
+LABEL="rocket_rules_end"

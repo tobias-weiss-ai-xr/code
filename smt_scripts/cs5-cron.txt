@@ -1,0 +1,198 @@
+#m h   dom mon dow user  command
+
+###Mailboxes mit Weiterleitung zum 1.loeschen
+
+
+### Temp loeschen
+
+45 2 * * *  root        find /tmp/spool/ -type f -name 'message*'|xargs rm -f
+
+ 
+
+### alle MB lang-machines.com
+
+1 0    * * 6    root    find /var/qmail/mailnames/lang-machines.com/*/Maildir/cur -type f -name '*.cs5-smt*'|xargs rm -f
+
+2 0    * * 6    root    find /var/qmail/mailnames/lang-machines.com/*/Maildir/new -type f -name '*.cs5-smt*'|xargs rm -f
+
+3 0    * * 6    root    find /var/qmail/mailnames/lang-machines.com/*/Maildir/tmp -type f -name '*.cs5-smt*'|xargs rm -f
+
+### stuerner@smt.de
+
+4 0    * * 6    root    find /var/qmail/mailnames/smt.de/stuerner/Maildir/cur -type f -name '*.cs5-smt*'|xargs rm -f
+
+5 0    * * 6    root    find /var/qmail/mailnames/smt.de/stuerner/Maildir/new -type f -name '*.cs5-smt*'|xargs rm -f
+
+6 0    * * 6    root    find /var/qmail/mailnames/smt.de/stuerner/Maildir/tmp -type f -name '*.cs5-smt*'|xargs rm -f
+
+#####
+
+7 0    * * 6    root    find /var/qmail/mailnames/smt.de/m.sohn/Maildir/cur -type f -name '*.cs5-smt*'|xargs rm -f
+
+8 0    * * 6    root    find /var/qmail/mailnames/smt.de/m.sohn/Maildir/new -type f -name '*.cs5-smt*'|xargs rm -f
+
+9 0    * * 6    root    find /var/qmail/mailnames/smt.de/m.sohn/Maildir/tmp -type f -name '*.cs5-smt*'|xargs rm -f
+
+#####
+
+10 0    * * 6    root    find /var/qmail/mailnames/smt.de/f.urban/Maildir/cur -type f -name '*.cs5-smt*'|xargs rm -f
+
+11 0    * * 6    root    find /var/qmail/mailnames/smt.de/f.urban/Maildir/new -type f -name '*.cs5-smt*'|xargs rm -f
+
+12 0    * * 6    root    find /var/qmail/mailnames/smt.de/f.urban/Maildir/tmp -type f -name '*.cs5-smt*'|xargs rm -f
+
+#####
+
+19 0    * * 6    root    find /var/qmail/mailnames/smt.de/service/Maildir/cur -type f -name '*.cs5-smt*'|xargs rm -f
+
+20 0    * * 6    root    find /var/qmail/mailnames/smt.de/service/Maildir/new -type f -name '*.cs5-smt*'|xargs rm -f
+
+21 0    * * 6    root    find /var/qmail/mailnames/smt.de/service/Maildir/tmp -type f -name '*.cs5-smt*'|xargs rm -f
+
+###
+
+### stuerner@smt.de
+
+4 0    * * 6    root    find /var/qmail/mailnames/smt.de/j.klemm-hartley/Maildir/cur -type f -name '*.cs5-smt*'|xargs rm -f
+
+5 0    * * 6    root    find /var/qmail/mailnames/smt.de/j.klemm-hartley/Maildir/new -type f -name '*.cs5-smt*'|xargs rm -f
+
+6 0    * * 6    root    find /var/qmail/mailnames/smt.de/j.klemm-hartley/Maildir/tmp -type f -name '*.cs5-smt*'|xargs rm -f
+
+###
+
+31 0    * * 6    root    find /var/qmail/mailnames/smt.de/jusuff/Maildir/cur -type f -name '*.cs5-smt*'|xargs rm -f
+
+32 0    * * 6    root    find /var/qmail/mailnames/smt.de/jusuff/Maildir/new -type f -name '*.cs5-smt*'|xargs rm -f
+
+33 0    * * 6    root    find /var/qmail/mailnames/smt.de/jusuff/Maildir/tmp -type f -name '*.cs5-smt*'|xargs rm -f
+
+###
+
+34 0    * * 6    root    find /var/qmail/mailnames/smt.de/stuerner/Maildir/cur -type f -name '*.cs5-smt*'|xargs rm -f
+
+35 0    * * 6    root    find /var/qmail/mailnames/smt.de/stuerner/Maildir/new -type f -name '*.cs5-smt*'|xargs rm -f
+
+36 0    * * 6    root    find /var/qmail/mailnames/smt.de/stuerner/Maildir/tmp -type f -name '*.cs5-smt*'|xargs rm -f
+
+###
+
+37 0    * * 6    root    find /var/qmail/mailnames/smt.de/m.stuerner/Maildir/cur -type f -name '*.cs5-smt*'|xargs rm -f
+
+38 0    * * 6    root    find /var/qmail/mailnames/smt.de/m.stuerner/Maildir/new -type f -name '*.cs5-smt*'|xargs rm -f
+
+39 0    * * 6    root    find /var/qmail/mailnames/smt.de/m.stuerner/Maildir/tmp -type f -name '*.cs5-smt*'|xargs rm -f
+
+###
+
+40 0    * * 6    root    find /var/qmail/mailnames/smt.de/p.petersen/Maildir/cur -type f -name '*.cs5-smt*'|xargs rm -f
+
+41 0    * * 6    root    find /var/qmail/mailnames/smt.de/p.petersen/Maildir/new -type f -name '*.cs5-smt*'|xargs rm -f
+
+42 0    * * 6    root    find /var/qmail/mailnames/smt.de/p.petersen/Maildir/tmp -type f -name '*.cs5-smt*'|xargs rm -f
+
+###
+
+43 0    * * 6    root    find /var/qmail/mailnames/smt.de/t.weiss/Maildir/cur -type f -name '*.cs5-smt*'|xargs rm -f
+
+44 0    * * 6    root    find /var/qmail/mailnames/smt.de/t.weiss/Maildir/new -type f -name '*.cs5-smt*'|xargs rm -f
+
+45 0    * * 6    root    find /var/qmail/mailnames/smt.de/t.weiss/Maildir/tmp -type f -name '*.cs5-smt*'|xargs rm -f
+
+###
+
+#46 0    * * 6    root    find /var/qmail/mailnames/smt.de/w.pfister/Maildir/cur -type f -name '*.cs5-smt*'|xargs rm -f
+
+#47 0    * * 6    root    find /var/qmail/mailnames/smt.de/w.pfister/Maildir/new -type f -name '*.cs5-smt*'|xargs rm -f
+
+#48 0    * * 6    root    find /var/qmail/mailnames/smt.de/w.pfister/Maildir/tmp -type f -name '*.cs5-smt*'|xargs rm -f
+
+#### hofer-forellen.de
+
+13 0    * * 6    root    find /var/qmail/mailnames/hofer-forellen.de/stephan/Maildir/cur -type f -name '*.cs5-smt*'|xargs rm -f
+
+14 0    * * 6    root    find /var/qmail/mailnames/hofer-forellen.de/stephan/Maildir/new -type f -name '*.cs5-smt*'|xargs rm -f
+
+15 0    * * 6    root    find /var/qmail/mailnames/hofer-forellen.de/stephan/Maildir/tmp -type f -name '*.cs5-smt*'|xargs rm -f
+
+###
+
+13 0    * * 6    root    find /var/qmail/mailnames/hofer-forellen.de/sthofer/Maildir/cur -type f -name '*.cs5-smt*'|xargs rm -f
+
+14 0    * * 6    root    find /var/qmail/mailnames/hofer-forellen.de/sthofer/Maildir/new -type f -name '*.cs5-smt*'|xargs rm -f
+
+15 0    * * 6    root    find /var/qmail/mailnames/hofer-forellen.de/sthofer/Maildir/tmp -type f -name '*.cs5-smt*'|xargs rm -f
+
+###
+
+16 0    * * 6    root    find /var/qmail/mailnames/hezel-online.de/*/Maildir/cur -type f -name '*.cs5-smt*'|xargs rm -f
+
+17 0    * * 6    root    find /var/qmail/mailnames/hezel-online.de/*/Maildir/new -type f -name '*.cs5-smt*'|xargs rm -f
+
+18 0    * * 6    root    find /var/qmail/mailnames/hezel-online.de/*/Maildir/tmp -type f -name '*.cs5-smt*'|xargs rm -f
+
+###
+
+18 0    1 * *    root    find /var/qmail/mailnames/sued-fc.de/woessner/Maildir/cur -type f -name '*.cs5-smt*'|xargs rm -f
+
+19 0    1 * *    root    find /var/qmail/mailnames/sued-fc.de/woessner/Maildir/new -type f -name '*.cs5-smt*'|xargs rm -f
+
+20 0    1 * *    root    find /var/qmail/mailnames/sued-fc.de/woessner/Maildir/tmp -type f -name '*.cs5-smt*'|xargs rm -f
+
+###
+
+21 0    1 * *    root    find /var/qmail/mailnames/franz-gkt.de/*/Maildir/cur -type f -name '*.cs5-smt*'|xargs rm -f
+
+23 0    1 * *    root    find /var/qmail/mailnames/franz-gkt.de/*/Maildir/new -type f -name '*.cs5-smt*'|xargs rm -f
+
+25 0    1 * *    root    find /var/qmail/mailnames/franz-gkt.de/*/Maildir/tmp -type f -name '*.cs5-smt*'|xargs rm -f
+
+###
+
+27 0    1 * *    root    find /var/qmail/mailnames/franz-gks.de/*/Maildir/cur -type f -name '*.cs5-smt*'|xargs rm -f
+
+29 0    1 * *    root    find /var/qmail/mailnames/franz-gks.de/*/Maildir/new -type f -name '*.cs5-smt*'|xargs rm -f
+
+31 0    1 * *    root    find /var/qmail/mailnames/franz-gks.de/*/Maildir/tmp -type f -name '*.cs5-smt*'|xargs rm -f
+
+###
+
+33 0    1 * *    root    find /var/qmail/mailnames/cs5-smt.de/*/Maildir/cur -type f -name '*.cs5-smt*'|xargs rm -f
+
+35 0    1 * *    root    find /var/qmail/mailnames/cs5-smt.de/*/Maildir/new -type f -name '*.cs5-smt*'|xargs rm -f
+
+37 0    1 * *    root    find /var/qmail/mailnames/cs5-smt.de/*/Maildir/tmp -type f -name '*.cs5-smt*'|xargs rm -f
+
+###
+
+#39 0    1 * *    root    find /var/qmail/mailnames/hezel-online.de/jutta.mnessner/Maildir/cur -type f -name '*.cs5-smt*'|xargs rm -f
+
+#41 0    1 * *    root    find /var/qmail/mailnames/hezel-online.de/jutta.mnessner/Maildir/new -type f -name '*.cs5-smt*'|xargs rm -f
+
+#43 0    1 * *    root    find /var/qmail/mailnames/hezel-online.de/jutta.mnessner/Maildir/tmp -type f -name '*.cs5-smt*'|xargs rm -f
+
+###
+
+#
+
+###alle Minute Mailsuer support
+
+* * * * *       root    php5 -q /var/www/vhosts/smt.de/httpdocs/support/server/jobs.php
+
+###*/3 * * * *  root    php5 -q /var/www/vhosts/smt.de/httpdocs/support/server/jobs.php
+
+###time
+
+36 2 * * *      root    /usr/sbin/ntpdate -s ptbtime1.ptb.de ptbtime2.ptb.de
+
+###
+
+#### backup versenden woechentlich
+
+#59 23 * * 0    root    /usr/local/backup/backup.sh
+
+### mailqoeschen bouncing
+
+#33 * * * *    root    /usr/local/psa/admin/bin/mailqueuemng -Sfailure
+
+*/10 * * * *    root    /usr/local/psa/admin/bin/mailqueuemng -Sfailure

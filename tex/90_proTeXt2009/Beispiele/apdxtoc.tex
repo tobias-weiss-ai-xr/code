@@ -1,0 +1,23 @@
+\documentclass[b5paper]{scrartcl}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage[ngerman]{babel}
+\pagestyle{empty}
+
+\newcommand{\settocdepth}[1]{%
+\addtocontents{toc}{\protect\setcounter{tocdepth}{#1}}}
+
+\begin{document}
+\tableofcontents
+\section{Abschnitt}
+\subsection{Unterabschnitt}
+\appendix
+\settocdepth{1}
+\section{Abschnitt}
+\subsection{Unterabschnitt}
+\end{document}
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: t
+%%% End: 

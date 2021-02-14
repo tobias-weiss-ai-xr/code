@@ -1,0 +1,1 @@
+tar --atime-preserve --ignore-failed-read --numeric-owner --same-owner --exclude=/sysbackup.tgz --exclude=/dev/ --exclude=/mnt --exclude=/proc --exclude=/sys -czlvpf /sysbackup.tgz ./

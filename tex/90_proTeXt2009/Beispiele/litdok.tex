@@ -1,0 +1,48 @@
+\documentclass[b5paper]{scrartcl}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage[english,ngerman]{babel}
+\usepackage{fix-cm}
+\providecommand{\litsty}{fix-cm}
+\providecommand{\litbst}{plain}
+\providecommand{\litopt}{}
+\usepackage[\litopt]{\litsty}
+\usepackage[paperheight=10cm]{geometry}
+\usepackage{url}
+
+\raggedbottom{}
+
+\usepackage[short,english,german]{isodate}
+\providecommand{\setbibliographyfont}[2]{}
+\setbibliographyfont{urldate}{\printdate}
+
+\providecommand{\mycite}{\cite}
+
+\begin{document}
+\pagestyle{empty}
+
+\makeatletter
+\def\bib@heading{}
+\def\bibsection{}
+\makeatother
+
+\raggedbottom{}
+
+Die Ursprünge sehen Sie am 
+besten in \mycite{Knuth:TeXbook}.
+
+Die Distribution
+proTeXt \mycite{ProTeXt} 
+auf CD.
+
+\hspace{.25\linewidth}\underline{\hspace{.5\linewidth}}
+
+\bibliographystyle{\litbst}
+\bibliography{latexlit}
+
+\end{document}
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: t
+%%% End: 

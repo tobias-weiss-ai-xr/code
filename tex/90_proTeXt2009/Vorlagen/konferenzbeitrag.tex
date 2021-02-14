@@ -1,0 +1,225 @@
+%% Vorlage eines Konferenzbeitrags für das Buch
+%% "Wissenschaftliche Arbeiten schreiben mit LaTeX"
+%% von Joachim Schlosser, 2006-2009
+%%
+%% Sie dürfen dieses Dokument frei verteilen, verändern und verwenden.
+%%
+%% Dies ist nur eine Vorlage. 
+%% Zwei Kommentarzeichen (%%) bedeuten, dass eine Erläuterung folgt.
+%% Ein Kommentarzeichen heisst, dass die Zeile deaktiviert wurde
+%% Die meisten Pakete sind deaktiviert, Sie aktivieren Sie, indem Sie
+%% das Kommentarzeichen am Beginn der Zeile entfernen.
+%% Aktivieren Sie nur, was Sie wirklich brauchen!
+%% Lesen Sie in l2tabu nach, ob nicht einige Pakete mittlerweile
+%% veraltet sind, wenn Sie diese Vorlage erst 2010 oder später verwenden!
+
+\documentclass[
+%draft,                        %% um später den Zeilenumbruch zu kontrollieren
+a4paper,                       %% DIN A4-Papier
+BCOR4mm,                       %% Bindekorrektur 4 mm
+DIVcalc,                       %% Satzspiegel berechnen
+11pt,                          %% Schriftgröße
+tablecaptionabove,             %% Tabellenüber"= statt unterschriften
+twocolumn                      %% zweispaltig
+]{scrartcl}
+\usepackage[T1]{fontenc}       %% Schriftkodierung, die nativ Umlaute unterstützt
+\usepackage[latin1]{inputenc}  %% Umlaute direkt eingeben
+\usepackage{mathptmx}          %% schmal laufende Times als Brotschrift
+\usepackage[scaled=.92]{helvet}%% Helvetica als Grotesk
+% \usepackage[scaled=.87]{luximono} %% anderer Monotype-Font
+\usepackage{geometry}          %% damit auch das Papierformat passt
+\usepackage[english,german,ngerman]{babel}  %% Deutsch (neue Rechtschreibung) als Hauptsprache
+\input{dehyphtex.tex}          %% zusätzliche deutsche Trennmuster
+%\usepackage{microtype}         %% Optischer Randausgleich mit pdfLaTeX
+\usepackage{textcomp}          %% besondere Textzeichen
+\usepackage{amssymb}           %% Mathesymbole
+\usepackage{amsmath}           %% erweiterte Mathemakros
+%\usepackage{paralist}          %% Aufzählungen im Fließtext
+%\usepackage{mdwlist}           %% engere Aufzählungen und Nummerierungen
+%\usepackage{filecontents}      %% eingebundene Dateien (für ltxtable)
+%\usepackage{ltxtable}          %% lange Tabellen mit flexibler Spaltenbreite
+%\usepackage{tabularx}          %% Tabellen mit flexibler Spaltenbreite 
+\usepackage{booktabs}          %% schönere Tabellenlinien
+\usepackage{graphicx}          %% Graphiken einbinden
+\usepackage{tikz}              %% TikZ/pgf zum Schreiben von Grafiken
+% \usepackage{ifpdf}            %% direktes Einbinden von Metapost-Graphiken
+% \ifpdf 
+% \DeclareGraphicsRule{*}{mps}{*}{} 
+% \fi
+
+%% Literaturverzeichnisse: Hier ist Babelbib gewählt. Wählen Sie, was
+%% Sie brauchen.
+\usepackage{babelbib}          %% Mehrsprachiges Literaturverzeichnis
+
+\usepackage[%
+  bookmarks,                   %% PDF-Lesezeichen
+  bookmarksopen=true,          %% Lesezeichenbaum aufgeklappt...
+  bookmarksopenlevel=1,        %% ...um eine Ebene
+  bookmarksnumbered=true,      %% Lesezeichen numerieren
+%  pagebackref,                 %% Links von Literatur in Text
+  pdfusetitle,                 %% LaTeX-Titelei als Metainfo nehmen
+  pdfstartpage={1},            %% mit welcher Seite das PDF öffnen
+  pdfstartview={FitH},         %% Zoom auf Seitenbreite
+  pdfkeywords={},              %% Stichwörter fürs PDF, kommagetrennt
+  pdfsubject={},               %% Themenbeschreibung kurz
+  pdfcreator={LaTeX with KOMA-Script and hyperref package},
+%   pdfpagelabels,               %% Seitenzahlen wie im Dokument...
+%   plainpages=false,            %% ...und nicht wie sonst
+  hyperfootnotes=true,         %% Links auf Fußnoten
+  hyperindex=true,             %% Indexeinträge verweisen auf Text
+  linkbordercolor={0 1 1},     %% Rahmenfarbe interne Links
+  menubordercolor={0 1 1},     %% Rahmenfarbe Literaturlinks
+  urlbordercolor={1 0 0}       %% Rahmenfarbe externe Links
+]{hyperref}                    %% Hyperlinks und Lesezeichen in PDF 
+%\usepackage[figure]{hypcap}    %% Springt bei Links auf Abb. an die richtige Stelle
+
+\pagestyle{headings}           %% lebende Kolumnentitel
+
+\hyphenation{%
+%  eventuelle Trennmusterdefinitionen, mit - als Trennstellenmarker  
+}
+
+%% Anpassungen für das Layout: Float-Pages
+%\renewcommand{\floatpagefraction}{.7}  % vorher: .5
+
+%% Gegen die meisten Overfull hboxes, aus
+%% dctt, Axel Reichert, Message-ID: <a84us0$plqcm$7@ID-30533.news.dfncis.de>
+\tolerance 1414
+\hbadness 1414
+\emergencystretch 1.5em
+\hfuzz 0.3pt
+\widowpenalty=10000
+\vfuzz \hfuzz
+\raggedbottom
+
+%% Hier beginnt das eigentliche Dokument
+\begin{document}
+
+%% Die Eckdaten des Dokuments, wegen Babel erst nach \begin{document}
+\author{Max Muster}
+\title{Mein wissenschaftlicher Beitrag}
+\date{24.\,12.~2009}
+
+%% Titel daraus erzeugen
+\maketitle
+
+\begin{abstract}
+Dieser Artikel basiert im wesentlichen auf der Theorie des begrenzten
+Wissens \cite{schlosser06:latexbuch}. Die Grundlagen des begrenzten
+Wissens sowie diese Theorie wollen wir im Folgenden erörtern. 
+\end{abstract}
+
+\section{Theorie}
+\label{cha:theorie}
+
+
+\subsection{Grundlagen}
+\label{sec:grundlagen}
+
+Prinzipiell gilt, dass
+\begin{equation}
+  x=y+z
+\end{equation}
+unter der Annahme $x$ und $y$ als Zahlenmaß von Textgröße, $z$ als
+Repräsentation der Aufnahmefähigkeit.
+
+\begin{equation*}
+  \label{eq:pythagoras}
+  \left.\begin{aligned}
+  c^2&=a^2+b^2\\
+  a^2&=p\cdot c\;\wedge\;
+     b^2=q\cdot c\\
+  h^2&=p\cdot q
+  \end{aligned}\right\}
+\begin{gathered}
+  \text{Satzgruppe}\\
+  \text{des Pythagoras}
+\end{gathered}
+\end{equation*}
+
+\subsection{Theorie der Bäume}
+\label{sec:theorie-der-baume}
+
+Schon \cite{knuth:texbook} schreibt:
+
+\begin{table}[htbp]
+  \centering
+  \caption{Vier Zahlen}
+  \label{tab:vierzahlen}
+  \begin{tabular}{lr}
+    \toprule
+    Zahl & Nummer \\
+    \midrule
+    Eins & Zwei \\
+    Drei & Vier \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+Mehr dazu finden Sie in Abschnitt~\ref{sec:konz-der-umsetz}.
+
+\subsection{Erweiterungen der Theorie}
+\label{sec:erwe-der-theor}
+
+Nun ist es so, dass ausgenommen der nichtstandardisierten Verteilung
+alle verteilten Standards nicht ausgenommen werden können.
+
+Das können wir machen durch:
+\begin{enumerate}
+\item etwas,
+\item etwas anders oder
+\item ganz etwas anderes.
+\end{enumerate}
+
+\begin{figure}[htbp]
+  \centering
+  %% Eine Grafik in der Syntax von TikZ. Paket tikz deaktivieren wenn
+  %% nicht benötigt!
+  \begin{tikzpicture}
+    \node {root}
+    child {node {left}}
+    child {node {right}
+      child {node {child}}
+      child {node {child}}
+    };
+  \end{tikzpicture}
+  \caption{Ein Baum}
+  \label{fig:einbaum}
+\end{figure}
+
+Diese Liste ist natürlich nicht als abschliessend zu betrachten und
+kann beliebig erweitert werden. Etwa durch eine Beschreibungsliste:
+
+\begin{description}
+\item[Nichts] ist alles.
+\item[Alles] ist nichts.
+\end{description}
+
+\section{Anwendung}
+\label{cha:anwendung}
+
+\subsection{Konzept der Umsetzung}
+\label{sec:konz-der-umsetz}
+
+Noch etwas tolles.
+
+\subsection{Schnittstellen nach aussen}
+\label{sec:schn-nach-au3en}
+
+Noch etwas tolles.
+
+\section{Schlussfolgerungen}
+\label{sec:schlu3folgerungen}
+
+Daraus können wir ein Resumée ziehen: Ohne Inhalt keine Arbeit, wohl aber
+einige Seiten Dokument.
+
+\bibliographystyle{babalpha}
+\bibliography{literatur}
+
+\end{document}
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: t
+%%% End: 

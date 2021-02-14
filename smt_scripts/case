@@ -1,0 +1,34 @@
+#!/bin/bash
+
+#Die 4 Grundrechenarten
+clear; echo -e "Welche Rechenart?\nBiite den ersten Buchstaben eingeben und mit Enter bestätigen!\n"
+echo -e	"[a]ddieren
+[s]ubtrahieren
+[d]ividieren
+[m]ultiplizieren "
+read operator
+
+clear; echo -e "\nBitte erste Zahl eingeben"
+read a
+
+clear; echo -e "\nBitte zweite Zahl eingeben"
+read b
+
+case "$operator" in
+	a)
+	let c=a+b
+	clear; echo $c;;
+	s)
+	let c=a-s
+	clear; echo $c;;
+	m)
+	let c=a*s
+	clear; echo $c;;
+	d)
+	let c=a/s
+	clear; echo $c;;
+	*)
+	clear; echo -e "\nKein gueltiger Operator"
+	exit1;;
+esac
+

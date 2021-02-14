@@ -1,0 +1,5 @@
+#!/bin/bash
+FILENAME=/var/log/auth.log
+cat $FILENAME | grep sshd > /tmp/auth.log
+SIZE=$(stat --printf="%s" $FILENAME)
+

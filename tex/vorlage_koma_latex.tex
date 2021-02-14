@@ -1,0 +1,79 @@
+\documentclass[11pt,a4paper,paper=a4,oneside,parskip=half+,pdftex]{scrarticle}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage[left=3cm, top=2.5cm, bottom=2.5cm, right=2.5cm% page margins
+    %,showframe% <- only to show the page layout
+]{geometry}
+\usepackage[onehalfspacing]{setspace}
+%page numbering right outer
+\usepackage{scrlayer-scrpage}
+\cfoot*{} %asterisk for first page overwrite
+\rofoot*{\pagemark}
+\setlength{\parindent}{0em} % no first line indent (Erstzeileneinzug)
+%\setlength{\parskip}{1em} % gap between paragraphs (Zeilenzwischenraum)
+%\setlength{\parskip}{0.5em} % gap between paragraphs (Zeilenzwischenraum)
+\RedeclareSectionCommand[
+    beforeskip=.3\baselineskip
+]{paragraph}
+% ms arial compatible font
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+% font and style concerns
+\usepackage{mathtools}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{listings}
+\usepackage{subcaption}
+\usepackage{booktabs}
+\usepackage{url}
+\usepackage{xcolor} % red, green, blue, yellow, cyan, magenta, black, white
+\usepackage{natbib}
+\setcitestyle{aysep={}} %no comma between author and year, e.g. (Scholl 1999, Kap. 1) for \citep citations
+\renewcommand{\bibsection}{} % no bibliography title as section is used
+\usepackage{lipsum} % dummy text
+%algorithm visualisation
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\floatname{algorithm}{Algorithmus}
+%table caption on top
+\usepackage{float}
+\floatstyle{plaintop}
+\restylefloat{table}
+%full size tables
+\usepackage{tabularx}
+%rotate (e.g. table columns)
+\usepackage{rotating}
+%use , as decimal separator (german convention) in math mode
+\usepackage{ziffer}
+%adjust table size or float object positioning like pictures via adjustbox
+\usepackage{adjustbox}
+%font for math mode
+%\usepackage{fourier}
+
+\begin{document}
+\titlehead{MW31.6 - Data and Knowledge Management}
+\subject{Handout}
+\title{Netzwerkdatenbankmodell}
+%\subtitle{Untertitel}
+\author{Tobias Weiß, Matr.-Nr: 159098\\tobias.weiss@uni-jena.de}
+\date{\today}
+%\publishers{Platz für Betreuer o.\,ä.}
+\maketitle
+\tableofcontents
+
+\section{Big picture: Datenbankmodelle}
+\lipsum
+
+\section{}
+\lipsum
+
+\section{Schluss}
+\lipsum
+
+\section{Literaturverzeichnis}
+\bibliography{bibliography.bib}
+\bibliographystyle{apalike-german-mod}
+\end{document}

@@ -1,0 +1,24 @@
+\documentclass[a4paper]{scrartcl}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{tocloft}
+\usepackage[toc]{multitoc}
+\setlength{\cftbeforesecskip}{.2\baselineskip}
+\setlength{\cftbeforesubsecskip}{.1\baselineskip}
+\renewcommand{\cftsecleader}{\quad}
+\renewcommand{\cftsecafterpnum}{\cftparfillskip}
+\setlength{\cftsubsecindent}{0pt}
+\renewcommand{\cftsubsecleader}{\quad}
+\renewcommand{\cftsubsecafterpnum}{\cftparfillskip}
+
+\begin{document}
+\tableofcontents
+\thispagestyle{empty}
+
+\section{Ein Abschnitt}
+\section{Noch ein Abschnitt}
+\subsection{Ein Unterabschnitt}
+\subsection{Noch ein Unterabschnitt}
+\section{Und noch einer}
+\end{document}

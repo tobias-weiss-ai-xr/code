@@ -1,0 +1,19 @@
+zarafa.smt.net
+IP		109.75.19.6
+GW		109.75.19.1
+DNS1	81.209.168.100
+DNS2	91.196.142.228
+
+Webaccess:
+http://109.75.19.6/webaccess/
+
+PWs:
+root:0915
+mysql - siehe root
+stuerner:0915
+
+Zarafa Version:
+zcp-6.40.7-26119-debian-6.0-i386
+
+Besonderheiten:
+- Unix Auth Konfiguration

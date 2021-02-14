@@ -1,0 +1,5 @@
+Uploads seitens Kaiser werden unter upload zu finden sein.
+
+Bitte die Daten die von Kaiser heruntergeladen werden sollen weiterhin ins Stammverzeichnis kopieren.
+
+Am besten Sie verwenden einen richtigen FTP Client z.B. den freien FileZilla http://www.filezilla.de/

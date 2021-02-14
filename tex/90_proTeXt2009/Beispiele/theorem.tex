@@ -1,0 +1,21 @@
+\documentclass{scrartcl}
+\usepackage[T1]{fontenc}
+
+\newtheorem{beisp}{Beispiel}
+\newtheorem{behaupt}{Behauptung}
+\newtheorem{defin}[beisp]{Definition}
+\newtheorem{lemma}{Lemma}[section]
+
+\begin{document}
+\begin{beisp}Ein Text.\end{beisp}
+\begin{beisp}Ein Text.\end{beisp}
+\begin{behaupt}Ein Text.\end{behaupt}
+\begin{behaupt}Ein Text.\end{behaupt}
+\begin{defin}Ein Text.\end{defin}
+\begin{lemma}Ein Text.\end{lemma}
+
+\section{Nix}
+\begin{behaupt}Ein Text.\end{behaupt}
+\begin{lemma}Ein Text.\end{lemma}
+\begin{lemma}Ein Text.\end{lemma}
+\end{document}

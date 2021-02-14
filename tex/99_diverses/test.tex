@@ -1,0 +1,40 @@
+\documentclass[a4paper,11pt,oneside]{report}
+\usepackage[utf8]{inputenc} %An dein System anpassen!
+\usepackage[ngerman]{babel}
+\usepackage{fancyhdr}
+\usepackage{blindtext}
+
+% -- Header -- %
+\pagestyle{fancy} %eigener Seitenstil
+\fancyhf{} %alle Kopf- und Fußzeilenfelder bereinigen
+\fancyhead[L]{Analysis für Informatiker} %Kopfzeile links
+\fancyhead[C]{Tobias Weiß - 159098} %zentrierte Kopfzeile
+\fancyhead[R]{\today} %Kopfzeile rechts
+\renewcommand{\headrulewidth}{0.4pt} %obere Trennlinie
+\fancyfoot[C]{\thepage} %Seitennummer
+\renewcommand{\footrulewidth}{0.4pt} %untere Trennlinie
+
+
+\begin{document}
+\section{Einleitung}
+Einer Theorie zufolge enthalten 
+wissenschaftliche Artikel Formeln.
+\section{Methode}
+Um eine 2 in einer \LaTeX-Formel 
+hochzustellen, stellt man der 
+Ziffer ein \verb+^+ voran.
+\section{Ergebnis}
+So erhalten wir \(E=mc^2\).
+\section{Diskussion}
+Zum selben Ergebnis kam 
+\textsc{A. Einstein}.
+\section{Fazit}
+Wir konnten die Theorie bestätigen.
+\section*{Literatur}
+E. Robert Schulman: ``How to Write a 
+Scientific Paper.'' \textit{Annals of 
+Improbable Research}, Vol.~2, No.~5
+(1996).
+\section{Einleitung}
+\blindtext
+\end{document}

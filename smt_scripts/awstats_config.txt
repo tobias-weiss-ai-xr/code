@@ -1,0 +1,1 @@
+http://www.ppds.hu.gp/configs/opensuse/apache/01_awstats.conf

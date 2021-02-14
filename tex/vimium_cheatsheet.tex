@@ -1,0 +1,386 @@
+\documentclass[10pt,a4paper]{article}
+
+% Packages
+\usepackage{fancyhdr}           % For header and footer
+\usepackage{multicol}           % Allows multicols in tables
+\usepackage{tabularx}           % Intelligent column widths
+\usepackage{tabulary}           % Used in header and footer
+\usepackage{hhline}             % Border under tables
+\usepackage{graphicx}           % For images
+\usepackage{xcolor}             % For hex colours
+%\usepackage[utf8x]{inputenc}    % For unicode character support
+\usepackage[T1]{fontenc}        % Without this we get weird character replacements
+\usepackage{colortbl}           % For coloured tables
+\usepackage{setspace}           % For line height
+\usepackage{lastpage}           % Needed for total page number
+\usepackage{seqsplit}           % Splits long words.
+%\usepackage{opensans}          % Can't make this work so far. Shame. Would be lovely.
+\usepackage[normalem]{ulem}     % For underlining links
+% Most of the following are not required for the majority
+% of cheat sheets but are needed for some symbol support.
+\usepackage{amsmath}            % Symbols
+\usepackage{MnSymbol}           % Symbols
+\usepackage{wasysym}            % Symbols
+%\usepackage[english,german,french,spanish,italian]{babel}              % Languages
+
+% Document Info
+%\author{l1qu1d}
+\pdfinfo{
+  %/Title (vimium.pdf)
+  /%Creator (Cheatography)
+  %/Author (l1qu1d)
+  %/Subject (Vimium Cheat Sheet)
+}
+
+% Lengths and widths
+\addtolength{\textwidth}{6cm}
+\addtolength{\textheight}{-1cm}
+\addtolength{\hoffset}{-3cm}
+\addtolength{\voffset}{-2cm}
+\setlength{\tabcolsep}{0.2cm} % Space between columns
+\setlength{\headsep}{-12pt} % Reduce space between header and content
+\setlength{\headheight}{85pt} % If less, LaTeX automatically increases it
+\renewcommand{\footrulewidth}{0pt} % Remove footer line
+\renewcommand{\headrulewidth}{0pt} % Remove header line
+\renewcommand{\seqinsert}{\ifmmode\allowbreak\else\-\fi} % Hyphens in seqsplit
+% This two commands together give roughly
+% the right line height in the tables
+\renewcommand{\arraystretch}{1.3}
+\onehalfspacing
+
+% Commands
+\newcommand{\SetRowColor}[1]{\noalign{\gdef\RowColorName{#1}}\rowcolor{\RowColorName}} % Shortcut for row colour
+\newcommand{\mymulticolumn}[3]{\multicolumn{#1}{>{\columncolor{\RowColorName}}#2}{#3}} % For coloured multi-cols
+\newcolumntype{x}[1]{>{\raggedright}p{#1}} % New column types for ragged-right paragraph columns
+\newcommand{\tn}{\tabularnewline} % Required as custom column type in use
+
+% Font and Colours
+\definecolor{HeadBackground}{HTML}{333333}
+\definecolor{FootBackground}{HTML}{666666}
+\definecolor{TextColor}{HTML}{333333}
+\definecolor{DarkBackground}{HTML}{3A5D80}
+\definecolor{LightBackground}{HTML}{DDE3E9}
+\renewcommand{\familydefault}{\sfdefault}
+\color{TextColor}
+
+% Header and Footer
+\pagestyle{fancy}
+\fancyhead{} % Set header to blank
+\fancyfoot{} % Set footer to blank
+\fancyhead[L]{
+\noindent
+\begin{multicols}{3}
+\begin{tabulary}{5.8cm}{C}
+    \SetRowColor{DarkBackground}
+    \vspace{-7pt}
+    {\parbox{\dimexpr\textwidth-2\fboxsep\relax}{\noindent
+%        \hspace*{-6pt}\includegraphics[width=5.8cm]{/web/www.cheatography.com/public/images/cheatography_logo.pdf}
+		}
+    }
+\end{tabulary}
+\columnbreak
+\begin{tabulary}{11cm}{L}
+    \vspace{-2pt}\large{\bf{\textcolor{DarkBackground}{\textrm{Vimium Cheat Sheet}}}} \\
+    %\normalsize{by \textcolor{DarkBackground}{l1qu1d} via %\textcolor{DarkBackground}{\uline{cheatography.com/26830/cs/7627/}}}
+\end{tabulary}
+\end{multicols}}
+
+\fancyfoot[L]{ \footnotesize
+\noindent
+\begin{multicols}{3}
+\begin{tabulary}{5.8cm}{LL}
+  \SetRowColor{FootBackground}
+%  \mymulticolumn{2}{p{5.377cm}}{\bf\textcolor{white}{Cheatographer}}  \\
+%  \vspace{-2pt}l1qu1d \\
+%  \uline{cheatography.com/l1qu1d} \\
+  \end{tabulary}
+\vfill
+\columnbreak
+\begin{tabulary}{5.8cm}{L}
+  \SetRowColor{FootBackground}
+%  \mymulticolumn{1}{p{5.377cm}}{\bf\textcolor{white}{Cheat Sheet}}  \\
+%   \vspace{-2pt}Published 23rd March, 2016.\\
+%   Updated 23rd March, 2016.\\
+   Page {\thepage} of \pageref{LastPage}.
+\end{tabulary}
+\vfill
+\columnbreak
+\begin{tabulary}{5.8cm}{L}
+  \SetRowColor{FootBackground}
+%  \mymulticolumn{1}{p{5.377cm}}{\bf\textcolor{white}{Sponsor}}  \\
+%  \SetRowColor{white}
+%  \vspace{-5pt}
+%  %\includegraphics[width=48px,height=48px]{dave.jpeg}
+%  Measure your website readability!\\
+%  www.readability-score.com
+\end{tabulary}
+\end{multicols}}
+
+
+
+
+\begin{document}
+\raggedright
+\raggedcolumns
+
+% Set font size to small. Switch to any value
+% from this page to resize cheat sheet text:
+% www.emerson.emory.edu/services/latex/latex_169.html
+\footnotesize % Small font.
+
+\begin{multicols*}{3}
+
+\begin{tabularx}{5.377cm}{p{0.4977 cm} x{4.4793 cm} }
+\SetRowColor{DarkBackground}
+\mymulticolumn{2}{x{5.377cm}}{\bf\textcolor{white}{Navigating the current page}}  \tn
+% Row 0
+\SetRowColor{LightBackground}
+? & show the help dialog for a list of all available keys \tn 
+% Row Count 2 (+ 2)
+% Row 1
+\SetRowColor{white}
+h & scroll left \tn 
+% Row Count 3 (+ 1)
+% Row 2
+\SetRowColor{LightBackground}
+j & scroll down \tn 
+% Row Count 4 (+ 1)
+% Row 3
+\SetRowColor{white}
+k & scroll up \tn 
+% Row Count 5 (+ 1)
+% Row 4
+\SetRowColor{LightBackground}
+I & scroll right \tn 
+% Row Count 6 (+ 1)
+% Row 5
+\SetRowColor{white}
+gg & scroll to top of the page \tn 
+% Row Count 7 (+ 1)
+% Row 6
+\SetRowColor{LightBackground}
+G & scroll to bottom of the page \tn 
+% Row Count 8 (+ 1)
+% Row 7
+\SetRowColor{white}
+d & scroll down half a page \tn 
+% Row Count 9 (+ 1)
+% Row 8
+\SetRowColor{LightBackground}
+u & scroll up half a page \tn 
+% Row Count 10 (+ 1)
+% Row 9
+\SetRowColor{white}
+f & open a link in the current tab \tn 
+% Row Count 11 (+ 1)
+% Row 10
+\SetRowColor{LightBackground}
+F & open a link in a new tab \tn 
+% Row Count 12 (+ 1)
+% Row 11
+\SetRowColor{white}
+r & reload \tn 
+% Row Count 13 (+ 1)
+% Row 12
+\SetRowColor{LightBackground}
+gs & view source \tn 
+% Row Count 14 (+ 1)
+% Row 13
+\SetRowColor{white}
+i & enter insert mode -{}- all commands will be ignored until you hit Esc to exit \tn 
+% Row Count 17 (+ 3)
+% Row 14
+\SetRowColor{LightBackground}
+yy & copy the current url to the clipboard \tn 
+% Row Count 19 (+ 2)
+% Row 15
+\SetRowColor{white}
+yf & copy a link url to the clipboard \tn 
+% Row Count 20 (+ 1)
+% Row 16
+\SetRowColor{LightBackground}
+gf & cycle forward to the next frame \tn 
+% Row Count 21 (+ 1)
+% Row 17
+\SetRowColor{white}
+gF & focus the main/top frame \tn 
+% Row Count 22 (+ 1)
+\hhline{>{\arrayrulecolor{DarkBackground}}--}
+\end{tabularx}
+\par\addvspace{1.3em}
+
+\begin{tabularx}{5.377cm}{p{0.4977 cm} x{4.4793 cm} }
+\SetRowColor{DarkBackground}
+\mymulticolumn{2}{x{5.377cm}}{\bf\textcolor{white}{Navigating to new pages}}  \tn
+% Row 0
+\SetRowColor{LightBackground}
+o & Open URL, bookmark, or history entry \tn 
+% Row Count 1 (+ 1)
+% Row 1
+\SetRowColor{white}
+O & Open URL, bookmark, history entry in a new tab \tn 
+% Row Count 3 (+ 2)
+% Row 2
+\SetRowColor{LightBackground}
+b & Open bookmark \tn 
+% Row Count 4 (+ 1)
+% Row 3
+\SetRowColor{white}
+B & Open bookmark in a new tab \tn 
+% Row Count 5 (+ 1)
+\hhline{>{\arrayrulecolor{DarkBackground}}--}
+\end{tabularx}
+\par\addvspace{1.3em}
+
+\begin{tabularx}{5.377cm}{p{0.4977 cm} x{4.4793 cm} }
+\SetRowColor{DarkBackground}
+\mymulticolumn{2}{x{5.377cm}}{\bf\textcolor{white}{Navigating your history}}  \tn
+% Row 0
+\SetRowColor{LightBackground}
+H & go back in history \tn 
+% Row Count 1 (+ 1)
+% Row 1
+\SetRowColor{white}
+L & go forward in history \tn 
+% Row Count 2 (+ 1)
+\hhline{>{\arrayrulecolor{DarkBackground}}--}
+\end{tabularx}
+\par\addvspace{1.3em}
+
+\begin{tabularx}{5.377cm}{x{2.4885 cm} x{2.4885 cm} }
+\SetRowColor{DarkBackground}
+\mymulticolumn{2}{x{5.377cm}}{\bf\textcolor{white}{Using find}}  \tn
+% Row 0
+\SetRowColor{LightBackground}
+/ & enter find mode -{}- type your search query and hit enter to search, or Esc to cancel \tn 
+% Row Count 5 (+ 5)
+% Row 1
+\SetRowColor{white}
+n & cycle forward to the next find match \tn 
+% Row Count 7 (+ 2)
+% Row 2
+\SetRowColor{LightBackground}
+N & cycle backward to the previous find match \tn 
+% Row Count 10 (+ 3)
+% Row 3
+\SetRowColor{white}
+\seqsplit{https://github.com/philc/vimium/wiki/Find-Mode} & For advanced usage, see regular expressions on the wik \tn 
+% Row Count 13 (+ 3)
+\hhline{>{\arrayrulecolor{DarkBackground}}--}
+\end{tabularx}
+\par\addvspace{1.3em}
+
+\begin{tabularx}{5.377cm}{p{0.64701 cm} x{4.32999 cm} }
+\SetRowColor{DarkBackground}
+\mymulticolumn{2}{x{5.377cm}}{\bf\textcolor{white}{Using marks}}  \tn
+% Row 0
+\SetRowColor{LightBackground}
+ma, mA & set local mark "a" (global mark "A") \tn 
+% Row Count 2 (+ 2)
+% Row 1
+\SetRowColor{white}
+`a, `A & jump to local mark "a" (global mark "A") \tn 
+% Row Count 4 (+ 2)
+% Row 2
+\SetRowColor{LightBackground}
+`` & jump back to the position before the previous jump -that is, before the previous gg, G, n, N, / or `a \tn 
+% Row Count 7 (+ 3)
+\hhline{>{\arrayrulecolor{DarkBackground}}--}
+\end{tabularx}
+\par\addvspace{1.3em}
+
+\begin{tabularx}{5.377cm}{p{0.54747 cm} x{4.42953 cm} }
+\SetRowColor{DarkBackground}
+\mymulticolumn{2}{x{5.377cm}}{\bf\textcolor{white}{Manipulating tabs}}  \tn
+% Row 0
+\SetRowColor{LightBackground}
+J, gT & go one tab left \tn 
+% Row Count 2 (+ 2)
+% Row 1
+\SetRowColor{white}
+K, gt & go one tab right \tn 
+% Row Count 4 (+ 2)
+% Row 2
+\SetRowColor{LightBackground}
+g0 & go to the first tab \tn 
+% Row Count 5 (+ 1)
+% Row 3
+\SetRowColor{white}
+g\$ & go to the last tab \tn 
+% Row Count 6 (+ 1)
+% Row 4
+\SetRowColor{LightBackground}
+t & create tab \tn 
+% Row Count 7 (+ 1)
+% Row 5
+\SetRowColor{white}
+yt & duplicate current tab \tn 
+% Row Count 8 (+ 1)
+% Row 6
+\SetRowColor{LightBackground}
+x & close current tab \tn 
+% Row Count 9 (+ 1)
+% Row 7
+\SetRowColor{white}
+X & restore closed tab (i.e. unwind the 'x' command) \tn 
+% Row Count 11 (+ 2)
+% Row 8
+\SetRowColor{LightBackground}
+T & search through your open tabs \tn 
+% Row Count 12 (+ 1)
+% Row 9
+\SetRowColor{white}
+\textless{}a-p\textgreater{} & pin/unpin current tab \tn 
+% Row Count 14 (+ 2)
+\hhline{>{\arrayrulecolor{DarkBackground}}--}
+\end{tabularx}
+\par\addvspace{1.3em}
+
+\begin{tabularx}{5.377cm}{p{0.64701 cm} x{4.32999 cm} }
+\SetRowColor{DarkBackground}
+\mymulticolumn{2}{x{5.377cm}}{\bf\textcolor{white}{Additional advanced browsing commands}}  \tn
+% Row 0
+\SetRowColor{LightBackground}
+{]}{]}, {[}{[} & Follow the link labeled 'next' or '\textgreater{}' ('previous' or '\textless{}') -helpful for browsing paginated sites \tn 
+% Row Count 3 (+ 3)
+% Row 1
+\SetRowColor{white}
+\textless{}a-f\textgreater{} & open multiple links in a new tab \tn 
+% Row Count 4 (+ 1)
+% Row 2
+\SetRowColor{LightBackground}
+gi & focus the first (or n-th) text input box on the page \tn 
+% Row Count 6 (+ 2)
+% Row 3
+\SetRowColor{white}
+gu & go up one level in the URL hierarchy \tn 
+% Row Count 8 (+ 2)
+% Row 4
+\SetRowColor{LightBackground}
+gU & go up to root of the URL hierarchy \tn 
+% Row Count 9 (+ 1)
+% Row 5
+\SetRowColor{white}
+zH & scroll all the way left \tn 
+% Row Count 10 (+ 1)
+% Row 6
+\SetRowColor{LightBackground}
+zL & scroll all the way right \tn 
+% Row Count 11 (+ 1)
+% Row 7
+\SetRowColor{white}
+v & enter visual mode; use p/P to paste-and-go, use y to yank \tn 
+% Row Count 13 (+ 2)
+% Row 8
+\SetRowColor{LightBackground}
+V & enter visual line mode \tn 
+% Row Count 14 (+ 1)
+\hhline{>{\arrayrulecolor{DarkBackground}}--}
+\end{tabularx}
+\par\addvspace{1.3em}
+
+
+% That's all folks
+\end{multicols*}
+
+\end{document}

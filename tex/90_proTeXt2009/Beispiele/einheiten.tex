@@ -1,0 +1,97 @@
+\documentclass{scrartcl}
+\usepackage[T1]{fontenc}
+\usepackage{siunitx}
+\usepackage[ngerman]{babel}
+
+\begin{document}
+\num{12345678}\\
+\num[digitsep=comma]{12345678}\\
+\num{.12345678}\\
+\num[decimalsymbol=comma]{.12345678}\\
+\selectlanguage{ngerman}
+\num[fixdp]{.12345678}\\
+\num[dp=4]{.12345678}\\
+\num{2.3e2}\\
+\num{2.3d-2}\\
+\num[expproduct=tighttimes]{2.3e-2}\\
+\num[expproduct=cdot]{2.3e-2}\\
+\sisetup{locale=DE}
+\num{2.3e2}\\
+\num{2.3d-2}\\
+%\sisetup{loctolang={DE:ngerman}}
+\num{123(11)}\\
+\num[seperr]{123(11)}\\
+\ang{13;12;11}\\
+\ang[padangle=all]{13;;}\\
+\ang[padangle=none]{;12;}\\
+\ang[padangle=none]{13;;11}\\
+\ang[padangle=none]{;;11}\\
+\SI{1.7e2}{\pico\joule\per\kilo\gram\squared}\\
+\sisetup{per=slash}
+\SI{1.7e2}{\joule\per\kilo\gram\squared}\\
+\sisetup{per=frac}
+\SI{1.7e2}{\joule\per\kilo\gram\squared}\\
+\sisetup{per=frac, fraction=nice}
+\SI{1.7e2}{\joule\per\kilo\gram\squared}\\
+\SI{2.8}{\meter\cubed}\\
+\SI{2.8}{\meter\tothe{5}}\\
+\SI{2.8}{\per\meter\tothe{4}}\\
+\SI[prefixsymbolic=false]{1.7}{\joule\per\kilo\gram}\\
+\SI{2 x 3 x 4}{\milli\meter}\\
+\SI[repeatunits=power]{2 x 3 x 4}{\milli\meter}\\
+\SI[repeatunits=false]{2 x 3 x 4}{\milli\meter\cubed}\\
+{
+\sffamily\bfseries
+\SI{1.7e2}{\joule\per\kilo\gram\squared}\\
+\sisetup{obeyall}
+\SI{1.7e2}{\joule\per\kilo\gram\squared}\\
+}
+
+\newpage
+
+\begin{tabular}{%
+|S%
+|S[tabformat=2.2e2]%
+|S[tabformat=2.2e2,tabnumalign=right]|}
+{Standard} & {mit Formatangabe} & {numalign right} \\
+1          & 1                  & 1                \\
+1.03       & 1.03               & 1.03             \\
+1.123      & 1.123              & 1.123            \\
+1.1e1      & 1.1e1              & 1.1e1            \\
+1.12e123   & 1.12e123           & 1.12e123         \\
+\end{tabular}
+
+\begin{tabular}{%
+|S[tabformat=2.2e2,tabalignexp=false]%
+|S[tabformat=2.2e2,tabautofit]%
+|S[tabparseonly]|}
+{ohne alignexp} & {mit autofit} & {parseonly} \\
+1               & 1             & 1           \\
+1.03            & 1.03          & 1.03        \\
+1.123           & 1.123         & 1.123       \\
+1.1e1           & 1.1e1         & 1.1e1       \\
+ 1.12e123       & 1.12e123      & 1.12e123    \\
+\end{tabular}
+
+
+\begin{tabular}{lS[numdecimal={:},tabformat=1:2,decimalsymbol={:}]}
+Ziel      & {Dauer} \\
+Frankfurt & 3:20  \\
+Berlin    & 5:40  \\
+München   & :35   \\
+Nürnberg  & 1     \\
+Salzburg  & 2:20  \\
+\end{tabular}
+
+\sisetup{alsoload=binary}
+\begin{tabular}{%
+S[tabformat=1.1e-1,tabnumalign=centre]%
+s[tabunitalign=left]}
+{Wert} & {Einheit pro Zahl} \\
+{Wert} & \multicolumn{1}{c}{Einheit pro Zahl} \\
+1.3e-2 & \joule\per\kilo\gram        \\
+4.5e8  & \bit\per\second             \\
+4.6e5  & \bit\per\second
+\end{tabular}
+
+\end{document}

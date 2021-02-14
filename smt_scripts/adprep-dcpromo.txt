@@ -1,0 +1,119 @@
+Die AD Schemaversion mit dsquery abfragen
+Auch mit dsquery lässt sich die AD Schemaversion in einer Kommandozeile abfragen. Der Befehl lautet wie folgt:
+dsquery * "CN=Schema,CN=Configuration,DC=Root-Domäne" -Scope Base -attr objectVersion
+
+http://www.petri.co.il/determining_fsmo_role_holders.htm
+C:\WINDOWS>netdom query /domain:dpetri fsmo
+
+dsquery server -hasfsmo schema
+dsquery server -hasfsmo name
+dsquery server -hasfsmo rid
+dsquery server -hasfsmo pdc
+dsquery server -hasfsmo infr
+
+Schritt für Schritt-Anleitung für eine 32bit oder x64 Windows 2000/2003/2003 R2/2008 Gesamtstruktur, damit der erste Windows Server 2008 R2 DC hinzugefügt werden kann
+    Zuerst muss das Active Directory Preparation Tool (kurz ADPREP), das sich auf der Windows Server 2008 R2 DVD im Verzeichnis <DVD-Laufwerk>:\Support\Adprep befindet, mit dem Parameter /Forestprep auf dem Schema-Master ausgeführt werden. Allerdings befinden sich im Adprep-Verzeichnis zwei ADPREP-Dateien. Eine „Adprep.exe“ für x64-DCs und eine „Adprep32.exe“ für 32bit-DCs. Mit ausführen von Adprep32 /Forestprep auf einem 32bit Schema-Master, wird die Gesamtstruktur auf Windows Server 2008 R2 aktualisiert. Befindet sich der Schema-Master auf einem x64 DC, so lautet der Befehl Adprep /Forestprep.
+    Hinweis: Im weiteren Verlauf des Artikels wird die x32Bit Version des Adpreps angegeben, da sicherlich in den meisten Unternehmen noch hauptsächlich 32bit DCs existieren.
+
+    Der Parameter /Forestprep muss und kann nur ein einziges Mal in der Gesamtstruktur ausgeführt werden. Dabei muss das Benutzerkonto mit dem das ADPREP ausgeführt wird, Mitglied der folgenden drei Gruppen sein:
+    - Organisations-Admins
+    - Schema-Admins
+    - Domänen-Admins in der Domäne, in der der Schema-Master Mitglied ist
+	
+    Ruft man das Adprep32 /Forestprep nicht auf dem Schema-Master auf, bringt das Tool den Hinweis, dass die Gesamtstrukturaktualisierung nur auf dem Schema-Master durchgeführt werden kann und bricht den Vorgang ab. Microsoft empfiehlt das Verzeichnis „Adprep“ (mit dem kompletten Inhalt!) vorher auf den DC zu kopieren, um z.B. Lesefehler des DVD-Laufwerks während der Ausführung von Adprep zu vermeiden.
+    An error occurs when you run the ADPREP/FORESTPREP command on a Windows Server 2003-based or Windows Server 2008-based computer: "An attribute with the same link identifier already exists"
+
+    Das Adprep32 /Forestprep aktualisiert die Gesamtstruktur auf Windows Server 2008 R2, in dem neue Attribute sowie Klassen dem Schema hinzugefügt bzw. bestehende (z.B. die Berechtigungen) geändert werden. Nach dem Aufruf von Adprep32 /Forestprep werden abhängig von der Schema-Version die LDF-Dateien, die zur Schema-Aktualisierung benötigt werden, aus dem Verzeichnis „Support\Adprep“ auf dem DC in das Verzeichnis „%windir%\system32“ kopiert.
+    In einer Windows 2000 Gesamtstruktur werden die LDF-Dateien ab sch14.ldf, in einer Windows Server 2003 ab sch31.ldf, in einer Windows Server 2003 R2 ab sch32.ldf und in einer Windows Server 2008 Umgebung ab sch45.ldf bis zur sch47.ldf in das Schema importiert. Das Schema wird somit auf die Version 47 aktualisiert.
+    Die Schema-Versionen sind (in Dezimal):
+
+    - Schema-Version 13 = Windows 2000 RTM mit allen Service Packs
+    - Schema-Version 30 = Windows Server 2003 RTM mit allen Service Packs
+    - Schema-Version 31 = Windows Server 2003 R2 RTM mit allen Service Packs
+    - Schema-Version 44 = Windows Server 2008 RTM mit allen Service Packs
+    - Schema-Version 47 = Windows Server 2008 R2 mit allen Service Packs
+
+    Die Schema-Version kann man sich auf jedem DC in der Gesamtstruktur zum einen in der Registry in dem folgenden Pfad ansehen:
+
+    HKLM\SYSTEM\CurrentControlSet\Services\NTDS\Parameters\<Schema Version>
+    Zum anderen lässt sich im Attribut objectVersion, das sich in den Eigenschaften der Schema-Partition CN=Schema,CN=Configuration,DC=<Root-Domäne>,DC=<TLD> befindet, die Schemaversion anzeigen (z.B. mit ADSIEdit.msc oder LDP.exe).
+
+    Auch mit Dsquery lässt sich die Schema-Version abfragen. Der Befehl lautet wie folgt:
+    dsquery * CN=Schema,CN=Configuration,DC=Root-Domäne -Scope Base -attr objectVersion
+
+    Wenn das Adprep32 /Forestprep durchgeführt wurde, wird in der Konfigurationspartition der Container CN=ActiveDirectoryUpdate,CN=ForestUpdates,CN=Configuration,DC=<Root-Domäne> erstellt. Der Container selbst bleibt leer. Das Attribut Revision in den Eigenschaften des Containers CN=ActiveDirectoryUpdate erhält den Wert 5. Danach sollte sichergestellt werden, dass sich dieser Container zuerst auf alle DCs der Gesamtstruktur repliziert, um dann den nächsten Schritt mit Adprep durchzuführen.
+    In erster Linie sollten die DC`s der einzelnen Domänen die Aktualisierung empfangen haben, die die FSMO-Rolle des Infrastruktur-Master innehaben. Dazu gilt es den nächsten Punkt zu beachten.
+    Hinweis für Windows Server 2008 Umgebungen: Falls schon ein Windows Server 2008 DC in der (z.B. Windows 2000 oder Windows Server 2003) Domäne besteht oder es sich um eine reine Windows Server 2008 Umgebung handelt, existiert bereits der Container CN=ActiveDirectoryUpdate. Das Attribut Revision enthält dagegen als Wert 2. Wird nun das Adprep32 /Forestprep von der Windows Server 2008 R2 DVD ausgeführt, wird der Wert auf 5 geändert.
+    Hinweis: Im Gegensatz zu Windows Server 2008 Zeiten kann nun auch auf einem deutschen Schemamaster das ADPREP von einer englischen Windows Server 2008 R2 DVD ausgeführt werden. Zu Zeiten Windows Server 2008 gab es an dieser Stelle ein Sprach-Problem und nach dem Ausführen von ADPREP passierte einfach nichts, es erschien noch nicht einmal eine Fehlermeldung. Aber: Existiert ein englischer Schemamaster und man führt das ADPREP von einer deutschen Windows Server 2008 R2 DVD aus, besteht der Fehler weiterhin. Der Cursor blinkt in der nächsten Zeile ohne das irgendetwas passiert. Besteht ein englischer Schemamaster, kann man entweder den Schemamaster auf einen deutschen DC verschieben und danach das ADPREP von einer deutschen DVD ausführen oder man führt das ADPREP gleich von einer englischen DVD aus!
+    ADPREP "multi-language"
+    Im zweiten Schritt muss das Adprep32 mit den Parametern /Domainprep /Gpprep auf dem Infrastruktur-Master in der Domäne, in der man den Windows Server 2008 R2 als DC hinzufügen möchte, ausgeführt werden. Das Benutzerkonto, mit dem dieser Befehl ausgeführt wird, muss Mitglied der Sicherheitsgruppe Domänen-Admins sein. Mit Ausführen von /Domainprep /Gpprep wird die Domäne auf Windows Server 2008 R2 aktualisiert. Der Parameter /Domainprep bewirkt, dass neue Objekte erstellt sowie die ACLs an diversen Objekten in der Domänenpartition geändert werden.  Der Parameter /Gpprep sorgt dafür, dass die Berechtigungen der Gruppenrichtlinienobjekte die sich im Sysvol-Verzeichnis befinden, angepasst werden. Führt man diesen Befehl aus, noch bevor die Gesamtstrukturaktualisierung auf den Infrastruktur-Master repliziert wurde, bricht der Vorgang ab. Dieser bricht auch dann ab, wenn der Befehl nicht auf dem Infrastruktur-Master ausgeführt wird. Durch Ausführen dieses Befehls wird der folgende Container in der Domänenpartition erstellt: CN=ActiveDirectoryUpdate,CN=DomainUpdates,CN=System,DC=<Domäne>
+    Auch dieser Container bleibt leer. Das Attribut Revision das sich in den Eigenschaften des Containers CN=ActiveDirectoryUpdate befindet, bekommt ebenfalls den Wert 5. Es ist möglich zuerst das Adprep lediglich mit dem Parameter /Domainprep auszuführen und zu einem späteren Zeitpunkt die Berechtigungen der GPOs, mit Adprep /Domainprep /Gpprep zu aktualisieren. Empfehlenswert ist jedoch, beide Parameter in einem Schritt durchzuführen.
+    Hinweis für Windows Server 2008 Umgebungen: Wenn sich aber bereits ein Windows Server 2008 DC in der (z.B. Windows 2000 oder Windows Server 2003) Domäne befindet oder es sich um eine reine Windows Server 2008 Umgebung handelt, besteht bereits der Container CN=ActiveDirectoryUpdate in der Domänenpartition. Der Wert im Attribut Revision wird dann von 3 auf 5 geändert. In den Umgebungen wo bereits ein Windows Server 2008 DC existiert, ist es auch nicht notwendig den Parameter /Gpprep auszuführen, da bereits die Berechtigungen der GPOs im Sysvol-Verzeichnis angepasst wurden. Das gilt aber nur für die Umgebungen, in denen bereits beim hinzufügen des zusätzlichen Windows Server 2008 DCs der Parameter /Gpprep mit angegeben wurde. In einer Windows Server 2008 Domäne ist der Parameter /Gpprep ohnehin nicht notwendig. Es ist aber nicht weiter tragisch wenn der Parameter doch mit angegeben werden sollte, denn der Assistent bringt lediglich den Hinweis, dass die Berechtigungen der GPOs bereits angepasst wurden.
+
+
+    Wenn der Einsatz eines Read-Only Domain Controllers (RODC) in irgendeiner Domäne der Gesamtstruktur geplant ist, dann ist das Adprep32 mit dem Parameter /Rodcprep lediglich einmalig aufzurufen.  Der DC, auf dem dieser Befehl ausgeführt wird, muss auch nicht der Träger der FSMO-Rollen sein. Beim Ausführen dieses Befehls werden die einzelnen Infrastruktur-Master der Domänen kontaktiert, um die Berechtigungen (Security Descriptor, SD) der Domänen- sowie Anwendungsverzeichnispartitionen DomainDNSZones und ForestDNSZones zu aktualisieren.
+
+    Es reicht völlig aus, diesen Befehl erst vor dem Hinzufügen des ersten RODC`s in der Gesamtstruktur auszuführen. Das Benutzerkonto, mit dem dieser Befehl ausgeführt wird, muss Mitglied in der Sicherheitsgruppe Organisations-Admins sein. Nach Ausführung von /Rodcprep wird der folgende Container, der ebenfalls leer bleibt, erstellt:
+    CN=ActiveDirectoryRodcUpdate,CN=ForestUpdates,CN=Configuration,DC=<Root-Domäne>.
+
+    Das Attribut Revision in den Eigenschaften des Containers, erhält als Wert 2.
+
+
+    Hinweis für Windows Server 2008 Umgebungen: Existiert bereits ein Windows Server 2008 DC in der (z.B. Windows 2000 oder Windows Server 2003) Domäne oder handelt es sich um eine reine Windows Server 2008 Umgebung, so kann ein Windows Server 2008 R2 als RODC zur Domäne hinzugefügt werden. Es ist nicht unbedingt notwendig, dass bereits ein Windows Server 2008 R2 DC in der Domäne besteht um einen Windows 2008 R2 als RODC zur Domäne hinzuzufügen. Denn die Voraussetzungen um einen RODC zur Domäne hinzuzufügen sind schließlich, dass sich der Gesamtstrukturfunktionsmodus mindestens auf „Windows Server 2003“ befindet, sich bereits ein Windows Server 2008 DC in der Domäne befindet und das Adprep32 /Rodcprep ausgeführt wurde.
+
+    Read-Only Domain Controller (RODC)
+    Die Installation eines RODC
+
+
+    Wird eine neue Gesamtstruktur unter Windows Server 2008 R2 erstellt, so ist das Ausführen von Adprep/Adprep32 keineswegs notwendig. Weder der Parameter /Forestprep, noch /Domainprep /Gpprep oder /Rodcprep müssen angewendet werden.
+
+
+    Es wird bei jedem Ausführen von Adprep im Verzeichnis %Systemroot%\Debug\Adprep\Logs ein Ordner erstellt, dass als Namen das aktuelle Datum sowie die Uhrzeit erhält. Darin befindet sich (neben anderen) das Adprep-Protokoll mit dem Namen ADPrep.log, welches einen detaillierten Bericht zum Vorgang liefert. Wenn Adprep abbrechen oder einen Fehler melden sollte, ist dieses Protokoll bei der Fehlersuche hilfreich.
+
+    Debug Protokollierung
+
+
+    Nach der Domänenaktualisierung auf Windows Server 2008 R2, kann nun der neue Server als "zusätzlicher DC der bestehenden Domäne" hinzugefügt werden. Während dem Heraufstufen zum DC sollte an entsprechender Stelle, dass DNS mit installiert und zusätzlich der globale Katalog aktiviert werden. Anschließend sollten noch die FSMO-Rollen auf den Windows Server 2008 R2 DC verschoben werden.
+
+    Globaler Katalog (Global Catalog – GC)
+    Der PDC-Emulator
+    Die FSMO-Rollen verschieben
+	
+	
+	
+	Die FSMO-Rollen in der Kommandozeile mit NTDSUTIL online übertragen
+ 
+
+Alle fünf FSMO-Rollen lassen sich auch in der Kommandozeile auf einen anderen DC übertragen. Das Übertragen der Betriebsmasterrollen mit "Transfer" funktioniert jedoch nur, wenn der ursprüngliche Rolleninhaber noch online und funktionstüchtig ist! Per NTDSUTIL können die FSMO-Rollen folgendermaßen übertragen werden:
+
+    Als erstes muss in der Eingabeaufforderung (Start-Ausführen-CMD) oder unter "Start - Ausführen" das NTDSUTIL aufgerufen werden.
+
+    Mit dem Befehl ROLES wechselt man zur "fsmo maintenance" Ebene.
+
+    In der „fsmo maintenance“ Ebene gibt man Connections ein.
+
+    Mit dem Befehl "Connect to Server <Servername>“, gilt es den Ziel-DC (zukünftiger Rolleninhaber) zu fokussieren.
+
+    In der „server connections“ Ebene muss man mit "quit" oder „q“ erneut zur „fsmo maintenance“ Ebene wechseln.
+
+    Nun können mit dem folgenden Befehl, die Betriebsmasterrollen auf den fokussierten DC übertragen werden: Transfer <Rolle>
+
+    Transfer schema master
+    Transfer domain naming master (gilt bis einschließlich Windows Server 2003!)
+    Transfer naming master (gilt ab Windows Server 2008!)
+    Transfer RID master
+    Transfer PDC
+    Transfer infrastructure master
+
+     
+    Die folgende Abfrage ist mit einem Klick auf OK zu bestätigen.
+
+    Nach dem übertragen gilt es mit „q“ (zweimal), die NTDSUTIL - Kommandozeile zu verlassen.
+
+
+Falls dieser nicht mehr online ist, weil er einen Hardware-Crash erlitten hat, muss man die Rollen zwangsweise mit der „seize <Funktion>“ übertragen (bei gleicher Vorgehensweise wie beim "transfer").  
+Funktionieren würde das Verschieben, wenn der DC (für immer) offline wäre, auch über die GUI, bis auf den RID-Master, dieser muss per „seize“ verschoben werden.
+
+ 
+
+Befindet sich der Rolleninhaber nur vorübergehend offline, so ist es nicht notwendig die Rollen auf einen anderen DC zu verschieben!

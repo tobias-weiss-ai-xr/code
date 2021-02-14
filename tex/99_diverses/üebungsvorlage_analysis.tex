@@ -1,0 +1,42 @@
+\documentclass[headsepline,headings=onelinechapter,chapterprefix=false]{scrreprt}
+\usepackage{scrpage2}
+\usepackage[utf8]{inputenc} %An dein System anpassen!
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+
+% -- Seitengröße anpassen -- %
+\usepackage[left=25mm,right=25mm,top=25mm,bottom=20mm,includeheadfoot]{geometry}
+
+%% weitere Pakete, falls wirklich benötigt
+%\usepackage{xcolor}
+%\usepackage{graphicx}
+%\usepackage{amsmath} % Packages für Formeln
+%\usepackage{amsthm} % Packages für Formeln
+%\usepackage{amsfonts} % Packages für Formeln
+%\usepackage{amssymb} % Packages für Formeln
+%\usepackage{longtable} % Für Tabellen, die eine Seite überschreiten
+%\usepackage{booktabs} % für schöne Tabellen
+%\usepackage{pdfpages}
+\usepackage{lastpage} % für die # von # Seiten Anzeige
+%\usepackage{lmodern}
+%\setuptoc{toc}{leveldown}
+
+\usepackage{blindtext}
+
+\clearscrheadfoot
+\ihead{Analysis für Informatiker}
+\chead{Tobias Weiß - 159098}
+\ohead{\today}
+\ofoot{\thepage\ von \pageref{LastPage}}
+
+
+\pagestyle{scrheadings}
+\renewcommand*{\chapterpagestyle}{scrheadings} % Heading auch für chapter
+
+\begin{document}
+\chapter{Übung}
+\section{Darstellung rationaler Zahlen.}
+\subsection{}
+asdfadsf
+\section{(Un-)Gleichungen mit Quotienten, Quadraten, Wurzeln.}
+\end{document}

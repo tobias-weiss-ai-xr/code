@@ -1,0 +1,20 @@
+https://docs.djangoproject.com/en/1.10/intro/tutorial01/
+
+# start project
+django-admin startproject mysite
+
+
+python manage.py runserver
+python manage.py startapp polls
+
+#after model change
+python manage.py makemigrations 
+python manage.py sqlmigrate polls 0001Während der Installation wird nach dem root-Passwort für MySQL verfragt.
+Die Paketnamen können je nach verwendeter Distribution variieren. Des Weiteren besteht die Wahl aus mehreren MySQL Connectoren.
+python manage.py migrate
+
+python manage.py shell
+from polls.models import Question, Choice
+from django.utils import timezone
+q = Question(question_text="What's new?", pub_date=timezone.now())
+

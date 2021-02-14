@@ -1,0 +1,33 @@
+\documentclass[b6paper]{scrartcl}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage[english,ngerman]{babel}
+\usepackage{fix-cm}
+\pagestyle{empty}
+\usepackage[subsectionbib]{bibunits}
+
+\begin{document}
+\bibliographyunit[\section]
+\bibliographystyle{alpha}
+\bibliography{latexlit}
+
+\section{Anfang}
+Die Ursprünge sehen Sie am 
+besten in \cite{Knuth:TeXbook}.
+
+Die Distribution
+proTeXt \cite{ProTeXt} 
+auf CD.
+\putbib
+
+\section{Weiteres}
+Wie schon in \cite{Knuth:TeXbook}
+steht.
+\putbib
+\end{document}
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: t
+%%% End: 
+

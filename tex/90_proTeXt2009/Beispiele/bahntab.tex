@@ -1,0 +1,64 @@
+\documentclass{mitp} % Ersetzen Sie das durch \documentclass{scrartcl}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage[active,tightpage]{preview}
+\usepackage{booktabs, multirow, tabularx, siunitx}
+\usepackage[table]{xcolor}
+\PreviewEnvironment[{[]}]{tabularx}
+\pagestyle{empty}
+
+\begin{document}
+\rowcolors{3}{black!10}{black!20}
+\setlength\arrayrulewidth{2pt}\arrayrulecolor{gray}
+\newcolumntype{B}{>{\cellcolor{black!90}\color{white}}c}
+\sisetup{numdecimal={:},tabformat=1:2,%
+  decimalsymbol={:}}
+\begin{tabularx}{.9\linewidth}{llS
+  >{\raggedright}X>{\raggedright\arraybackslash $\approx$\,}X}
+\hline
+\rowcolor{black!90}
+          & \multicolumn{2}{B}{Zeiten}  & 
+              \multicolumn{2}{B}{Begleitinfo}\\
+\rowcolor{black!90}
+\color{white}Ziel    & \color{white}Abfahrt & {Dauer} &
+\textcolor{white}{Zugart} & \color{white}Verspätung\\
+\hline
+Frankfurt& stündlich   & 3:20 & IC, ICE                  & --      \\
+Berlin   & stündlich   & 5:40 &                          & 3\,min  \\
+Hamburg  & alle 5\,h   & 5:20 & \multirow{-2}{*}{ICE}    & --      \\
+München  & halbstündl. & :35  & RB, RE, CNL, IC, EC, ICE & 
+                                 CNL oft 30\,min, sonst ca.\ 5\,min\\
+Nürnberg & halbstündl. & 1    & RE, ICE, IC              & 5\,min  \\
+Salzburg & stündlich   & 2:20 & IC                       & 5\,min  \\
+Füssen   & stündlich   & 1:45 & RE, RB, IRE, IC          & 15\,min \\
+Lindau   & halbstündl. & 2:45 & RE                       & 10\,min \\
+\hline
+\end{tabularx}
+
+\rowcolors{1}{}{}\arrayrulecolor{black}
+\vspace{\baselineskip}
+\begin{tabularx}{.9\linewidth}{llS
+  >{\raggedright}X>{\raggedright\arraybackslash$\approx$\,}X}
+\toprule
+  & \multicolumn{2}{c}{Zeiten} & \multicolumn{2}{c}{Begleitinfo}\\
+\cmidrule(rl){2-3}\cmidrule(ll){4-5}
+Ziel     & Abfahrt & {Dauer} & Zugart              & Verspätung \\
+\midrule 
+Frankfurt& stündlich   & 3:20 & IC, ICE                  & --      \\
+Berlin   & stündlich   & 5:40 &                          & 3\,min  \\
+Hamburg  & alle 5\,h   & 5:20 & \multirow{-2}{*}{ICE}    & --      \\
+München  & halbstündl. & :35  & RB, RE, CNL, IC, EC, ICE & 
+                                 CNL oft 30\,min, sonst ca.\ 5\,min\\
+Nürnberg & halbstündl. & 1    & RE, ICE, IC              & 5\,min  \\
+Salzburg & stündlich   & 2:20 & IC                       & 5\,min  \\
+Füssen   & stündlich   & 1:45 & RE, RB, IRE, IC          & 15\,min \\
+Lindau   & halbstündl. & 2:45 & RE                       & 10\,min \\
+\bottomrule
+\end{tabularx}
+\end{document}
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: t
+%%% End: 

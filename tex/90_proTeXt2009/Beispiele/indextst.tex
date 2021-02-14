@@ -1,0 +1,24 @@
+\documentclass[a6paper]{scrartcl}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{makeidx}
+\providecommand{\stypkg}{}
+\stypkg
+
+\makeatletter
+\newcount\c@IndexColumns \c@IndexColumns=2
+\def\index@prologue{\section*{\indexname}}
+\makeatother
+
+\newcommand{\ii}[1]{\textit{#1}}
+\newcommand{\nn}[1]{#1n}
+
+\begin{document}
+\pagestyle{empty}
+\thispagestyle{empty}
+\renewcommand\thispagestyle[1]{}
+\renewcommand\pagestyle[1]{}
+
+\printindex
+\end{document}

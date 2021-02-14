@@ -1,0 +1,13 @@
+{
+  "title": "Dict.cc translate via context menu",
+  "name": "dictccmenu",
+  "version": "0.0.1",
+  "description": "Speed up my dictionary searches",
+  "main": "index.js",
+  "author": "TW",
+  "engines": {
+    "firefox": ">=38.0a1",
+    "fennec": ">=38.0a1"
+  },
+  "license": "MIT"
+}

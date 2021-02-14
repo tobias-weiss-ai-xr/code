@@ -1,0 +1,145 @@
+%% Vorlage einer längeren wissenschaftlichen Arbeit für das Buch
+%% "Wissenschaftliche Arbeiten schreiben mit LaTeX"
+%% von Joachim Schlosser, 2006-2009
+%%
+%% Sie dürfen dieses Dokument frei verteilen, verändern und verwenden.
+%%
+%% Dies ist nur eine Vorlage. 
+%% Zwei Kommentarzeichen (%%) bedeuten, dass eine Erläuterung folgt.
+%% Ein Kommentarzeichen heisst, dass die Zeile deaktiviert wurde
+%% Die meisten Pakete sind deaktiviert, Sie aktivieren Sie, indem Sie
+%% das Kommentarzeichen am Beginn der Zeile entfernen.
+%% Aktivieren Sie nur, was Sie wirklich brauchen!
+%% Lesen Sie in l2tabu nach, ob nicht einige Pakete mittlerweile
+%% veraltet sind, wenn Sie diese Vorlage erst 2010 oder später verwenden!
+
+\RequirePackage{fix-cm}        %% Korrektur der Computer Modern Schriftfamilien
+\documentclass[%
+%draft,                        %% um später den Zeilenumbruch zu kontrollieren
+a4paper,                       %% DIN A4-Papier
+BCOR4mm,                       %% Bindekorrektur 4 mm
+DIVcalc,                       %% Satzspiegel berechnen
+11pt,                          %% Schriftgröße
+%bibtotoc,                      %% Literaturverzeichnis ins Inhaltsverzeichnis
+%idxtotoc,                      %% Index ins Inhaltsverzeichnis
+tablecaptionabove,             %% Tabellenüber"= statt unterschriften
+]{scrreprt}                    %% KOMA-Skript Report als Klasse
+\usepackage{geometry}          %% damit auch das Papierformat passt
+\usepackage[english,german,ngerman]{babel}  %% Deutsch als Hauptsprache
+\input{dehyphtex.tex}          %% zusätzliche deutsche Trennmuster
+%\usepackage{microtype}         %% Optischer Randausgleich mit pdfLaTeX
+\usepackage[T1]{fontenc}       %% Schriftkodierung, die nativ Umlaute unterstützt
+\usepackage[latin1]{inputenc}  %% Umlaute direkt eingeben
+% \usepackage[osf]{mathpazo}    %% Palatino als Brotschrift, mit Minuskelziffern
+% \linespread{1.08}             %% Palatino braucht größeren Zeilenabstand
+% \usepackage[scaled=.87]{luximono} %% anderer Monotype-Font
+\usepackage{textcomp}          %% besondere Textzeichen
+\usepackage{amssymb}           %% Mathesymbole
+\usepackage{amsmath}           %% erweiterte Mathemakros
+%\usepackage{paralist}          %% Aufzählungen im Fließtext
+%\usepackage{mdwlist}           %% engere Aufzählungen und Nummerierungen
+%\usepackage{filecontents}      %% eingebundene Dateien (für ltxtable)
+%\usepackage{ltxtable}          %% lange Tabellen mit flexibler Spaltenbreite
+%\usepackage{tabularx}          %% Tabellen mit flexibler Spaltenbreite 
+\usepackage{booktabs}          %% schönere Tabellenlinien
+\usepackage{graphicx}          %% Graphiken einbinden
+%\usepackage{tikz}              %% TikZ/pgf zum Schreiben von Grafiken
+% \usepackage{ifpdf}            %% direktes Einbinden von Metapost-Graphiken
+% \ifpdf 
+% \DeclareGraphicsRule{*}{mps}{*}{} 
+% \fi
+
+%% Literaturverzeichnisse: Hier ist Babelbib gewählt. Wählen Sie, was
+%% Sie brauchen.
+\usepackage{babelbib}          %% Mehrsprachiges Literaturverzeichnis
+%\usepackage[ngerman,vario]{fancyref} %% "plain" für einfachere Querverweise, ",vario" für Seitenzahl
+%% Anpassung für Querverweiserkennung: Kapitel durch "cha:" anstatt "chap:"
+%\fancyrefchangeprefix{\fancyrefchaplabelprefix}{cha}
+%\vrefwarning                   %% Varioref vertrauen, erst am Ende!
+
+%\usepackage{index}             %% Index vorbereiten
+%\makeindex                     %% make index
+
+\usepackage[%
+  bookmarks,                   %% PDF-Lesezeichen
+  bookmarksopen=true,          %% Lesezeichenbaum aufgeklappt...
+  bookmarksopenlevel=1,        %% ...um eine Ebene
+  bookmarksnumbered=true,      %% Lesezeichen numerieren
+%  pagebackref,                 %% Links von Literatur in Text
+  pdfusetitle,                 %% LaTeX-Titelei als Metainfo nehmen
+  pdfstartpage={1},            %% mit welcher Seite das PDF öffnen
+  pdfstartview={FitH},         %% Zoom auf Seitenbreite
+  pdfkeywords={},              %% Stichwörter fürs PDF, kommagetrennt
+  pdfsubject={},               %% Themenbeschreibung kurz
+  pdfcreator={LaTeX with KOMA-Script and hyperref package},
+%   pdfpagelabels,               %% Seitenzahlen wie im Dokument...
+%   plainpages=false,            %% ...und nicht wie sonst
+  hyperfootnotes=true,         %% Links auf Fußnoten
+  hyperindex=true,             %% Indexeinträge verweisen auf Text
+  linkbordercolor={0 1 1},     %% Rahmenfarbe interne Links
+  menubordercolor={0 1 1},     %% Rahmenfarbe Literaturlinks
+  urlbordercolor={1 0 0}       %% Rahmenfarbe externe Links
+]{hyperref}                    %% Hyperlinks und Lesezeichen in PDF 
+%\usepackage[figure]{hypcap}    %% Springt bei Links auf Abb. an die richtige Stelle
+
+\pagestyle{headings}           %% lebende Kolumnentitel
+
+\hyphenation{%
+%  eventuelle Trennmusterdefinitionen, mit - als Trennstellenmarker  
+}
+
+%\setcounter{secnumdepth}{3}    %% Nummerierung bis zur Ebene subsubsection
+%\setcounter{tocdepth}{3}       %% Inhaltsverzeichnis bis zur Ebene subsubsection 
+%% Anpassungen für das Layout: Float-Pages
+%\renewcommand{\floatpagefraction}{.7}  % vorher: .5
+
+%% Gegen die meisten Overfull hboxes, aus
+%% dctt, Axel Reichert, Message-ID: <a84us0$plqcm$7@ID-30533.news.dfncis.de>
+\tolerance 1414
+\hbadness 1414
+\emergencystretch 1.5em
+\hfuzz 0.3pt
+\widowpenalty=10000
+\vfuzz \hfuzz
+\raggedbottom
+
+%% Hier beginnt das eigentliche Dokument
+\begin{document}
+
+%% Die Eckdaten des Dokuments, wegen Babel erst nach \begin{document}
+\author{Max Muster}
+\title{Meine wissenschaftliche Arbeit}
+\subject{Masterarbeit}
+\publishers{Technische Universität Musterstadt\\
+  Fakultät für angewandte Wissenschaft}
+\date{24.\,12.~2009}
+
+%% Titel daraus erzeugen
+\maketitle
+
+%% Zusammenfassung. Oft auch erst nach dem Inhaltsverzeichnis.
+\include{arbeit-zusammenfassung}
+
+%% Inhaltsverzeichnis
+\tableofcontents 
+
+%% Abbildungsverzeichnis
+%\listoffigures
+
+%% Tabellenverzeichnis
+%\listoftables
+
+\include{arbeit-einleitung}
+\include{arbeit-theorie}
+\include{arbeit-anwendung}
+\include{arbeit-ausblick}
+
+\bibliographystyle{babalpha}
+\bibliography{literatur}
+
+\end{document}
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: t
+%%% End: 

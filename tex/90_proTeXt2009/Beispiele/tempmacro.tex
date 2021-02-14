@@ -1,0 +1,17 @@
+\documentclass{scrartcl}
+\newcommand{\ortsname}[1]{\textbf{#1}}      %% logisches Markup
+\newenvironment{stadt}{%                    %% neue Umgebung
+  \let\ortsnamesav=\ortsname                %% Befehl sichern
+  \renewcommand{\ortsname}[1]{\textsc{##1}} %% überschreiben
+}{%
+  \let\ortsname=\ortsnamesav                %% zurücksichern
+}
+\begin{document}
+\ortsname{Hamburg}
+
+\begin{stadt}
+  \ortsname{Berlin}
+\end{stadt}
+
+\ortsname{Augsburg}
+\end{document}

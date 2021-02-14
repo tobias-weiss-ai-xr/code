@@ -1,0 +1,28 @@
+(
+echo "From: fu@mail.ru "
+echo "To: owo-gmbh@web.de "
+echo "MIME-Version: 1.0"
+echo "Content-Type: multipart/alternative; " 
+echo ' boundary="PAA08673.1018277622/asd"' 
+echo "Subject: Important!" 
+echo "" 
+echo "This is a MIME-encapsulated message" 
+echo "" 
+echo "--PAA08673.1018277622/youcannotcatchme" 
+echo "Content-Type: text/html" 
+echo "" 
+echo "<html> 
+<head>
+<title>Important!</title>
+</head>
+<body>
+Are you angry?
+<br>
+Lean back and relax!
+<br>
+<br>
+<br>
+</body>
+</html>"
+echo "--PAA08673.1018277622/asd"
+) | sendmail -t

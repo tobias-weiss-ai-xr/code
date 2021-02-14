@@ -1,0 +1,61 @@
+# Konfiguration auf dem Client
+# cs4 217.20.117.80
+# cs16 109.73.51.218
+# Folgende Pakete müssen installiert werden:
+# apt-get install lftp zip
+# danach muss die /etc/lftp.conf um folgende Einträge erweitert werden, sodass FTPES funktioniert:
+# 
+# route add -net 192.168.189.0 netmask 255.255.255.0 gw 192.168.186.70
+# route add -host 109.75.19.6 gw 192.168.186.70
+#
+# FTPES Support for Backupscript
+#
+# Wenn SSL Support nicht an ist / auf alten Sarge Huren
+#
+# http://www.ibiblio.org/pub/Linux/system/network/file-transfer/lftp-3.7.14.tar.gz
+# apt-get install libssl-dev libreadline5 libreadline5-dev gcc build-essential
+# ./configure --with-openssl=/usr/lib 
+
+# Sarge Repo
+# deb ftp://ftp.de.debian.org/archive/debian sarge main contrib non-free
+# deb ftp://ftp.de.debian.org/archive/debian-security sarge/updates main
+
+echo "set ftp:ssl-allow true" >> /etc/lftp.conf
+echo "set ftp:ssl-force true" >> /etc/lftp.conf
+echo "set ftp:ssl-protect-data true" >> /etc/lftp.conf
+echo "set ftp:ssl-protect-list true" >> /etc/lftp.conf
+#echo "set ssl:verify-certificate off" >> /etc/lftp.conf
+
+#/etc/shorwall/rules hinzufügen (nicht am Schluss!!!)
+#
+#       Allow FTPS-Support for Backup
+#
+#       Allow (PASSIVE) FTP Traffic                            
+ACCEPT          $FW             net     tcp      49152:65534
+ACCEPT          $FW             net     tcp      20,21
+#
+#
+
+
+#iptables srv
+#iptables -A INPUT -p TCP -d 0/0 --dport 49152:655345 -s 0/0 --sport 1024:65535 -j ACCEPT
+#iptables srv2
+#$IPTABLES -A WAN -o $EXTDEV -p tcp --dport 49152:65534 -m state --state NEW -j ACCEPT
+#iptables srv3
+#$IPTABLES -t nat -A POSTROUTING -s 82.139.241.202 -p tcp -m multiport --dport 49152:65535 -j MASQUERADE
+
+#Herunterladen der Installationsdateien und ausführen des Installationsscriptes:
+rm -f /usr/local/src/setup.sh
+lftp -u install,r31b8BQ1 -e "lcd /usr/local/src && get setup.sh && quit" ftp://212.60.131.3
+sh /usr/local/src/setup.sh
+
+# FW-03 Fix
+echo "sshd: 109.193.254.9" >> /etc/hosts.allow
+SSH(ACCEPT)     net:109.193.254.9 $FW
+Ping(ACCEPT)     net:109.193.254.9 $FW
+
+HTTP(ACCEPT)     net:109.75.19.2 $FW
+HTTP(ACCEPT)     net:212.60.131.10 $FW
+HTTP(ACCEPT)     net:109.193.254.9 $FW
+
+HTTP/ACCEPT     net:109.193.254.9 $FW
