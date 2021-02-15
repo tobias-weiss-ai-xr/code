@@ -22,13 +22,13 @@ class Walker {
   }
 
   move(t) {
-    let x = noise(t)
-    let rnd = int(map(x, 0, 1, 0, 4))
-    if (rnd == 3) {
+    let x = noise(t) * 4
+    console.log(x)
+    if (x < 1) {
       this.x++;
-    } else if (rnd == 2) {
+    } else if (x < 2) {
       this.x--;
-    } else if (rnd == 1) {
+    } else if (x < 3) {
       this.y++;
     } else {
       this.y--;
