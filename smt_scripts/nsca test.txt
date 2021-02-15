@@ -1,1 +1,0 @@
-echo "test;test;0;test-output" | send_nsca -H cs4 -p 5667 -c /etc/send_nsca.cfg -d ";"

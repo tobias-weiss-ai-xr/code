@@ -1,2 +1,0 @@
-gw-benevit:/etc/openvpn/ccd# route add -net 10.10.12.0/24 gw 192.168.100.253
-gw-benevit:/etc/openvpn/ccd# route add -net 192.168.10.0/24 gw 192.168.100.253

@@ -1,8 +1,0 @@
-                reject_rbl_client zen.spamhaus.org,
-                reject_rbl_client sbl.spamhaus.org,
-                reject_rbl_client pbl.spamhaus.org,
-                reject_rbl_client xbl.spamhaus.org,
-                reject_rbl_client whois.rfc-ignorant.org,
-                reject_rbl_client ix.dnsbl.manitu.org,
-                reject_rbl_client dnsbl.ahbl.org,
-                reject_rbl_client rhsbl.ahbl.org

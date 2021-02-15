@@ -1,9 +1,0 @@
-# cs15
-# /etc/crontab
-# dirtrockers Backup
-0 2    * * *   root sh /usr/local/backup/dirtrockers_backup.sh
-
-# cs15
-# /etc/crontab
-# dirtrockers scp Backup
-0 3    * * *   root sh /usr/local/backup/scp_dirtrockers_backup.sh

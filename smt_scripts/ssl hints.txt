@@ -1,1 +1,0 @@
-ssh-keygen -Xf key.pub >> authorized_keys
