@@ -1,0 +1,6 @@
+\babel@toc {ngerman}{}
+\contentsline {section}{\numberline {1}Big picture: Datenbankmodelle}{1}{}%
+\contentsline {section}{\numberline {2}Placeholder}{3}{}%
+\contentsline {section}{\numberline {3}Schluss}{4}{}%
+\contentsline {section}{\numberline {4}Literaturverzeichnis}{6}{}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
