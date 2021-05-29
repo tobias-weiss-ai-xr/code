@@ -1,8 +1,13 @@
+<<<<<<< Updated upstream
 This is LuaHBTeX, Version 1.12.0 (TeX Live 2020/Arch Linux)  (format=lualatex 2021.5.7)  29 MAY 2021 12:25
+=======
+This is LuaHBTeX, Version 1.13.0 (TeX Live 2021/Arch Linux)  (format=lualatex 2021.5.29)  29 MAY 2021 12:50
+>>>>>>> Stashed changes
  restricted system commands enabled.
  file:line:error style messages enabled.
 **vorlage_koma_luatex.tex
 (./vorlage_koma_luatex.tex
+<<<<<<< Updated upstream
 LaTeX2e <2020-10-01> patch level 2
 Lua module: luaotfload-main 2020-09-02 3.15 luaotfload entry point
 Lua module: luaotfload-init 2020-09-02 3.15 luaotfload submodule / initialization
@@ -45,12 +50,37 @@ Lua module: luaotfload-notdef 2020-09-02 3.15 luaotfload submodule / notdef
 Lua module: luaotfload-suppress 2020-09-02 3.15 luaotfload submodule / suppress
 Lua module: luaotfload-szss 2020-09-02 3.15 luaotfload submodule / Special feature handling
 Lua module: luaotfload-auxiliary 2020-09-02 3.15 luaotfload submodule / auxiliary functions
+=======
+LaTeX2e <2020-10-01> patch level 4
+Lua module: luaotfload 2021-01-08 3.17 Lua based OpenType font support
+Lua module: lualibs 2020-12-30 2.73 ConTeXt Lua standard libraries.
+Lua module: lualibs-extended 2020-12-30 2.73 ConTeXt Lua libraries -- extended collection.
+luaotfload | conf : Root cache directory is "/home/weiss/.texlive/texmf-var/luatex-cache/generic/names".
+luaotfload | init : Loading fontloader "fontloader-2021-01-07.lua" from kpse-resolved path "/usr/share/texmf-dist/tex/luatex/luaotfload/fontloader-2021-01-07.lua".
+Lua-only attribute luaotfload@noligature = 1
+Lua-only attribute luaotfload@syllabe = 2
+luaotfload | init : Context OpenType loader version 0x1.8e76c8b439581p+1
+Inserting `luaotfload.node_processor' at position 1 in `pre_linebreak_filter'.
+Inserting `luaotfload.node_processor' at position 1 in `hpack_filter'.
+Inserting `luaotfload.glyph_stream' at position 1 in `glyph_stream_provider'.
+Inserting `luaotfload.define_font' at position 1 in `define_font'.
+Lua-only attribute luaotfload_color_attribute = 3
+luaotfload | conf : Root cache directory is "/home/weiss/.texlive/texmf-var/luatex-cache/generic/names".
+Inserting `luaotfload.harf.strip_prefix' at position 1 in `find_opentype_file'.
+Inserting `luaotfload.harf.strip_prefix' at position 1 in `find_truetype_file'.
+Inserting `luaotfload.harf.finalize_vlist' at position 1 in `post_linebreak_filter'.
+Inserting `luaotfload.harf.finalize_hlist' at position 2 in `hpack_filter'.
+Inserting `luaotfload.cleanup_files' at position 1 in `wrapup_run'.
+Inserting `luaotfload.harf.finalize_unicode' at position 1 in `finish_pdffile'.
+Inserting `luaotfload.glyphinfo' at position 1 in `glyph_info'.
+>>>>>>> Stashed changes
 Inserting `luaotfload.aux.set_sscale_dimens' at position 1 in `luaotfload.patch_font'.
 Inserting `luaotfload.aux.set_font_index' at position 2 in `luaotfload.patch_font'.
 Inserting `luaotfload.aux.patch_cambria_domh' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 4 in `luaotfload.patch_font'.
 Inserting `luaotfload.aux.set_xheight' at position 5 in `luaotfload.patch_font'.
+<<<<<<< Updated upstream
 Lua module: luaotfload-tounicode 2020-09-02 3.15 luaotfload submodule / tounicode
 Inserting `luaotfload.rewrite_fontname' at position 6 in `luaotfload.patch_font'. L3 programming layer <2020-12-03> xparse <2020-03-03> (/usr/share/texmf-dist/tex/latex/koma-script/scrarticle.cls
 Document Class: scrarticle 2020/09/21 v3.32 KOMA-Script document class (article)
@@ -64,6 +94,20 @@ Package: scrbase 2020/09/21 v3.32 KOMA-Script package (KOMA-Script-independent b
 Package: scrlfile 2020/09/21 v3.32 KOMA-Script package (file load hooks)
  (/usr/share/texmf-dist/tex/latex/koma-script/scrlfile-hook.sty
 Package: scrlfile-hook 2020/09/21 v3.32 KOMA-Script package (using LaTeX hooks)
+=======
+Inserting `luaotfload.rewrite_fontname' at position 6 in `luaotfload.patch_font'. L3 programming layer <2021-02-18> (/usr/share/texmf-dist/tex/latex/koma-script/scrarticle.cls
+Document Class: scrarticle 2021/03/17 v3.33 KOMA-Script document class (article)
+(/usr/share/texmf-dist/tex/latex/koma-script/scrartcl.cls
+Document Class: scrartcl 2021/03/17 v3.33 KOMA-Script document class (article)
+(/usr/share/texmf-dist/tex/latex/koma-script/scrkbase.sty
+Package: scrkbase 2021/03/17 v3.33 KOMA-Script package (KOMA-Script-dependent basics and keyval usage)
+ (/usr/share/texmf-dist/tex/latex/koma-script/scrbase.sty
+Package: scrbase 2021/03/17 v3.33 KOMA-Script package (KOMA-Script-independent basics and keyval usage)
+ (/usr/share/texmf-dist/tex/latex/koma-script/scrlfile.sty
+Package: scrlfile 2021/03/17 v3.33 KOMA-Script package (file load hooks)
+ (/usr/share/texmf-dist/tex/latex/koma-script/scrlfile-hook.sty
+Package: scrlfile-hook 2021/03/17 v3.33 KOMA-Script package (using LaTeX hooks)
+>>>>>>> Stashed changes
 
 LaTeX3 Info: Defining command \BeforeFile with sig. 'm' on line 61.
 
@@ -143,12 +187,24 @@ LaTeX3 Info: Defining command \protected@immediate@write with sig. 'm+m+m' on
 (LaTeX3)     line 298.
 
  (/usr/share/texmf-dist/tex/latex/koma-script/scrlogo.sty
+<<<<<<< Updated upstream
 Package: scrlogo 2020/09/21 v3.32 KOMA-Script package (logo)
 ))) (/usr/share/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks15
 ))) (/usr/share/texmf-dist/tex/latex/koma-script/tocbasic.sty
 Package: tocbasic 2020/09/21 v3.32 KOMA-Script package (handling toc-files)
+=======
+Package: scrlogo 2021/03/17 v3.33 KOMA-Script package (logo)
+))) (/usr/share/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+Skipping: [2021/05/01] Usage of raw option list on input line 252.
+Applying: [0000/00/00] compatibility for LaTeX before 2021/05/01 on input line 337.
+)) (/usr/share/texmf-dist/tex/latex/koma-script/tocbasic.sty
+Package: tocbasic 2021/03/17 v3.33 KOMA-Script package (handling toc-files)
+>>>>>>> Stashed changes
 \scr@dte@tocline@numberwidth=\skip47
 \scr@dte@tocline@numbox=\box47
 )
@@ -166,6 +222,7 @@ Class scrartcl Info: You've used standard option `oneside'.
 (scrartcl)           If you'd like to set the option with \KOMAoptions,
 (scrartcl)           you'd have to use `twoside=false' there
 (scrartcl)           instead of `oneside', too.
+<<<<<<< Updated upstream
 Class scrartcl Info: File `scrsize11pt.clo' used to setup font sizes on input line 2222.
  (/usr/share/texmf-dist/tex/latex/koma-script/scrsize11pt.clo
 File: scrsize11pt.clo 2020/09/21 v3.32 KOMA-Script font size class option (11pt)
@@ -173,6 +230,15 @@ luaotfload | db : Font names database loaded from /home/weiss/.texlive/texmf-var
 Package: typearea 2020/09/21 v3.32 KOMA-Script package (type area)
 \ta@bcor=\skip48
 \ta@div=\count173
+=======
+Class scrartcl Info: File `scrsize11pt.clo' used to setup font sizes on input line 2239.
+ (/usr/share/texmf-dist/tex/latex/koma-script/scrsize11pt.clo
+File: scrsize11pt.clo 2021/03/17 v3.33 KOMA-Script font size class option (11pt)
+luaotfload | db : Font names database loaded from /home/weiss/.texlive/texmf-var/luatex-cache/generic/names/luaotfload-names.luc) (/usr/share/texmf-dist/tex/latex/koma-script/typearea.sty
+Package: typearea 2021/03/17 v3.33 KOMA-Script package (type area)
+\ta@bcor=\skip48
+\ta@div=\count175
+>>>>>>> Stashed changes
 Package typearea Info: You've used standard option `a4paper'.
 (typearea)             This is correct!
 (typearea)             Internally I'm using `paper=a4'.
@@ -205,6 +271,7 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \topskip        = 11.0pt
 (typearea)              \footskip       = 47.6pt
 (typearea)              \baselineskip   = 13.6pt
+<<<<<<< Updated upstream
 (typearea)              on input line 1740.
 )
 \c@part=\count174
@@ -241,10 +308,49 @@ Class scrartcl Info: using compatibility default `runin=bysign'
 (scrartcl)           for `\subparagraph on input line 4844.
 Class scrartcl Info: using compatibility default `afterindent=bysign'
 (scrartcl)           for `\subparagraph on input line 4844.
+=======
+(typearea)              on input line 1741.
+)
+\c@part=\count176
+\c@section=\count177
+\c@subsection=\count178
+\c@subsubsection=\count179
+\c@paragraph=\count180
+\c@subparagraph=\count181
+\scr@dte@section@maxnumwidth=\skip53
+Class scrartcl Info: using compatibility default `runin=bysign'
+(scrartcl)           for `\section on input line 4846.
+Class scrartcl Info: using compatibility default `afterindent=bysign'
+(scrartcl)           for `\section on input line 4846.
+\scr@dte@part@maxnumwidth=\skip54
+Class scrartcl Info: using compatibility default `afterindent=false'
+(scrartcl)           for `\part on input line 4854.
+\scr@dte@subsection@maxnumwidth=\skip55
+Class scrartcl Info: using compatibility default `runin=bysign'
+(scrartcl)           for `\subsection on input line 4864.
+Class scrartcl Info: using compatibility default `afterindent=bysign'
+(scrartcl)           for `\subsection on input line 4864.
+\scr@dte@subsubsection@maxnumwidth=\skip56
+Class scrartcl Info: using compatibility default `runin=bysign'
+(scrartcl)           for `\subsubsection on input line 4874.
+Class scrartcl Info: using compatibility default `afterindent=bysign'
+(scrartcl)           for `\subsubsection on input line 4874.
+\scr@dte@paragraph@maxnumwidth=\skip57
+Class scrartcl Info: using compatibility default `runin=bysign'
+(scrartcl)           for `\paragraph on input line 4885.
+Class scrartcl Info: using compatibility default `afterindent=bysign'
+(scrartcl)           for `\paragraph on input line 4885.
+\scr@dte@subparagraph@maxnumwidth=\skip58
+Class scrartcl Info: using compatibility default `runin=bysign'
+(scrartcl)           for `\subparagraph on input line 4895.
+Class scrartcl Info: using compatibility default `afterindent=bysign'
+(scrartcl)           for `\subparagraph on input line 4895.
+>>>>>>> Stashed changes
 \abovecaptionskip=\skip59
 \belowcaptionskip=\skip60
 \c@pti@nb@sid@b@x=\box48
 Package tocbasic Info: babel extension for `lof' omitted
+<<<<<<< Updated upstream
 (tocbasic)             because of missing \bbl@set@language on input line 6076.
 \scr@dte@figure@maxnumwidth=\skip61
 \c@figure=\count180
@@ -277,12 +383,45 @@ Package: fontspec-luatex 2020/02/21 v2.7i Font selection for XeLaTeX and LuaLaTe
 \l__fontspec_emdef_int=\count191
 \l__fontspec_strong_int=\count192
 \l__fontspec_strongdef_int=\count193
+=======
+(tocbasic)             because of missing \bbl@set@language on input line 6127.
+\scr@dte@figure@maxnumwidth=\skip61
+\c@figure=\count182
+Package tocbasic Info: babel extension for `lot' omitted
+(tocbasic)             because of missing \bbl@set@language on input line 6139.
+\scr@dte@table@maxnumwidth=\skip62
+\c@table=\count183
+Class scrartcl Info: Redefining `\numberline' on input line 6303.
+\bibindent=\dimen138
+)) (/usr/share/texmf-dist/tex/latex/fontspec/fontspec.sty (/usr/share/texmf-dist/tex/latex/l3packages/xparse/xparse.sty (/usr/share/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2021-02-18 L3 programming layer (loader) 
+ (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-luatex.def
+File: l3backend-luatex.def 2021-03-18 L3 backend support: PDF output (LuaTeX)
+\l__color_backend_stack_int=\count184
+\l__pdf_internal_box=\box49
+)) (/usr/share/texmf-dist/tex/latex/l3packages/xparse/xparse-2020-10-01.sty (/usr/share/texmf-dist/tex/latex/l3packages/xparse/xparse-generic.tex)))
+Package: fontspec 2020/02/21 v2.7i Font selection for XeLaTeX and LuaLaTeX
+Lua module: fontspec 2020/02/21 2.7i Font selection for XeLaTeX and LuaLaTeX (/usr/share/texmf-dist/tex/latex/fontspec/fontspec-luatex.sty
+Package: fontspec-luatex 2020/02/21 v2.7i Font selection for XeLaTeX and LuaLaTeX
+\l__fontspec_script_int=\count185
+\l__fontspec_language_int=\count186
+\l__fontspec_strnum_int=\count187
+\l__fontspec_tmp_int=\count188
+\l__fontspec_tmpa_int=\count189
+\l__fontspec_tmpb_int=\count190
+\l__fontspec_tmpc_int=\count191
+\l__fontspec_em_int=\count192
+\l__fontspec_emdef_int=\count193
+\l__fontspec_strong_int=\count194
+\l__fontspec_strongdef_int=\count195
+>>>>>>> Stashed changes
 \l__fontspec_tmpa_dim=\dimen139
 \l__fontspec_tmpb_dim=\dimen140
 \l__fontspec_tmpc_dim=\dimen141
  (/usr/share/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2020/08/10 v2.0s Standard LaTeX package
 ) (/usr/share/texmf-dist/tex/latex/fontspec/fontspec.cfg))) (/usr/share/texmf-dist/tex/latex/microtype/microtype.sty
+<<<<<<< Updated upstream
 Package: microtype 2019/11/18 v2.7d Micro-typographical refinements (RS)
 \MT@toks=\toks16
 \MT@count=\count194
@@ -295,11 +434,29 @@ File: microtype-luatex.def 2019/11/18 v2.7d Definitions specific to luatex (RS)
 Module microtype Info: overwriting function `keepligature' on input line 59
 LaTeX Info: Redefining \lsstyle on input line 695.
 LaTeX Info: Redefining \lslig on input line 695.
+=======
+Package: microtype 2021/03/14 v2.8c Micro-typographical refinements (RS)
+\MT@toks=\toks16
+\MT@count=\count196
+LaTeX Info: Redefining \textls on input line 790.
+\MT@outer@kern=\dimen142
+LaTeX Info: Redefining \textmicrotypecontext on input line 1374.
+\MT@listname@count=\count197
+ (/usr/share/texmf-dist/tex/latex/microtype/microtype-luatex.def
+File: microtype-luatex.def 2021/03/14 v2.8c Definitions specific to luatex (RS)
+Module microtype Info: overwriting function `keepligature' on input line 62
+LaTeX Info: Redefining \lsstyle on input line 710.
+LaTeX Info: Redefining \lslig on input line 710.
+>>>>>>> Stashed changes
 \MT@outer@space=\skip63
 )
 Package microtype Info: Loading configuration file microtype.cfg.
  (/usr/share/texmf-dist/tex/latex/microtype/microtype.cfg
+<<<<<<< Updated upstream
 File: microtype.cfg 2019/11/18 v2.7d microtype main configuration file (RS)
+=======
+File: microtype.cfg 2021/03/14 v2.8c microtype main configuration file (RS)
+>>>>>>> Stashed changes
 ))
 luaotfload | cache : Lookup cache loaded from /home/weiss/.texlive/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc.
 
@@ -333,9 +490,15 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
  (/usr/share/texmf-dist/tex/generic/iftex/iftex.sty
 Package: iftex 2020/03/06 v1.0d TeX engine tests
 ))
+<<<<<<< Updated upstream
 \Gm@cnth=\count196
 \Gm@cntv=\count197
 \c@Gm@tempcnt=\count198
+=======
+\Gm@cnth=\count198
+\Gm@cntv=\count199
+\c@Gm@tempcnt=\count266
+>>>>>>> Stashed changes
 \Gm@bindingoffset=\dimen143
 \Gm@wd@mp=\dimen144
 \Gm@odd@mp=\dimen145
@@ -346,16 +509,27 @@ Package: iftex 2020/03/06 v1.0d TeX engine tests
 \Gm@layoutvoffset=\dimen150
 \Gm@dimlist=\toks17
 ) (/usr/share/texmf-dist/tex/generic/babel/babel.sty
+<<<<<<< Updated upstream
 Package: babel 2020/10/27 3.51 The Babel package
  (/usr/share/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2020/10/27 3.51 Babel common definitions
+=======
+Package: babel 2021/03/24 3.56 The Babel package
+ (/usr/share/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2021/03/24 3.56 Babel common definitions
+>>>>>>> Stashed changes
  (/usr/share/texmf-dist/tex/generic/babel/luababel.def
 \bbl@readstream=\read2
 \l@dumylang=\language2
 Package babel Info: Non-standard hyphenation setup on input line 117.
 \l@nohyphenation=\language3
+<<<<<<< Updated upstream
 \l@german-x-2019-04-04=\language4
 \l@ngerman-x-2019-04-04=\language5
+=======
+\l@german-x-2021-02-26=\language4
+\l@ngerman-x-2021-02-26=\language5
+>>>>>>> Stashed changes
 \l@afrikaans=\language6
 \l@ancientgreek=\language7
 \l@ibycus=\language8
@@ -379,6 +553,7 @@ Package babel Info: Non-standard hyphenation setup on input line 117.
 \l@ethiopic=\language26
 \l@farsi=\language27
 \l@finnish=\language28
+<<<<<<< Updated upstream
 \l@french=\language29
 \l@friulan=\language30
 \l@galician=\language31
@@ -461,6 +636,91 @@ Package scrlayer Info: Using already defined \footheight
 (scrlayer)             hoping, that this is a length and
 (scrlayer)             not only a macro on input line 109.
 Package scrlayer Info: patching LaTeX kernel macro \pagestyle on input line 2116.
+=======
+\l@schoolfinnish=\language29
+\l@french=\language30
+\l@friulan=\language31
+\l@galician=\language32
+\l@georgian=\language33
+\l@german=\language34
+\l@ngerman=\language35
+\l@swissgerman=\language36
+\l@greek=\language37
+\l@monogreek=\language38
+\l@hungarian=\language39
+\l@icelandic=\language40
+\l@assamese=\language41
+\l@bengali=\language42
+\l@gujarati=\language43
+\l@hindi=\language44
+\l@kannada=\language45
+\l@malayalam=\language46
+\l@marathi=\language47
+\l@oriya=\language48
+\l@pali=\language49
+\l@panjabi=\language50
+\l@tamil=\language51
+\l@telugu=\language52
+\l@indonesian=\language53
+\l@interlingua=\language54
+\l@irish=\language55
+\l@italian=\language56
+\l@kurmanji=\language57
+\l@classiclatin=\language58
+\l@latin=\language59
+\l@liturgicallatin=\language60
+\l@latvian=\language61
+\l@lithuanian=\language62
+\l@macedonian=\language63
+\l@mongolian=\language64
+\l@mongolianlmc=\language65
+\l@bokmal=\language66
+\l@nynorsk=\language67
+\l@occitan=\language68
+\l@piedmontese=\language69
+\l@polish=\language70
+\l@portuguese=\language71
+\l@romanian=\language72
+\l@romansh=\language73
+\l@russian=\language74
+\l@sanskrit=\language75
+\l@serbian=\language76
+\l@serbianc=\language77
+\l@slovak=\language78
+\l@slovenian=\language79
+\l@spanish=\language80
+\l@swedish=\language81
+\l@thai=\language82
+\l@turkish=\language83
+\l@turkmen=\language84
+\l@ukrainian=\language85
+\l@uppersorbian=\language86
+\l@welsh=\language87
+\babelcatcodetablenum=\catcodetable12
+\bbl@pattcodes=\catcodetable13
+)
+\babel@savecnt=\count267
+\U@D=\dimen151
+\l@babelnohyphens=\language88
+ (/usr/share/texmf-dist/tex/generic/babel/luababel.def
+\bbl@attr@locale=\attribute4
+)) (/usr/share/texmf-dist/tex/generic/babel-german/ngerman.ldf
+Language: ngerman 2021/02/27 v2.13 German support for babel (post-1996 orthography)
+ (/usr/share/texmf-dist/tex/generic/babel-german/ngermanb.ldf
+Language: ngermanb 2021/02/27 v2.13 German support for babel (post-1996 orthography)
+Package babel Info: Making " an active character on input line 122.
+ (/usr/share/texmf-dist/tex/generic/hyph-utf8/loadhyph/loadhyph-de-1996.tex UTF-8 German hyphenation patterns (reformed orthography) (/usr/share/texmf-dist/tex/generic/hyph-utf8/patterns/tex/hyph-de-1996.tex
+German Hyphenation Patterns (Reformed Orthography, 2006) `dehyphn-x' 2021-02-26 (WL)))))) (/usr/share/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+) (/usr/share/texmf-dist/tex/latex/koma-script/scrlayer-scrpage.sty
+Package: scrlayer-scrpage 2021/03/17 v3.33 KOMA-Script package (end user interface for scrlayer)
+ (/usr/share/texmf-dist/tex/latex/koma-script/scrlayer.sty
+Package: scrlayer 2021/03/17 v3.33 KOMA-Script package (defining layers and page styles)
+Package scrlayer Info: Using already defined \footheight
+(scrlayer)             hoping, that this is a length and
+(scrlayer)             not only a macro on input line 136.
+Package scrlayer Info: patching LaTeX kernel macro \pagestyle on input line 2162.
+>>>>>>> Stashed changes
 )
 Package scrlayer-scrpage Info: Makeing stand-alone element `pagehead' from
 (scrlayer-scrpage)             alias to `pageheadfoot' on input line 1085.
@@ -469,21 +729,36 @@ Package scrlayer-scrpage Info: deactivating warning for font element
 )
 Package scrlayer-scrpage Info: auto-selection of `pagestyleset=KOMA-Script'.
  (/usr/share/texmf-dist/tex/latex/mathtools/mathtools.sty
+<<<<<<< Updated upstream
 Package: mathtools 2020/03/24 v1.24 mathematical typesetting tools
  (/usr/share/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count266
 \calc@Bcount=\count267
+=======
+Package: mathtools 2021/03/18 v1.25 mathematical typesetting tools
+ (/usr/share/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count268
+\calc@Bcount=\count269
+>>>>>>> Stashed changes
 \calc@Adimen=\dimen152
 \calc@Bdimen=\dimen153
 \calc@Askip=\skip64
 \calc@Bskip=\skip65
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
+<<<<<<< Updated upstream
 \calc@Ccount=\count268
 \calc@Cskip=\skip66
 ) (/usr/share/texmf-dist/tex/latex/mathtools/mhsetup.sty
 Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
+=======
+\calc@Ccount=\count270
+\calc@Cskip=\skip66
+) (/usr/share/texmf-dist/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
+>>>>>>> Stashed changes
 ) (/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2020/09/23 v2.17i AMS math features
 \@mathmargin=\skip67
@@ -501,6 +776,7 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 ) (/usr/share/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
+<<<<<<< Updated upstream
 \inf@bad=\count269
 LaTeX Info: Redefining \frac on input line 236.
 \uproot@=\count270
@@ -508,6 +784,15 @@ LaTeX Info: Redefining \frac on input line 236.
 LaTeX Info: Redefining \overline on input line 399.
 \classnum@=\count272
 \DOTSCASE@=\count273
+=======
+\inf@bad=\count271
+LaTeX Info: Redefining \frac on input line 236.
+\uproot@=\count272
+\leftroot@=\count273
+LaTeX Info: Redefining \overline on input line 399.
+\classnum@=\count274
+\DOTSCASE@=\count275
+>>>>>>> Stashed changes
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
@@ -516,6 +801,7 @@ LaTeX Info: Redefining \cdots on input line 620.
 \big@size=\dimen156
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+<<<<<<< Updated upstream
 \macc@depth=\count274
 \c@MaxMatrixCols=\count275
 \dotsspace@=\muskip16
@@ -525,6 +811,17 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
 \row@=\count278
 \column@=\count279
 \maxfields@=\count280
+=======
+\macc@depth=\count276
+\c@MaxMatrixCols=\count277
+\dotsspace@=\muskip16
+\c@parentequation=\count278
+\dspbrk@lvl=\count279
+\tag@help=\toks19
+\row@=\count280
+\column@=\count281
+\maxfields@=\count282
+>>>>>>> Stashed changes
 \andhelp@=\toks20
 \eqnshift@=\dimen157
 \alignsep@=\dimen158
@@ -543,7 +840,11 @@ LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 130.
 LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 130.
 LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 130.
 LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 130.
+<<<<<<< Updated upstream
 \g_MT_multlinerow_int=\count281
+=======
+\g_MT_multlinerow_int=\count283
+>>>>>>> Stashed changes
 \l_MT_multwidth_dim=\dimen163
 \origjot=\skip70
 \l_MT_shortvdotswithinadjustabove_dim=\dimen164
@@ -579,9 +880,15 @@ File: luatex.def 2020/10/05 v1.2a Graphics/color driver for luatex
 \Gin@req@height=\dimen171
 \Gin@req@width=\dimen172
 ) (/usr/share/texmf-dist/tex/latex/multirow/multirow.sty
+<<<<<<< Updated upstream
 Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
 \multirow@colwidth=\skip71
 \multirow@cntb=\count282
+=======
+Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
+\multirow@colwidth=\skip71
+\multirow@cntb=\count284
+>>>>>>> Stashed changes
 \multirow@dima=\skip72
 \bigstrutjot=\dimen173
 ) (/usr/share/texmf-dist/tex/latex/tools/array.sty
@@ -594,6 +901,7 @@ Package: array 2020/10/01 v2.5c Tabular extension package (FMi)
 \backup@length=\skip74
 \ar@cellbox=\box54
 ) (/usr/share/texmf-dist/tex/latex/listings/listings.sty
+<<<<<<< Updated upstream
 \lst@mode=\count283
 \lst@gtempboxa=\box55
 \lst@token=\toks24
@@ -610,6 +918,24 @@ Package: array 2020/10/01 v2.5c Tabular extension package (FMi)
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 \c@lstnumber=\count289
 \lst@skipnumbers=\count290
+=======
+\lst@mode=\count285
+\lst@gtempboxa=\box55
+\lst@token=\toks24
+\lst@length=\count286
+\lst@currlwidth=\dimen176
+\lst@column=\count287
+\lst@pos=\count288
+\lst@lostspace=\dimen177
+\lst@width=\dimen178
+\lst@newlines=\count289
+\lst@lineno=\count290
+\lst@maxwidth=\dimen179
+ (/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count291
+\lst@skipnumbers=\count292
+>>>>>>> Stashed changes
 \lst@framebox=\box56
 ) (/usr/share/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2020/03/24 1.8d listings configuration
@@ -632,12 +958,21 @@ Package caption Info: KOMA-Script document class detected.
  (/usr/share/texmf-dist/tex/latex/caption/caption-koma.sto
 File: caption-koma.sto 2020/09/21 v2.0b Adaption of the caption package to the KOMA-Script document classes (AR)
 ))
+<<<<<<< Updated upstream
 \c@caption@flags=\count291
 \c@continuedfloat=\count292
 Package caption Info: listings package is loaded.
 )
 \c@subfigure=\count293
 \c@subtable=\count294
+=======
+\c@caption@flags=\count293
+\c@continuedfloat=\count294
+Package caption Info: listings package is loaded.
+)
+\c@subfigure=\count295
+\c@subtable=\count296
+>>>>>>> Stashed changes
 ) (/usr/share/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \heavyrulewidth=\dimen187
@@ -650,12 +985,21 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \cmidrulesep=\dimen194
 \cmidrulekern=\dimen195
 \defaultaddspace=\dimen196
+<<<<<<< Updated upstream
 \@cmidla=\count295
 \@cmidlb=\count296
 \@aboverulesep=\dimen197
 \@belowrulesep=\dimen198
 \@thisruleclass=\count297
 \@lastruleclass=\count298
+=======
+\@cmidla=\count297
+\@cmidlb=\count298
+\@aboverulesep=\dimen197
+\@belowrulesep=\dimen198
+\@thisruleclass=\count299
+\@lastruleclass=\count300
+>>>>>>> Stashed changes
 \@thisrulewidth=\dimen199
 ) (/usr/share/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
@@ -665,16 +1009,28 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip75
 \bibsep=\skip76
 LaTeX Info: Redefining \cite on input line 694.
+<<<<<<< Updated upstream
 \c@NAT@ctr=\count299
 ) (/usr/share/texmf-dist/tex/latex/lipsum/lipsum.sty
 Package: lipsum 2019/01/02 v2.2 150 paragraphs of Lorem Ipsum dummy text
  (/usr/share/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex
 File: lipsum.ltd.tex 2019/01/02 v2.2 The Lorem ipsum dummy text
+=======
+\c@NAT@ctr=\count301
+) (/usr/share/texmf-dist/tex/latex/lipsum/lipsum.sty
+Package: lipsum 2021-03-03 v2.3 150 paragraphs of Lorem Ipsum dummy text
+ (/usr/share/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex
+File: lipsum.ltd.tex 2021-03-03 v2.3 The Lorem ipsum dummy text
+>>>>>>> Stashed changes
 )) (/usr/share/texmf-dist/tex/latex/algorithms/algorithm.sty
 Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating environment
  (/usr/share/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
+<<<<<<< Updated upstream
 \c@float@type=\count300
+=======
+\c@float@type=\count302
+>>>>>>> Stashed changes
 \float@exts=\toks25
 \float@box=\box57
 \@float@everytoks=\toks26
@@ -683,13 +1039,18 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
 \@float@every@algorithm=\toks27
+<<<<<<< Updated upstream
 \c@algorithm=\count301
+=======
+\c@algorithm=\count303
+>>>>>>> Stashed changes
 ) (/usr/share/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
 Package: algpseudocode 
  (/usr/share/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
 Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
 
 Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+<<<<<<< Updated upstream
 \c@ALG@line=\count302
 \c@ALG@rem=\count303
 \c@ALG@nested=\count304
@@ -699,6 +1060,17 @@ Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
 \c@ALG@blocknr=\count306
 \c@ALG@storecount=\count307
 \c@ALG@tmpcounter=\count308
+=======
+\c@ALG@line=\count304
+\c@ALG@rem=\count305
+\c@ALG@nested=\count306
+\ALG@tlm=\skip77
+\ALG@thistlm=\skip78
+\c@ALG@Lnr=\count307
+\c@ALG@blocknr=\count308
+\c@ALG@storecount=\count309
+\c@ALG@tmpcounter=\count310
+>>>>>>> Stashed changes
 \ALG@tmplength=\skip79
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
@@ -711,11 +1083,19 @@ Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
 \TX@old@col=\dimen258
 \TX@target=\dimen259
 \TX@delta=\dimen260
+<<<<<<< Updated upstream
 \TX@cols=\count309
 \TX@ftn=\toks29
 ) (/usr/share/texmf-dist/tex/latex/graphics/rotating.sty
 Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
 \c@r@tfl@t=\count310
+=======
+\TX@cols=\count311
+\TX@ftn=\toks29
+) (/usr/share/texmf-dist/tex/latex/graphics/rotating.sty
+Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
+\c@r@tfl@t=\count312
+>>>>>>> Stashed changes
 \rotFPtop=\skip80
 \rotFPbot=\skip81
 \rot@float@box=\box59
@@ -728,7 +1108,11 @@ Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
 \XKV@toks=\toks31
 \XKV@tempa@toks=\toks32
 )
+<<<<<<< Updated upstream
 \XKV@depth=\count311
+=======
+\XKV@depth=\count313
+>>>>>>> Stashed changes
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 )) (/usr/share/texmf-dist/tex/latex/adjustbox/adjcalc.sty
 Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back-ends (calc, etex, pgfmath)
@@ -751,11 +1135,19 @@ File: tc-pgf.def 2019/01/04 v2.2 trimclip fall-back clipping driver using PGF
  (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex)) (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
 \pgfutil@abb=\box61
 ) (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (/usr/share/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+<<<<<<< Updated upstream
 Package: pgfrcs 2020/12/01 v3.1.7a (3.1.7a)
 ))
 Package: pgf 2020/12/01 v3.1.7a (3.1.7a)
  (/usr/share/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (/usr/share/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
 Package: pgfsys 2020/12/01 v3.1.7a (3.1.7a)
+=======
+Package: pgfrcs 2020/12/27 v3.1.8b (3.1.8b)
+))
+Package: pgf 2020/12/27 v3.1.8b (3.1.8b)
+ (/usr/share/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (/usr/share/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2020/12/27 v3.1.8b (3.1.8b)
+>>>>>>> Stashed changes
  (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
 \pgfkeys@pathtoks=\toks34
 \pgfkeys@temptoks=\toks35
@@ -774,6 +1166,7 @@ Package: pgfsys 2020/12/01 v3.1.7a (3.1.7a)
 \pgf@yd=\dimen276
 \w@pgf@writea=\write3
 \r@pgf@reada=\read3
+<<<<<<< Updated upstream
 \c@pgf@counta=\count312
 \c@pgf@countb=\count313
 \c@pgf@countc=\count314
@@ -796,6 +1189,30 @@ File: pgfsyssoftpath.code.tex 2020/12/01 v3.1.7a (3.1.7a)
 \pgfsyssoftpath@bigbuffer@items=\count318
 ) (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+=======
+\c@pgf@counta=\count314
+\c@pgf@countb=\count315
+\c@pgf@countc=\count316
+\c@pgf@countd=\count317
+\t@pgf@toka=\toks37
+\t@pgf@tokb=\toks38
+\t@pgf@tokc=\toks39
+\pgf@sys@id@count=\count318
+ (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2020/12/27 v3.1.8b (3.1.8b)
+)
+Driver file for pgf: pgfsys-luatex.def
+ (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-luatex.def
+File: pgfsys-luatex.def 2020/12/27 v3.1.8b (3.1.8b)
+ (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2020/12/27 v3.1.8b (3.1.8b)
+))) (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgfsyssoftpath@smallbuffer@items=\count319
+\pgfsyssoftpath@bigbuffer@items=\count320
+) (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+>>>>>>> Stashed changes
 )) (/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
  (/usr/share/texmf-dist/tex/latex/graphics-cfg/color.cfg
@@ -812,19 +1229,33 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 ) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+<<<<<<< Updated upstream
 Package: pgfcore 2020/12/01 v3.1.7a (3.1.7a)
  (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
 (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
 \pgfmath@dimen=\dimen277
 \pgfmath@count=\count319
+=======
+Package: pgfcore 2020/12/27 v3.1.8b (3.1.8b)
+ (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen277
+\pgfmath@count=\count321
+>>>>>>> Stashed changes
 \pgfmath@box=\box62
 \pgfmath@toks=\toks40
 \pgfmath@stack@operand=\toks41
 \pgfmath@stack@operation=\toks42
 ) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex))) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+<<<<<<< Updated upstream
 \c@pgfmathroundto@lastzeros=\count320
 )) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+=======
+\c@pgfmathroundto@lastzeros=\count322
+)) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+>>>>>>> Stashed changes
 \pgf@picminx=\dimen278
 \pgf@picmaxx=\dimen279
 \pgf@picminy=\dimen280
@@ -840,6 +1271,7 @@ File: pgfcorepoints.code.tex 2020/12/01 v3.1.7a (3.1.7a)
 \pgf@zx=\dimen290
 \pgf@zy=\dimen291
 ) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
+<<<<<<< Updated upstream
 File: pgfcorepathconstruct.code.tex 2020/12/01 v3.1.7a (3.1.7a)
 \pgf@path@lastx=\dimen292
 \pgf@path@lasty=\dimen293
@@ -858,10 +1290,31 @@ File: pgfcoregraphicstate.code.tex 2020/12/01 v3.1.7a (3.1.7a)
 \pgflinewidth=\dimen296
 ) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
 File: pgfcoretransformations.code.tex 2020/12/01 v3.1.7a (3.1.7a)
+=======
+File: pgfcorepathconstruct.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgf@path@lastx=\dimen292
+\pgf@path@lasty=\dimen293
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgf@shorten@end@additional=\dimen294
+\pgf@shorten@start@additional=\dimen295
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgfpic=\box63
+\pgf@hbox=\box64
+\pgf@layerbox@main=\box65
+\pgf@picture@serial@count=\count323
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgflinewidth=\dimen296
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+>>>>>>> Stashed changes
 \pgf@pt@x=\dimen297
 \pgf@pt@y=\dimen298
 \pgf@pt@temp=\dimen299
 ) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+<<<<<<< Updated upstream
 File: pgfcorequick.code.tex 2020/12/01 v3.1.7a (3.1.7a)
 ) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
 File: pgfcoreobjects.code.tex 2020/12/01 v3.1.7a (3.1.7a)
@@ -900,6 +1353,46 @@ Package: pgfcomp-version-0-65 2020/12/01 v3.1.7a (3.1.7a)
 \pgf@nodesepend=\dimen303
 ) (/usr/share/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
 Package: pgfcomp-version-1-18 2020/12/01 v3.1.7a (3.1.7a)
+=======
+File: pgfcorequick.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgfarrowsep=\dimen300
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgf@max=\dimen301
+\pgf@sys@shading@range@num=\count324
+\pgf@shadingcount=\count325
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgfexternal@startupbox=\box66
+)) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+))) (/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgfnodeparttextbox=\box67
+) (/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+) (/usr/share/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2020/12/27 v3.1.8b (3.1.8b)
+\pgf@nodesepstart=\dimen302
+\pgf@nodesepend=\dimen303
+) (/usr/share/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2020/12/27 v3.1.8b (3.1.8b)
+>>>>>>> Stashed changes
 )))
 Package trimclip Info: No clipping driver 'tc-luatex.def' available.
 (trimclip)             Using fall-back PGF driver.
@@ -914,11 +1407,19 @@ Package trimclip Info: No clipping driver 'tc-luatex.def' available.
 \adjbox@ptotalheight=\dimen311
  (/usr/share/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
 Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
+<<<<<<< Updated upstream
 \c@checkoddpage=\count324
 ) (/usr/share/texmf-dist/tex/latex/varwidth/varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@box=\box68
 \sift@deathcycles=\count325
+=======
+\c@checkoddpage=\count326
+) (/usr/share/texmf-dist/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box68
+\sift@deathcycles=\count327
+>>>>>>> Stashed changes
 \@vwid@loff=\dimen312
 \@vwid@roff=\dimen313
 )) (./vorlage_koma_luatex.aux)
@@ -1006,7 +1507,11 @@ Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
+<<<<<<< Updated upstream
 Package microtype Info: Using default expansion set `basictext'.
+=======
+Package microtype Info: Using default expansion set `alltext-nott'.
+>>>>>>> Stashed changes
 LaTeX Info: Redefining \showhyphens on input line 54.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of spacing.
@@ -1052,6 +1557,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
+<<<<<<< Updated upstream
 \scratchcounter=\count326
 \scratchdimen=\dimen314
 \scratchbox=\box69
@@ -1062,6 +1568,18 @@ Package microtype Info: Loading generic protrusion settings for font family
 \MPscratchDim=\dimen315
 \MPnumerator=\count330
 \makeMPintoPDFobject=\count331
+=======
+\scratchcounter=\count328
+\scratchdimen=\dimen314
+\scratchbox=\box69
+\nofMPsegments=\count329
+\nofMParguments=\count330
+\everyMPshowfont=\toks43
+\MPscratchCnt=\count331
+\MPscratchDim=\dimen315
+\MPnumerator=\count332
+\makeMPintoPDFobject=\count333
+>>>>>>> Stashed changes
 \everyMPtoPDFconversion=\toks44
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1069,7 +1587,11 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
+<<<<<<< Updated upstream
 \c@lstlisting=\count332
+=======
+\c@lstlisting=\count334
+>>>>>>> Stashed changes
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: rotating package is loaded.
@@ -1095,6 +1617,7 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (
 Package tocbasic Info: character protrusion at toc deactivated on input line 63.
  (./vorlage_koma_luatex.toc)
 \tf@toc=\write4
+<<<<<<< Updated upstream
 
 \openout4 = vorlage_koma_luatex.toc
 <example-image.pdf, id=4, 321.2pt x 240.9pt>
@@ -1106,6 +1629,19 @@ LaTeX Font Info:    Font shape `TU/Erewhon(0)/m/sl' in size <10.95> not availabl
 (Font)              Font shape `TU/Erewhon(0)/m/it' tried instead on input line 87.
  [1
 
+=======
+
+\openout4 = vorlage_koma_luatex.toc
+<example-image.pdf, id=4, 321.2pt x 240.9pt>
+File: example-image.pdf Graphic file (type pdf)
+<use example-image.pdf>
+Package luatex.def Info: example-image.pdf  used on input line 73.
+(luatex.def)             Requested size: 220.50887pt x 165.38675pt.
+LaTeX Font Info:    Font shape `TU/Erewhon(0)/m/sl' in size <10.95> not available
+(Font)              Font shape `TU/Erewhon(0)/m/it' tried instead on input line 87.
+ [1
+
+>>>>>>> Stashed changes
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}</usr/share/texmf-dist/tex/latex/mwe/example-image.pdf>]
 Overfull \hbox (109.10104pt too wide) in paragraph at lines 92--94
@@ -1115,14 +1651,24 @@ Overfull \hbox (109.10104pt too wide) in paragraph at lines 92--94
 [2] (./vorlage_koma_luatex.aux))
 
 Here is how much of LuaTeX's memory you used:
+<<<<<<< Updated upstream
  25827 strings out of 478903
+=======
+ 25990 strings out of 478531
+>>>>>>> Stashed changes
  100000,1373583 words of node,token memory allocated
  625 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 1 dir, 5 glue, 4 kern, 1 glyph, 16 attribute, 67 glue_spec, 10 attribute_list, 2 write nodes
    avail lists: 2:734,3:175,4:114,5:117,6:85,7:1598,8:32,9:447,10:3,11:116
+<<<<<<< Updated upstream
  44362 multiletter control sequences out of 65536+600000
  83 fonts using 10319911 bytes
  119i,20n,117p,10644b,557s stack positions out of 5000i,500n,10000p,200000b,100000s
+=======
+ 44886 multiletter control sequences out of 65536+600000
+ 83 fonts using 10424551 bytes
+ 125i,20n,123p,10644b,558s stack positions out of 5000i,500n,10000p,200000b,80000s
+>>>>>>> Stashed changes
 </usr/share/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf-dist/fonts/opentype/public/erewhon/Erewhon-Bold.otf></usr/share/texmf-dist/fonts/opentype/public/erewhon/Erewhon-Regular.otf></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
 Output written on vorlage_koma_luatex.pdf (2 pages, 77662 bytes).
 
