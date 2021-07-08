@@ -6,8 +6,7 @@
  * We make no guarantees that this code is fit for any purpose.
  * Visit http://www.pragmaticprogrammer.com/titles/dnvim2 for more book information.
 ***/
-mixin = {
-    applyName: function(config) {
-        return Factory(config, this.getName());
-    },
-}
+var buttons = viewport.buttons;
+viewport.buttons.previous.show();
+viewport.buttons.next.show();
+viewport.buttons.index.hide();

@@ -6,8 +6,7 @@
  * We make no guarantees that this code is fit for any purpose.
  * Visit http://www.pragmaticprogrammer.com/titles/dnvim2 for more book information.
 ***/
-mixin = {
-    applyName: function(config) {
-        return Factory(config, this.getName());
-    },
-}
+var tally;
+for (tally=1; tally <= 10; tally++) {
+  // do something with tally
+};

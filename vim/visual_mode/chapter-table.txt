@@ -1,5 +1,4 @@
-Chapter      | Page
--------------------
-Normal mode  |   15
-Insert mode  |   31
-Visual mode  |   44
+Chapter            Page
+Normal mode          15
+Insert mode          31
+Visual mode          44
