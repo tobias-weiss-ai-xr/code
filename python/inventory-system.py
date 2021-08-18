@@ -53,11 +53,28 @@ class Inventory:
         print('Saved inventory')
 
 
-if __name__ == '__main__':
+def main():
     i = Inventory()
-    i.add('snake', 1)
-    i.add('snake', 5)
-    i.remove('snake', 3)
-    i.display()
+
+    while True:
+        action = input('Actions: add, remove, list, save, load, exit: ')
+        if action == 'exit':
+            break
+        if action == 'add' or action == 'remove':
+            key = input('Enter an animal: ')
+            qty = int(input('Enter the qty: '))
+            if action == 'add':
+                i.add(key, qty)
+            else:
+                i.remove(key, qty)
+        if action == 'list':
+            i.display()
+        if action == 'save':
+            i.save()
+        if action == 'load':
+            i.load()
+
     i.save()
-    i.load()
+
+if __name__ == '__main__':
+    main()
