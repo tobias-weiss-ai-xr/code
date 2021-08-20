@@ -15,7 +15,7 @@ for _ in range(5):
 
 p = Person()
 p.setName('Brian')
-p._name = 'Nooo' #  edit weak private
+# p._name = 'Nooo' #  edit weak private
 # printing not even working by the lint checker
 # print(f'Weak private {p._name}')
 
@@ -32,3 +32,6 @@ c = Child()
 # helps with naming conflicts with keywords...
 class_ = Person()
 print(class_)
+
+p = Person()
+p.__call__()

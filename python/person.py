@@ -16,6 +16,12 @@ class Person:
     def work(self):
         self.__think()
 
+    def __init__(self):
+        print('Constructor')
+
+    def __call__(self):
+        print('call someone')
+
 class Child(Person):
     def testDouble(self):
         self.__think()
