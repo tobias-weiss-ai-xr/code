@@ -3,7 +3,7 @@
 
 class Person:
     # weak private
-    _name = 'No name'
+        _name = 'No name'
 
     def setName(self, name):
         self._name = name
