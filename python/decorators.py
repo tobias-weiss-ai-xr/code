@@ -51,6 +51,37 @@ def numcheck(func):
 def divide(a, b):
     print(a / b)
 
-divide(100, 3)
-divide(100, 0)
-divide(100, 'cat')
+# divide(100, 3)
+# divide(100, 0)
+# divide(100, 'cat')
+
+# Decorator with unknown number of params
+# We want a decorator tht can pass params and handle anything
+# *args, **kwargs to the rescue
+
+def outline(func):
+    def inner(*args, **kwargs):
+        print('~'*20)
+        func(*args, **kwargs)
+        print('~'*20)
+    return inner
+
+
+def list_items(func):
+    def inner(*args, **kwargs):
+        func(*args, **kwargs)
+        print(f'args = {args}')
+        print(f'kwargs = {kwargs}')
+        for x in args:
+            print(f'arg = {x}')
+        for k, v in kwargs.items():
+            print(f'key = {k}, value = {v}')
+    return inner
+
+
+@outline
+@list_items
+def display(msg):
+    print(msg)
+
+display('hello world')
