@@ -85,3 +85,10 @@ def display(msg):
     print(msg)
 
 display('hello world')
+
+@outline
+@list_items
+def birthday(name='', age=0):
+    print(f'Happy birthday {name} you are {age} years old.')
+
+birthday(name='brian', age=46)
