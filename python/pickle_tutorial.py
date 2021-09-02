@@ -1,11 +1,10 @@
 # Pickle
-
 import pickle
 
 def outline(func):
     def inner(*args):
         print('-'*20)
-        print(f'Function: {func.__name__')
+        print(f'Function: {func.__name__}')
         func(*args)
         print('-'*20)
     return inner
@@ -18,8 +17,11 @@ class Cat():
         self._properties = properties
 
     @outline
-    def display(self):
-        pass
+    def display(self, msg=''):
+        print(msg)
+        print(f'{self._name} is a {self._age} years old cat')
+        for k, v in self._properties:
+            print(f'{k} = {v}')
 
 oscar = Cat(name='Oscar', age=11, properties=dict(instrument='piano', sports=['soccer', 'baseball']))
 
