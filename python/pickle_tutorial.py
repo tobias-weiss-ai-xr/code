@@ -20,10 +20,23 @@ class Cat():
     def display(self, msg=''):
         print(msg)
         print(f'{self._name} is a {self._age} years old cat')
-        for k, v in self._properties:
+        for k, v in self._properties.items():
             print(f'{k} = {v}')
 
-oscar = Cat(name='Oscar', age=11, properties=dict(instrument='piano', sports=['soccer', 'baseball']))
+oscar = Cat(name='Oscar', age=11, properties=dict(instrument='piano', sports=['soccer', 'tennis']))
+
+oscar.display('original')
 
 sc = pickle.dumps(oscar)
 print(sc)
+
+with open('cat.txt', 'wb') as f:
+    pickle.dump(oscar, f)
+
+# deserialize
+oscarReloaded = pickle.loads(sc)
+oscarReloaded.display('from string')
+
+with open('cat.txt', 'rb') as f:
+    oscarReloadedFromFile = pickle.load(f)
+oscarReloadedFromFile.display('from disk')
