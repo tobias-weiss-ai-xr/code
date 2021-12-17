@@ -15,8 +15,6 @@ def test(item):
     time.sleep(s)
 
 def main():
-    """[summary]
-    """    
     logging.basicConfig(format='%(levelname)s - %(asctime)s: %(message)s', datefmt='%H-%M-%S', level=logging.DEBUG)
     logging.info('App start')
 
@@ -25,7 +23,7 @@ def main():
     
     with ThreadPoolExecutor(max_workers=workers) as executor:
         executor.map(test, range(items))
-
+        
     logging.info('App finished')
 
 if __name__ == "__main__":
