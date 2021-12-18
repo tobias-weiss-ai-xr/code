@@ -1,0 +1,39 @@
+% Full instructions available at:
+% https://github.com/elauksap/focus-beamertheme
+
+\documentclass{beamer}
+\usetheme{focus}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+
+\title{Dummy \texorpdfstring{\\}{}Topic}
+\subtitle{Template}
+\author{Tobias Weiss} %\texorpdfstring{\\}{,} Author 2}
+%\titlegraphic{\includegraphics[scale=1.25]{focuslogo.pdf}}
+\institute{Friedrich-Schiller-Universität Jena\\
+	Wirtschaftswissenschaftliche Fakultät\\
+	Lehrstuhl für XYZ}
+\date{\today}
+
+\begin{document}
+	\vfuzz=35pt
+    \begin{frame}
+        \maketitle
+    \end{frame}
+    
+    % Use starred version (e.g. \section*{Section name})
+    % to disable (sub)section page.
+    \section{Section 1}
+    \subsection{Subsection 1.1}
+    \begin{frame}{Simple frame}
+        This is a simple frame.
+    \end{frame}
+    
+    \appendix
+    \begin{frame}{Referenzen}
+        \nocite{*}
+        \bibliography{bibliography.bib}
+        \bibliographystyle{plain}
+    \end{frame}
+\end{document}
+
