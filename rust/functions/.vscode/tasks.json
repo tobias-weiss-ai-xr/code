@@ -1,0 +1,26 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cargo",
+			"subcommand": "run",
+			"problemMatcher": [
+				"$rustc"
+			],
+			"label": "Rust: cargo run - functions",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		},
+		{
+			"type": "cargo",
+			"subcommand": "clean",
+			"problemMatcher": [
+				"$rustc"
+			],
+			"group": "clean",
+			"label": "Rust: cargo clean - functions"
+		}
+	]
+}
