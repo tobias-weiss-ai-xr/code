@@ -1,0 +1,3 @@
+*  * * * * root python3 /home/homaar/monitoring/webserver-monitor-p3.py
+00 * * * * root free -m | python /home/homaar/monitoring/memory-monitor.py
+00 * * * * root df -h | python /home/homaar/monitoring/disk-monitor.py
