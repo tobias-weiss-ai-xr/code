@@ -1,0 +1,45 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'more-loops'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=more-loops",
+                    "--package=more-loops"
+                ],
+                "filter": {
+                    "name": "more-loops",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'more-loops'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=more-loops",
+                    "--package=more-loops"
+                ],
+                "filter": {
+                    "name": "more-loops",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
