@@ -1,0 +1,15 @@
+/home/weiss/git/code/cs/DateTimeTest/bin/Debug/net6.0/DateTimeTest
+/home/weiss/git/code/cs/DateTimeTest/bin/Debug/net6.0/DateTimeTest.deps.json
+/home/weiss/git/code/cs/DateTimeTest/bin/Debug/net6.0/DateTimeTest.runtimeconfig.json
+/home/weiss/git/code/cs/DateTimeTest/bin/Debug/net6.0/DateTimeTest.dll
+/home/weiss/git/code/cs/DateTimeTest/bin/Debug/net6.0/ref/DateTimeTest.dll
+/home/weiss/git/code/cs/DateTimeTest/bin/Debug/net6.0/DateTimeTest.pdb
+/home/weiss/git/code/cs/DateTimeTest/obj/Debug/net6.0/DateTimeTest.csproj.AssemblyReference.cache
+/home/weiss/git/code/cs/DateTimeTest/obj/Debug/net6.0/DateTimeTest.GeneratedMSBuildEditorConfig.editorconfig
+/home/weiss/git/code/cs/DateTimeTest/obj/Debug/net6.0/DateTimeTest.AssemblyInfoInputs.cache
+/home/weiss/git/code/cs/DateTimeTest/obj/Debug/net6.0/DateTimeTest.AssemblyInfo.cs
+/home/weiss/git/code/cs/DateTimeTest/obj/Debug/net6.0/DateTimeTest.csproj.CoreCompileInputs.cache
+/home/weiss/git/code/cs/DateTimeTest/obj/Debug/net6.0/DateTimeTest.dll
+/home/weiss/git/code/cs/DateTimeTest/obj/Debug/net6.0/ref/DateTimeTest.dll
+/home/weiss/git/code/cs/DateTimeTest/obj/Debug/net6.0/DateTimeTest.pdb
+/home/weiss/git/code/cs/DateTimeTest/obj/Debug/net6.0/DateTimeTest.genruntimeconfig.cache

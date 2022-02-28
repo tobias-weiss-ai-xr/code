@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "4+8+HF+gthxhFrAeeax+HDXWHwfRY+4sx8unYVy3tuVgW5m8fy4e9UPso+sfJdhTP+w0ySpThLlM7PHqz2us7w==",
+  "success": true,
+  "projectFilePath": "/home/weiss/git/code/cs/DateTimeTest/DateTimeTest.csproj",
+  "expectedPackageFiles": [
+    "/home/weiss/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.0/microsoft.aspnetcore.app.ref.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
