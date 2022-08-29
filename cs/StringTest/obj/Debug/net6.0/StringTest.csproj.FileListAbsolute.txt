@@ -1,0 +1,15 @@
+/home/weiss/git/code/cs/StringTest/bin/Debug/net6.0/StringTest
+/home/weiss/git/code/cs/StringTest/bin/Debug/net6.0/StringTest.deps.json
+/home/weiss/git/code/cs/StringTest/bin/Debug/net6.0/StringTest.runtimeconfig.json
+/home/weiss/git/code/cs/StringTest/bin/Debug/net6.0/StringTest.dll
+/home/weiss/git/code/cs/StringTest/bin/Debug/net6.0/ref/StringTest.dll
+/home/weiss/git/code/cs/StringTest/bin/Debug/net6.0/StringTest.pdb
+/home/weiss/git/code/cs/StringTest/obj/Debug/net6.0/StringTest.csproj.AssemblyReference.cache
+/home/weiss/git/code/cs/StringTest/obj/Debug/net6.0/StringTest.GeneratedMSBuildEditorConfig.editorconfig
+/home/weiss/git/code/cs/StringTest/obj/Debug/net6.0/StringTest.AssemblyInfoInputs.cache
+/home/weiss/git/code/cs/StringTest/obj/Debug/net6.0/StringTest.AssemblyInfo.cs
+/home/weiss/git/code/cs/StringTest/obj/Debug/net6.0/StringTest.csproj.CoreCompileInputs.cache
+/home/weiss/git/code/cs/StringTest/obj/Debug/net6.0/StringTest.dll
+/home/weiss/git/code/cs/StringTest/obj/Debug/net6.0/ref/StringTest.dll
+/home/weiss/git/code/cs/StringTest/obj/Debug/net6.0/StringTest.pdb
+/home/weiss/git/code/cs/StringTest/obj/Debug/net6.0/StringTest.genruntimeconfig.cache

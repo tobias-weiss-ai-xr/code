@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "mYswJkLMwhSLX9qXocPLm4CZ3y424Kpx9aHe+fUAKXNgmzFZYTl5ZQoqBOzWYwQ+CDC5SkKk8Z9BG4i5JunJvg==",
+  "success": true,
+  "projectFilePath": "/home/weiss/git/code/cs/StringTest/StringTest.csproj",
+  "expectedPackageFiles": [
+    "/home/weiss/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.6/microsoft.aspnetcore.app.ref.6.0.6.nupkg.sha512"
+  ],
+  "logs": []
+}
