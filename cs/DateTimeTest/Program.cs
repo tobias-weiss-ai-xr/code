@@ -3,6 +3,7 @@
 // See https://aka.ms/new-console-template for more information
 Console.WriteLine("Hello, World!");
 
+/*
 DateTime centuryBegin = new DateTime(2001, 1, 1);
 DateTime currentDate = DateTime.Now;
 
@@ -29,3 +30,18 @@ Console.WriteLine("Log Date: {0}", logDate);
 String logDateString = logDate.ToString("yyyy-MM-dd HH:mm:ss.fff",
                                             CultureInfo.InvariantCulture);
 Console.WriteLine("Log Date: {0}", logDateString);
+*/
+
+
+long[] test_timestamp = { 1001909042496544735, 1000014403400006078 };
+
+foreach (long i in test_timestamp)
+{
+    DateTime dateTime = new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc);
+    long divider = 100;
+    dateTime = dateTime.AddTicks(i / divider);
+    string logDateString = dateTime.ToString("yyyy-MM-dd HH:mm:ss.fff",
+                                                CultureInfo.InvariantCulture);
+    Console.WriteLine("Log Date: {0}", logDateString);
+    Console.WriteLine(dateTime.ToLongTimeString());
+}
