@@ -1,8 +1,11 @@
 package main
 
-import "fmt"
+import (
+    "fmt"
+    "rsc.io/quote"
+    "tobias-weiss.org/greetings"
+)
 
-import "rsc.io/quote"
 
 func main() {
     var i int
@@ -14,4 +17,6 @@ func main() {
     fmt.Printf("i: value %v, type %T\n", i, i)
     fmt.Printf("j: value %v, type %T\n", j, j)
     fmt.Printf("i: value %v, type %T\n", k, k)
+    message := greetings.Hello("Tobias")
+    fmt.Println(message)
 }
