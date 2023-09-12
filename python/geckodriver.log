@@ -1,0 +1,547 @@
+1694030289766	geckodriver	INFO	Listening on 127.0.0.1:59517
+1694030289792	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "41127" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileU0QNHw"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694030290131	Marionette	INFO	Marionette enabled
+1694030290191	Marionette	INFO	Listening on port 35593
+WebDriver BiDi listening on ws://127.0.0.1:41127
+Read port: 35593
+1694030290349	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+DevTools listening on ws://127.0.0.1:41127/devtools/browser/fcabc8b8-8d03-4f35-aa5d-88f1620eb222
+JavaScript error: https://media.ethicalads.io/media/client/v1.4.0/ethicalads.min.js, line 1: Error: No ad placements found.
+JavaScript error: resource:///actors/FormValidationChild.sys.mjs, line 178: TypeError: this._element is null
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.python.org."
+1694030292341	Marionette	INFO	Stopped listening on port 35593
+JavaScript error: resource://devtools/client/jsonview/Sniffer.sys.mjs, line 50: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsIChannel.contentType]
+1694030494758	geckodriver	INFO	Listening on 127.0.0.1:56285
+1694030494784	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "36225" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileSrYpa9"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694030495105	Marionette	INFO	Marionette enabled
+1694030495161	Marionette	INFO	Listening on port 42353
+WebDriver BiDi listening on ws://127.0.0.1:36225
+Read port: 42353
+1694030495301	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+DevTools listening on ws://127.0.0.1:36225/devtools/browser/37b0e930-53cc-47ec-8664-b214cf1955cb
+1694030513794	geckodriver	INFO	Listening on 127.0.0.1:60461
+1694030513820	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "51409" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileTIFLU1"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694030514140	Marionette	INFO	Marionette enabled
+1694030514198	Marionette	INFO	Listening on port 43757
+WebDriver BiDi listening on ws://127.0.0.1:51409
+Read port: 43757
+1694030514369	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+DevTools listening on ws://127.0.0.1:51409/devtools/browser/2c3e17bf-0380-4250-9f57-93000d315a43
+JavaScript warning: https://hubs.mozilla.com/_next/static/chunks/main-f0e16f48d3775e5e.js, line 1: Script terminated by timeout at:
+e@https://hubs.mozilla.com/_next/static/chunks/main-f0e16f48d3775e5e.js:1:101214
+8745/61/</M/<@https://hubs.mozilla.com/_next/static/chunks/main-f0e16f48d3775e5e.js:1:101830
+c@https://hubs.mozilla.com/_next/static/chunks/main-f0e16f48d3775e5e.js:1:97985
+
+1694030517222	Marionette	INFO	Stopped listening on port 42353
+1694030528334	geckodriver	INFO	Listening on 127.0.0.1:58549
+1694030528360	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "54331" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile56S3gv"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694030528688	Marionette	INFO	Marionette enabled
+1694030528745	Marionette	INFO	Listening on port 46641
+WebDriver BiDi listening on ws://127.0.0.1:54331
+Read port: 46641
+1694030528855	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+DevTools listening on ws://127.0.0.1:54331/devtools/browser/b26805b1-d84e-45cb-8983-98e4f0ea96f2
+JavaScript warning: https://hubs.mozilla.com/_next/static/chunks/main-f0e16f48d3775e5e.js, line 1: Script terminated by timeout at:
+e@https://hubs.mozilla.com/_next/static/chunks/main-f0e16f48d3775e5e.js:1:101214
+8745/61/</M/<@https://hubs.mozilla.com/_next/static/chunks/main-f0e16f48d3775e5e.js:1:101830
+c@https://hubs.mozilla.com/_next/static/chunks/main-f0e16f48d3775e5e.js:1:97985
+
+1694030531433	Marionette	INFO	Stopped listening on port 43757
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1694030587485	geckodriver	INFO	Listening on 127.0.0.1:54273
+1694030587511	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "44317" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileTaIyNa"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694030587841	Marionette	INFO	Marionette enabled
+1694030587896	Marionette	INFO	Listening on port 40745
+WebDriver BiDi listening on ws://127.0.0.1:44317
+Read port: 40745
+1694030588010	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+DevTools listening on ws://127.0.0.1:44317/devtools/browser/9566ab7c-9fd9-4cea-92b1-943e988a4be8
+JavaScript warning: https://hubs.mozilla.com/_next/static/chunks/main-f0e16f48d3775e5e.js, line 1: Script terminated by timeout at:
+e@https://hubs.mozilla.com/_next/static/chunks/main-f0e16f48d3775e5e.js:1:101214
+8745/61/</M/<@https://hubs.mozilla.com/_next/static/chunks/main-f0e16f48d3775e5e.js:1:101830
+c@https://hubs.mozilla.com/_next/static/chunks/main-f0e16f48d3775e5e.js:1:97985
+
+1694030591201	Marionette	INFO	Stopped listening on port 46641
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1694030746048	geckodriver	INFO	Listening on 127.0.0.1:44715
+1694030746077	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "58707" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile3yFXhM"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694030746443	Marionette	INFO	Marionette enabled
+1694030746505	Marionette	INFO	Listening on port 33107
+WebDriver BiDi listening on ws://127.0.0.1:58707
+Read port: 33107
+1694030746667	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+DevTools listening on ws://127.0.0.1:58707/devtools/browser/b828ea10-9231-4e82-89ee-1d916e7b6d41
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1694030938959	geckodriver	INFO	Listening on 127.0.0.1:43615
+1694030939496	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "42339" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileSU2DDS"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694030939936	Marionette	INFO	Marionette enabled
+1694030940016	Marionette	INFO	Listening on port 38947
+WebDriver BiDi listening on ws://127.0.0.1:42339
+Read port: 38947
+1694030940213	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+DevTools listening on ws://127.0.0.1:42339/devtools/browser/dd00c8e3-4e86-45df-bfe3-2c176ca7d94f
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+JavaScript warning: https://hmc-assets.reticulum.io/hubs/assets/js/engine-80253e2d4693baf7e464.js, line 2: Script terminated by timeout at:
+upload@https://hmc-assets.reticulum.io/hubs/assets/js/engine-80253e2d4693baf7e464.js:2:372490
+99477/fl/this.renderBufferDirect/o<@https://hmc-assets.reticulum.io/hubs/assets/js/engine-80253e2d4693baf7e464.js:2:470343
+99477/fl/this.renderBufferDirect@https://hmc-assets.reticulum.io/hubs/assets/js/engine-80253e2d4693baf7e464.js:2:470676
+kt@https://hmc-assets.reticulum.io/hubs/assets/js/engine-80253e2d4693baf7e464.js:2:474447
+Ft@https://hmc-assets.reticulum.io/hubs/assets/js/engine-80253e2d4693baf7e464.js:2:474060
+Nt@https://hmc-assets.reticulum.io/hubs/assets/js/engine-80253e2d4693baf7e464.js:2:473705
+99477/fl/this.render@https://hmc-assets.reticulum.io/hubs/assets/js/engine-80253e2d4693baf7e464.js:2:478066
+69409/setupRenderer/</</</<@https://hmc-assets.reticulum.io/hubs/assets/js/hub-1e2befc07be55012aa3b.js:1:1552024
+69409/setupRenderer/</</<@https://hmc-assets.reticulum.io/hubs/assets/js/hub-1e2befc07be55012aa3b.js:1:1552036
+99477/fl/<@https://hmc-assets.reticulum.io/hubs/assets/js/engine-80253e2d4693baf7e464.js:2:476836
+r@https://hmc-assets.reticulum.io/hubs/assets/js/engine-80253e2d4693baf7e464.js:2:205791
+
+1694030973485	Marionette	INFO	Stopped listening on port 38947
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource:///actors/WebRTCChild.sys.mjs, line 457: TypeError: aContentWindow.pendingPeerConnectionRequests is undefined
+1694031004252	geckodriver	INFO	Listening on 127.0.0.1:43901
+1694031004288	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "59117" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileEUla6n"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694031004745	Marionette	INFO	Marionette enabled
+1694031004824	Marionette	INFO	Listening on port 34423
+WebDriver BiDi listening on ws://127.0.0.1:59117
+Read port: 34423
+1694031005034	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+JavaScript warning: https://hmc-assets.reticulum.io/hubs/assets/js/engine-80253e2d4693baf7e464.js, line 2: Script terminated by timeout at:
+b@https://hmc-assets.reticulum.io/hubs/assets/js/engine-80253e2d4693baf7e464.js:2:420025
+N@https://hmc-assets.reticulum.io/hubs/assets/js/engine-80253e2d4693baf7e464.js:2:428299
+R@https://hmc-assets.reticulum.io/hubs/assets/js/engine-80253e2d4693baf7e464.js:2:422857
+Ga@https://hmc-assets.reticulum.io/hubs/assets/js/engine-80253e2d4693baf7e464.js:2:368454
+upload@https://hmc-assets.reticulum.io/hubs/assets/js/engine-80253e2d4693baf7e464.js:2:372546
+99477/fl/this.renderBufferDirect/o<@https://hmc-assets.reticulum.io/hubs/assets/js/engine-80253e2d4693baf7e464.js:2:470343
+99477/fl/this.renderBufferDirect@https://hmc-assets.reticulum.io/hubs/assets/js/engine-80253e2d4693baf7e464.js:2:470676
+kt@https://hmc-assets.reticulum.io/hubs/assets/js/engine-80253e2d4693baf7e464.js:2:474447
+Ft@https://hmc-assets.reticulum.io/hubs/assets/js/engine-80253e2d4693baf7e464.js:2:474060
+Nt@https://hmc-assets.reticulum.io/hubs/assets/js/engine-80253e2d4693baf7e464.js:2:473705
+99477/fl/this.render@https://hmc-assets.reticulum.io/hubs/assets/js/engine-80253e2d4693baf7e464.js:2:478066
+69409/setupRenderer/</</</<@https://hmc-assets.reticulum.io/hubs/assets/js/hub-1e2befc07be55012aa3b.js:1:1552024
+69409/setupRenderer/</</<@https://hmc-assets.reticulum.io/hubs/assets/js/hub-1e2befc07be55012aa3b.js:1:1552036
+99477/fl/<@https://hmc-assets.reticulum.io/hubs/assets/js/engine-80253e2d4693baf7e464.js:2:476836
+r@https://hmc-assets.reticulum.io/hubs/assets/js/engine-80253e2d4693baf7e464.js:2:205791
+
+DevTools listening on ws://127.0.0.1:59117/devtools/browser/11ede5e7-c53d-4130-ba44-d7096dbb4316
+JavaScript warning: https://hmc-assets.reticulum.io/hubs/assets/js/engine-80253e2d4693baf7e464.js, line 2: Script terminated by timeout at:
+r@https://hmc-assets.reticulum.io/hubs/assets/js/engine-80253e2d4693baf7e464.js:2:205790
+
+1694031010676	Marionette	INFO	Stopped listening on port 33107
+1694031011575	Marionette	INFO	Stopped listening on port 40745
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1694031043690	geckodriver	INFO	Listening on 127.0.0.1:46953
+1694031043720	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "39727" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileAx7RY8"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694031044086	Marionette	INFO	Marionette enabled
+1694031044146	Marionette	INFO	Listening on port 41489
+WebDriver BiDi listening on ws://127.0.0.1:39727
+Read port: 41489
+1694031044318	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+DevTools listening on ws://127.0.0.1:39727/devtools/browser/5a383613-0356-4cc0-8066-3b77a74e942e
+JavaScript warning: https://hmc-assets.reticulum.io/hubs/assets/js/engine-80253e2d4693baf7e464.js, line 2: Script terminated by timeout at:
+upload@https://hmc-assets.reticulum.io/hubs/assets/js/engine-80253e2d4693baf7e464.js:2:372490
+99477/fl/this.renderBufferDirect/o<@https://hmc-assets.reticulum.io/hubs/assets/js/engine-80253e2d4693baf7e464.js:2:470343
+99477/fl/this.renderBufferDirect@https://hmc-assets.reticulum.io/hubs/assets/js/engine-80253e2d4693baf7e464.js:2:470676
+kt@https://hmc-assets.reticulum.io/hubs/assets/js/engine-80253e2d4693baf7e464.js:2:474447
+Ft@https://hmc-assets.reticulum.io/hubs/assets/js/engine-80253e2d4693baf7e464.js:2:474060
+Nt@https://hmc-assets.reticulum.io/hubs/assets/js/engine-80253e2d4693baf7e464.js:2:473705
+99477/fl/this.render@https://hmc-assets.reticulum.io/hubs/assets/js/engine-80253e2d4693baf7e464.js:2:478066
+69409/setupRenderer/</</</<@https://hmc-assets.reticulum.io/hubs/assets/js/hub-1e2befc07be55012aa3b.js:1:1552024
+69409/setupRenderer/</</<@https://hmc-assets.reticulum.io/hubs/assets/js/hub-1e2befc07be55012aa3b.js:1:1552036
+99477/fl/<@https://hmc-assets.reticulum.io/hubs/assets/js/engine-80253e2d4693baf7e464.js:2:476836
+r@https://hmc-assets.reticulum.io/hubs/assets/js/engine-80253e2d4693baf7e464.js:2:205791
+
+1694031046781	Marionette	INFO	Stopped listening on port 34423
+1694031064614	geckodriver	INFO	Listening on 127.0.0.1:53427
+1694031064643	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "38607" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileiNrfVm"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694031065028	Marionette	INFO	Marionette enabled
+1694031065089	Marionette	INFO	Listening on port 33727
+WebDriver BiDi listening on ws://127.0.0.1:38607
+Read port: 33727
+1694031065258	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+DevTools listening on ws://127.0.0.1:38607/devtools/browser/f3cc0c69-c682-432f-85ac-2cc49f0d4bdd
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+console.error: "update.locale" " file doesn't exist in either the application or GRE directories"
+1694031104810	geckodriver	INFO	Listening on 127.0.0.1:34905
+1694031104846	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "47017" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile2xQ6a9"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694031105270	Marionette	INFO	Marionette enabled
+1694031105348	Marionette	INFO	Listening on port 33321
+WebDriver BiDi listening on ws://127.0.0.1:47017
+Read port: 33321
+1694031105534	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+DevTools listening on ws://127.0.0.1:47017/devtools/browser/771d54d6-0bbb-4043-a5ca-4d684da17979
+JavaScript warning: https://hmc-assets.reticulum.io/hubs/assets/js/engine-80253e2d4693baf7e464.js, line 2: Script terminated by timeout at:
+upload@https://hmc-assets.reticulum.io/hubs/assets/js/engine-80253e2d4693baf7e464.js:2:372490
+99477/fl/this.renderBufferDirect/o<@https://hmc-assets.reticulum.io/hubs/assets/js/engine-80253e2d4693baf7e464.js:2:470343
+99477/fl/this.renderBufferDirect@https://hmc-assets.reticulum.io/hubs/assets/js/engine-80253e2d4693baf7e464.js:2:470676
+kt@https://hmc-assets.reticulum.io/hubs/assets/js/engine-80253e2d4693baf7e464.js:2:474447
+Ft@https://hmc-assets.reticulum.io/hubs/assets/js/engine-80253e2d4693baf7e464.js:2:474060
+Nt@https://hmc-assets.reticulum.io/hubs/assets/js/engine-80253e2d4693baf7e464.js:2:473705
+99477/fl/this.render@https://hmc-assets.reticulum.io/hubs/assets/js/engine-80253e2d4693baf7e464.js:2:478066
+69409/setupRenderer/</</</<@https://hmc-assets.reticulum.io/hubs/assets/js/hub-1e2befc07be55012aa3b.js:1:1552024
+69409/setupRenderer/</</<@https://hmc-assets.reticulum.io/hubs/assets/js/hub-1e2befc07be55012aa3b.js:1:1552036
+99477/fl/<@https://hmc-assets.reticulum.io/hubs/assets/js/engine-80253e2d4693baf7e464.js:2:476836
+r@https://hmc-assets.reticulum.io/hubs/assets/js/engine-80253e2d4693baf7e464.js:2:205791
+
+JavaScript error: resource://gre/actors/AudioPlaybackChild.sys.mjs, line 17: InvalidStateError: JSWindowActorChild.sendAsyncMessage: JSWindowActorChild cannot send at the moment
+1694031109495	Marionette	INFO	Stopped listening on port 41489
+JavaScript warning: https://hmc-assets.reticulum.io/hubs/assets/js/engine-80253e2d4693baf7e464.js, line 2: Script terminated by timeout at:
+upload@https://hmc-assets.reticulum.io/hubs/assets/js/engine-80253e2d4693baf7e464.js:2:372490
+99477/fl/this.renderBufferDirect/o<@https://hmc-assets.reticulum.io/hubs/assets/js/engine-80253e2d4693baf7e464.js:2:470343
+99477/fl/this.renderBufferDirect@https://hmc-assets.reticulum.io/hubs/assets/js/engine-80253e2d4693baf7e464.js:2:470676
+kt@https://hmc-assets.reticulum.io/hubs/assets/js/engine-80253e2d4693baf7e464.js:2:474447
+Ft@https://hmc-assets.reticulum.io/hubs/assets/js/engine-80253e2d4693baf7e464.js:2:474060
+Nt@https://hmc-assets.reticulum.io/hubs/assets/js/engine-80253e2d4693baf7e464.js:2:473705
+99477/fl/this.render@https://hmc-assets.reticulum.io/hubs/assets/js/engine-80253e2d4693baf7e464.js:2:478066
+69409/setupRenderer/</</</<@https://hmc-assets.reticulum.io/hubs/assets/js/hub-1e2befc07be55012aa3b.js:1:1552024
+69409/setupRenderer/</</<@https://hmc-assets.reticulum.io/hubs/assets/js/hub-1e2befc07be55012aa3b.js:1:1552036
+99477/fl/<@https://hmc-assets.reticulum.io/hubs/assets/js/engine-80253e2d4693baf7e464.js:2:476836
+r@https://hmc-assets.reticulum.io/hubs/assets/js/engine-80253e2d4693baf7e464.js:2:205791
+
+1694031110442	Marionette	INFO	Stopped listening on port 33727
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+1694031128175	Marionette	INFO	Stopped listening on port 33321
+JavaScript warning: https://hmc-assets.reticulum.io/hubs/assets/js/hub-vendors-6e4302afb9bbaed89436.js, line 2: Script terminated by timeout at:
+i@https://hmc-assets.reticulum.io/hubs/assets/js/hub-vendors-6e4302afb9bbaed89436.js:2:5034585
+52165/_runWebSocket/<@https://hmc-assets.reticulum.io/hubs/assets/js/hub-vendors-6e4302afb9bbaed89436.js:2:3832034
+41960/t.prototype.attempt@https://hmc-assets.reticulum.io/hubs/assets/js/hub-vendors-6e4302afb9bbaed89436.js:2:3955321
+_runWebSocket@https://hmc-assets.reticulum.io/hubs/assets/js/hub-vendors-6e4302afb9bbaed89436.js:2:3831940
+52165/_runWebSocket/</this._ws.onclose@https://hmc-assets.reticulum.io/hubs/assets/js/hub-vendors-6e4302afb9bbaed89436.js:2:3832462
+
+1694031149887	geckodriver	INFO	Listening on 127.0.0.1:48065
+1694031149913	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "58935" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile3rP5b5"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694031150239	Marionette	INFO	Marionette enabled
+1694031150293	Marionette	INFO	Listening on port 39233
+WebDriver BiDi listening on ws://127.0.0.1:58935
+Read port: 39233
+1694031150434	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+DevTools listening on ws://127.0.0.1:58935/devtools/browser/80a49187-94e2-4527-aa96-4da561fbc1ef
+Handler function threw an exception: TypeError: undefined has no properties
+Stack: #getWaitTiming@resource://devtools/shared/network-observer/NetworkObserver.sys.mjs:1029:1
+#setupHarTimings@resource://devtools/shared/network-observer/NetworkObserver.sys.mjs:1251:42
+#onTransactionClose@resource://devtools/shared/network-observer/NetworkObserver.sys.mjs:977:43
+#dispatchActivity@resource://devtools/shared/network-observer/NetworkObserver.sys.mjs:528:33
+@resource://devtools/shared/network-observer/NetworkObserver.sys.mjs:634:29
+makeInfallible/<@resource://devtools/shared/DevToolsInfaillibleUtils.sys.mjs:43:22
+Line: 1029, column: 1
+console.error: (new TypeError("undefined has no properties", "resource://devtools/shared/network-observer/NetworkObserver.sys.mjs", 1029))
+Handler function threw an exception: TypeError: undefined has no properties
+Stack: #getWaitTiming@resource://devtools/shared/network-observer/NetworkObserver.sys.mjs:1029:1
+#setupHarTimings@resource://devtools/shared/network-observer/NetworkObserver.sys.mjs:1251:42
+#onTransactionClose@resource://devtools/shared/network-observer/NetworkObserver.sys.mjs:977:43
+#dispatchActivity@resource://devtools/shared/network-observer/NetworkObserver.sys.mjs:528:33
+@resource://devtools/shared/network-observer/NetworkObserver.sys.mjs:634:29
+makeInfallible/<@resource://devtools/shared/DevToolsInfaillibleUtils.sys.mjs:43:22
+Line: 1029, column: 1
+console.error: (new TypeError("undefined has no properties", "resource://devtools/shared/network-observer/NetworkObserver.sys.mjs", 1029))
+1694031172964	Marionette	INFO	Stopped listening on port 39233
+console.warn: "Async method failed in safeAsyncMethod" (new Error("Connection closed, pending request to server0.conn0.windowGlobal6442450945/customhighlighter89, type hide failed\n\nRequest stack:\nrequest@resource://devtools/shared/protocol/Front.js:300:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:47:19\nhide@resource://devtools/client/fronts/highlighters.js:36:18\nexports.safeAsyncMethod/<@resource://devtools/shared/async-utils.js:61:25\nhideHighlighterType@resource://devtools/client/inspector/shared/highlighters-overlay.js:650:23\nexports.safeAsyncMethod/<@resource://devtools/shared/async-utils.js:61:25\n_hideBoxModel@resource://devtools/client/inspector/markup/markup.js:787:40\n_onMouseOut@resource://devtools/client/inspector/markup/markup.js:755:16\nobserve@resource://gre/modules/AsyncShutdown.sys.mjs:573:17\nquit@chrome://remote/content/shared/Browser.sys.mjs:94:22\nGeckoDriver.prototype.quit@chrome://remote/content/marionette/driver.sys.mjs:2918:42\ndespatch@chrome://remote/content/marionette/server.sys.mjs:318:40\nexecute@chrome://remote/content/marionette/server.sys.mjs:289:16\nonPacket/<@chrome://remote/content/marionette/server.sys.mjs:262:20\nonPacket@chrome://remote/content/marionette/server.sys.mjs:263:9\n_onJSONObjectReady/<@chrome://remote/content/marionette/transport.sys.mjs:494:20\n", "resource://devtools/shared/protocol/Front.js", 106))
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 573: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1694031295839	geckodriver	INFO	Listening on 127.0.0.1:38857
+1694031295867	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "58805" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile7GGYed"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694031296230	Marionette	INFO	Marionette enabled
+1694031296297	Marionette	INFO	Listening on port 35461
+WebDriver BiDi listening on ws://127.0.0.1:58805
+Read port: 35461
+1694031296469	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+DevTools listening on ws://127.0.0.1:58805/devtools/browser/2d3b7a88-981f-487a-8824-abebe5f452b7
+1694031304305	Marionette	INFO	Stopped listening on port 35461
+JavaScript warning: https://hmc-assets.reticulum.io/hubs/assets/js/hub-vendors-6e4302afb9bbaed89436.js, line 2: Script terminated by timeout at:
+@https://hmc-assets.reticulum.io/hubs/assets/js/hub-vendors-6e4302afb9bbaed89436.js:2:4859251
+
