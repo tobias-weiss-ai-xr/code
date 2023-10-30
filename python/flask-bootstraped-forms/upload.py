@@ -3,26 +3,22 @@ from flask_bootstrap import Bootstrap5
 from flask_wtf import FlaskForm
 from markupsafe import escape
 from time import sleep
-from wtforms import SubmitField, BooleanField, IntegerField
+from wtforms import SubmitField, BooleanField, IntegerField, StringField
+from wtforms.validators import DataRequired
+from flask_wtf.file import FileField, FileRequired
+from werkzeug.utils import secure_filename
 
 
 class UploadForm(FlaskForm):
-    duration1 = IntegerField(
-        "Mother pump duration",
-        default=0,
-        render_kw={"class": "form-control-sm"},
-    )
-    duration2 = IntegerField(
-        "Payload pump duration",
-        default=0,
-        render_kw={"class": "form-control-sm"},
-    )
-    duration3 = IntegerField(
-        "Cutlings pump duration",
-        default=0,
-        render_kw={"class": "form-control-sm"},
-    )
-    send = SubmitField("send")
+    student_id = IntegerField("Matrikelnummer", validators=[DataRequired()])
+    first_name = StringField("Nachname", validators=[DataRequired()])
+    last_name = StringField("Vorname", validators=[DataRequired()])
+    report1 = FileField("Erstgutachten", validators=[FileRequired()])
+    report2 = FileField("Zweitgutachten", validators=[FileRequired()])
+    report_grade = FileField(
+        "Notenmeldung", validators=[FileRequired()]
+    )  # die excel sollte aber perspektivisch ganz abgeschafft werden!!!
+    send = SubmitField("Absenden")
 
 
 app = Flask(__name__)
@@ -39,4 +35,4 @@ def index():
 @app.route("/upload", methods=["GET", "POST"])
 def upload():
     form = UploadForm()
-    return render_template("button.html", form=form)
+    return render_template("upload.html", form=form)
