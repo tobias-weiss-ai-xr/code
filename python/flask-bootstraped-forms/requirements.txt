@@ -1,0 +1,17 @@
+blinker @ file:///home/conda/feedstock_root/build_artifacts/blinker_1696764509355/work
+Bootstrap-Flask==2.3.2
+click @ file:///home/conda/feedstock_root/build_artifacts/click_1692311806742/work
+Flask @ file:///home/conda/feedstock_root/build_artifacts/flask_1696349106907/work
+importlib-metadata @ file:///home/conda/feedstock_root/build_artifacts/importlib-metadata_1688754491823/work
+influxdb-client==1.37.0
+itsdangerous @ file:///home/conda/feedstock_root/build_artifacts/itsdangerous_1648147185463/work
+Jinja2 @ file:///home/conda/feedstock_root/build_artifacts/jinja2_1654302431367/work
+MarkupSafe @ file:///home/conda/feedstock_root/build_artifacts/markupsafe_1695367421802/work
+psutil==5.9.5
+python-dateutil==2.8.2
+reactivex==4.0.4
+typing_extensions==4.7.1
+Werkzeug @ file:///home/conda/feedstock_root/build_artifacts/werkzeug_1698235201373/work
+Flask-WTF==1.2.1
+WTForms==3.1.0
+zipp @ file:///home/conda/feedstock_root/build_artifacts/zipp_1695255097490/work
