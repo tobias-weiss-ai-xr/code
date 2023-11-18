@@ -7,7 +7,7 @@ from email.mime.text import MIMEText
 s = smtplib.SMTP_SSL('www.tobias-weiss.org', 465)
 
 # Login Using Your Email ID & Password
-s.login("mailuser@tobias-weiss.org", "trUmY6v6Hnkri7xILib6")
+s.login("c@tobias-weiss.org", "")
 
 msg = MIMEMultipart()
 
