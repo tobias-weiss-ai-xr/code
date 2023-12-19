@@ -12,7 +12,8 @@ fn main() {
     let s3 = takes_ownership_and_gives_back(s);
     println!("{}", s3);
 
-    let (s4, len) = calculate_len(s3); 
+    let (s4, len) = calculate_len(s3);
+    println!("String: {s4}, Length: {len}");
 }
 
 fn takes_ownership(some_string: String) {
