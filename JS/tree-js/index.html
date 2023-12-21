@@ -3,11 +3,19 @@
 	<head>
 		<meta charset="utf-8">
 		<title>My first three.js app</title>
-		<style>
-			body { margin: 0; }
-		</style>
+		<link type="text/css" rel="stylesheet" href="main.css">
 	</head>
+		<script type="importmap">
+			{
+				"imports": {
+					"three": "../build/three.module.js",
+					"three/addons/": "./jsm/"
+				}
+			}
+		</script>
 	<body>
-		<script type="module" src="/main.js"></script>
+		<!-- <script type="module" src="/main.js"></script> -->
+		<script type="module" src="/css2d_label.js"></script>
+		<div id="info">Description</div>
 	</body>
 </html>
