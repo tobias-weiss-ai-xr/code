@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "5fMXdGfva0lo5O64Y1088n9xX6j/HRhj0RSmkOQehhhpJWXTtsk1upG1afViSOuI3SqnqV/SLtKiZPKNdYvsTw==",
+  "dgSpecHash": "NT+aG6aRdOMClhotYiMyXLestvkBuPd5TH1t3DP7GBGkpkfJ3kTWcBM6YTN5w6jGcFG/R1Mh8qV9BLnw5U3PdQ==",
   "success": true,
   "projectFilePath": "/home/weiss/git/code/cs/StringTest/StringTest.csproj",
   "expectedPackageFiles": [
-    "/home/weiss/.nuget/packages/microsoft.netcore.app.ref/6.0.24/microsoft.netcore.app.ref.6.0.24.nupkg.sha512",
-    "/home/weiss/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.24/microsoft.aspnetcore.app.ref.6.0.24.nupkg.sha512",
-    "/home/weiss/.nuget/packages/microsoft.netcore.app.host.linux-x64/6.0.24/microsoft.netcore.app.host.linux-x64.6.0.24.nupkg.sha512"
+    "/home/weiss/.nuget/packages/microsoft.netcore.app.ref/6.0.26/microsoft.netcore.app.ref.6.0.26.nupkg.sha512",
+    "/home/weiss/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.26/microsoft.aspnetcore.app.ref.6.0.26.nupkg.sha512",
+    "/home/weiss/.nuget/packages/microsoft.netcore.app.host.linux-x64/6.0.26/microsoft.netcore.app.host.linux-x64.6.0.26.nupkg.sha512"
   ],
   "logs": []
 }
