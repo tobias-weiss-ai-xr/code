@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "/home/weiss/.nuget/packages/": {}
+    "C:\\Users\\Tobias\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/weiss/git/code/cs/StringTest/StringTest.csproj",
+      "projectUniqueName": "C:\\Users\\Tobias\\git\\code\\cs\\StringTest\\StringTest.csproj",
       "projectName": "StringTest",
-      "projectPath": "/home/weiss/git/code/cs/StringTest/StringTest.csproj",
-      "packagesPath": "/home/weiss/.nuget/packages/",
-      "outputPath": "/home/weiss/git/code/cs/StringTest/obj/",
+      "projectPath": "C:\\Users\\Tobias\\git\\code\\cs\\StringTest\\StringTest.csproj",
+      "packagesPath": "C:\\Users\\Tobias\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Tobias\\git\\code\\cs\\StringTest\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/weiss/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Tobias\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -38,6 +38,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -57,15 +62,19 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[6.0.26, 6.0.26]"
+            "version": "[6.0.28, 6.0.28]"
           },
           {
-            "name": "Microsoft.NETCore.App.Host.linux-x64",
-            "version": "[6.0.26, 6.0.26]"
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[6.0.28, 6.0.28]"
           },
           {
             "name": "Microsoft.NETCore.App.Ref",
-            "version": "[6.0.26, 6.0.26]"
+            "version": "[6.0.28, 6.0.28]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[6.0.28, 6.0.28]"
           }
         ],
         "frameworkReferences": {
@@ -73,7 +82,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.101/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

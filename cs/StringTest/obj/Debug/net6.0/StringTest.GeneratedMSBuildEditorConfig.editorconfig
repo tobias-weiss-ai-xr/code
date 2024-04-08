@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = StringTest
-build_property.ProjectDir = /home/weiss/git/code/cs/StringTest/
+build_property.ProjectDir = C:\Users\Tobias\git\code\cs\StringTest\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "5+/tECfXNKKSLsnDGCWcsYJGGa9lxrAsHgO8yEY/6j7ALalS4K0AKLg18lE66yXBCZD1DP6O4fhpR4XEmqd0bA==",
+  "dgSpecHash": "UhlWWSK1HUClz8gWO3+ZQhuQiQCvv5k4cH2fIGxWYeteMuFj6h2nu0ae0JuqUOt8WQuEYrk+Ulg1AfLL7K/rUA==",
   "success": true,
-  "projectFilePath": "/home/weiss/git/code/cs/DateTimeTest/DateTimeTest.csproj",
+  "projectFilePath": "C:\\Users\\Tobias\\git\\code\\cs\\DateTimeTest\\DateTimeTest.csproj",
   "expectedPackageFiles": [
-    "/home/weiss/.nuget/packages/microsoft.netcore.app.ref/6.0.26/microsoft.netcore.app.ref.6.0.26.nupkg.sha512",
-    "/home/weiss/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.26/microsoft.aspnetcore.app.ref.6.0.26.nupkg.sha512",
-    "/home/weiss/.nuget/packages/microsoft.netcore.app.host.linux-x64/6.0.26/microsoft.netcore.app.host.linux-x64.6.0.26.nupkg.sha512"
+    "C:\\Users\\Tobias\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.28\\microsoft.netcore.app.ref.6.0.28.nupkg.sha512",
+    "C:\\Users\\Tobias\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.28\\microsoft.windowsdesktop.app.ref.6.0.28.nupkg.sha512",
+    "C:\\Users\\Tobias\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.28\\microsoft.aspnetcore.app.ref.6.0.28.nupkg.sha512",
+    "C:\\Users\\Tobias\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.28\\microsoft.netcore.app.host.win-x64.6.0.28.nupkg.sha512"
   ],
   "logs": []
 }
