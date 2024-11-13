@@ -1,13 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "a43HhG6ds8I=",
+  "dgSpecHash": "hYfVnw8Rxm8=",
   "success": true,
   "projectFilePath": "C:\\Users\\Tobias\\git\\code\\cs\\DateTimeTest\\DateTimeTest.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\Tobias\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.33\\microsoft.netcore.app.ref.6.0.33.nupkg.sha512",
-    "C:\\Users\\Tobias\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.33\\microsoft.windowsdesktop.app.ref.6.0.33.nupkg.sha512",
-    "C:\\Users\\Tobias\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.33\\microsoft.aspnetcore.app.ref.6.0.33.nupkg.sha512",
-    "C:\\Users\\Tobias\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.33\\microsoft.netcore.app.host.win-x64.6.0.33.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }
