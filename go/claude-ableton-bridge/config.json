@@ -1,0 +1,11 @@
+{
+  "claude_api_key": "YOUR_CLAUDE_API_KEY_HERE",
+  "osc_receive_port": 7400,
+  "osc_send_port": 7401,
+  "osc_host": "127.0.0.1",
+  "claude_model": "claude-sonnet-4-20250514",
+  "max_tokens": 2000,
+  "log_file": "claude-bridge.log",
+  "enable_cache": true,
+  "cache_ttl_seconds": 300
+}
