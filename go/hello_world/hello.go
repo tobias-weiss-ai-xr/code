@@ -22,7 +22,7 @@ func main() {
     fmt.Printf("i: value %v, type %T\n", i, i)
     fmt.Printf("j: value %v, type %T\n", j, j)
     fmt.Printf("i: value %v, type %T\n", k, k)
-    message, err := greetings.Hello("")
+    message, err := greetings.Hello("Tobias")
     if err != nil {
         log.Fatal(err)
     }
