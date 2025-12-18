@@ -1,4 +1,4 @@
-# Claude-Ableton Bridge - Complete Implementation Guide
+## Claude-Ableton Bridge - Complete Implementation Guide
 
 This document contains complete instructions and code for building a Go-based bridge between Claude AI API and Ableton Live via Max for Live, using OSC communication.
 
