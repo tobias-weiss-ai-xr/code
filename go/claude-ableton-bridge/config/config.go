@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"os"
+	"strconv"
 )
 
 type Config struct {
@@ -59,21 +60,56 @@ func Load() (*Config, error) {
 	}
 
 	// Fall back to environment variables and set defaults
+	oscReceivePort := 7400
+	if pStr := os.Getenv("OSC_RECEIVE_PORT"); pStr != "" {
+		if p, err := strconv.Atoi(pStr); err == nil {
+			oscReceivePort = p
+		}
+	}
+	oscSendPort := 7401
+	if pStr := os.Getenv("OSC_SEND_PORT"); pStr != "" {
+		if p, err := strconv.Atoi(pStr); err == nil {
+			oscSendPort = p
+		}
+	}
+
+	maxTokens := 2000
+	if mtStr := os.Getenv("MAX_TOKENS"); mtStr != "" {
+		if mt, err := strconv.Atoi(mtStr); err == nil {
+			maxTokens = mt
+		}
+	}
+
+	enableCache := true
+	if ecStr := os.Getenv("ENABLE_CACHE"); ecStr != "" {
+		if ec, err := strconv.ParseBool(ecStr); err == nil {
+			enableCache = ec
+		}
+	}
+
+	cacheTTL := 300
+	if ctStr := os.Getenv("CACHE_TTL_SECONDS"); ctStr != "" {
+		if ct, err := strconv.Atoi(ctStr); err == nil {
+			cacheTTL = ct
+		}
+	}
+
 	return &Config{
 		APIProvider:    os.Getenv("API_PROVIDER"),
 		ClaudeAPIKey:   os.Getenv("CLAUDE_API_KEY"),
 		OpenAIAPIKey:   os.Getenv("OPENAI_API_KEY"),
 		OpenAIBaseURL:  os.Getenv("OPENAI_BASE_URL"),
 		OllamaModel:    os.Getenv("OLLAMA_MODEL"),
-		OSCReceivePort: 7400,
-		OSCSendPort:    7401,
-		OSCHost:        "127.0.0.1",
-		ClaudeModel:    "claude-sonnet-4-20250514",
-		MaxTokens:      2000,
-		EnableCache:    true,
-		CacheTTL:       300, // 5 minutes
+		OSCReceivePort: oscReceivePort,
+		OSCSendPort:    oscSendPort,
+		OSCHost:        os.Getenv("OSC_HOST"),
+		ClaudeModel:    os.Getenv("CLAUDE_MODEL"),
+		MaxTokens:      maxTokens,
+		EnableCache:    enableCache,
+		CacheTTL:       cacheTTL,
 	}, nil
 }
+
 
 func loadFromFile(path string) (*Config, error) {
 	file, err := os.Open(path)
@@ -87,6 +123,36 @@ func loadFromFile(path string) (*Config, error) {
 	if err := decoder.Decode(&cfg); err != nil {
 		return nil, err
 	}
+
+	// Apply defaults if not specified in file
+	if cfg.APIProvider == "" {
+		cfg.APIProvider = "claude"
+	}
+	if cfg.ClaudeModel == "" {
+		cfg.ClaudeModel = "claude-sonnet-4-20250514"
+	}
+	if cfg.OpenAIBaseURL == "" {
+		cfg.OpenAIBaseURL = "https://api.openai.com/v1"
+	}
+	if cfg.OllamaModel == "" {
+		cfg.OllamaModel = "llama3"
+	}
+	if cfg.MaxTokens == 0 {
+		cfg.MaxTokens = 2000
+	}
+	if cfg.OSCReceivePort == 0 {
+		cfg.OSCReceivePort = 7400
+	}
+	if cfg.OSCSendPort == 0 {
+		cfg.OSCSendPort = 7401
+	}
+	if cfg.OSCHost == "" {
+		cfg.OSCHost = "127.0.0.1"
+	}
+	if cfg.CacheTTL == 0 {
+		cfg.CacheTTL = 300
+	}
+
 	return &cfg, nil
 }
 
