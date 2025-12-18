@@ -7,8 +7,8 @@ import (
 	"os/signal"
 	"syscall"
 
-	"claude-ableton-bridge/claude"
 	"claude-ableton-bridge/config"
+	"claude-ableton-bridge/llm" // Changed from "claude"
 	"claude-ableton-bridge/osc"
 )
 
@@ -33,15 +33,25 @@ func main() {
 	}
 
 	log.Println("Configuration loaded successfully")
-	log.Printf("Model: %s", cfg.ClaudeModel)
+	log.Printf("API Provider: %s", cfg.APIProvider)
+	if cfg.APIProvider == "claude" {
+		log.Printf("Model: %s", cfg.ClaudeModel)
+	} else if cfg.APIProvider == "openai" {
+		log.Printf("Model: %s", cfg.ClaudeModel) // Generic model field for OpenAI
+	} else if cfg.APIProvider == "ollama" {
+		log.Printf("Model: %s", cfg.OllamaModel)
+	}
 	log.Printf("Cache: %v", cfg.EnableCache)
 
-	// Initialize Claude client
-	claudeClient := claude.NewClient(cfg.ClaudeAPIKey)
-	log.Println("Claude client initialized")
+	// Initialize LLM client
+	llmClient, err := llm.NewLLMClient(cfg)
+	if err != nil {
+		log.Fatalf("Failed to create LLM client: %v", err)
+	}
+	log.Println("LLM client initialized")
 
 	// Initialize OSC server
-	oscServer, err := osc.NewServer(cfg, claudeClient)
+	oscServer, err := osc.NewServer(cfg, llmClient) // Pass llmClient
 	if err != nil {
 		log.Fatalf("Failed to create OSC server: %v", err)
 	}

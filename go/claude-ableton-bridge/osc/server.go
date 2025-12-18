@@ -7,8 +7,8 @@ import (
 	"time"
 
 	"claude-ableton-bridge/cache"
-	"claude-ableton-bridge/claude"
 	"claude-ableton-bridge/config"
+	"claude-ableton-bridge/llm" // Changed from "claude"
 	"claude-ableton-bridge/midi"
 
 	"github.com/hypebeast/go-osc/osc"
@@ -16,7 +16,7 @@ import (
 
 type Server struct {
 	config       *config.Config
-	claudeClient *claude.Client
+	llmClient    llm.LLMClient // Changed from claudeClient *claude.Client
 	oscServer    *osc.Server
 	oscClient    *osc.Client
 	cache        *cache.Cache
@@ -24,7 +24,7 @@ type Server struct {
 	stopChan     chan bool
 }
 
-func NewServer(cfg *config.Config, claudeClient *claude.Client) (*Server, error) {
+func NewServer(cfg *config.Config, llmClient llm.LLMClient) (*Server, error) { // Changed signature
 	addr := fmt.Sprintf("%s:%d", cfg.OSCHost, cfg.OSCReceivePort)
 
 	oscServer := &osc.Server{
@@ -41,13 +41,14 @@ func NewServer(cfg *config.Config, claudeClient *claude.Client) (*Server, error)
 
 	return &Server{
 		config:       cfg,
-		claudeClient: claudeClient,
+		llmClient:    llmClient, // Changed from claudeClient
 		oscServer:    oscServer,
 		oscClient:    oscClient,
 		cache:        cacheInstance,
 		stopChan:     make(chan bool),
 	}, nil
 }
+
 
 func (s *Server) Start() error {
 	// Register OSC message handlers
@@ -123,11 +124,9 @@ func (s *Server) processPrompt(prompt, context string) {
 		}
 	}
 
-	response, err := s.claudeClient.GenerateResponse(
+	response, err := s.llmClient.GenerateResponse( // Changed from claudeClient
 		prompt,
 		context,
-		s.config.ClaudeModel,
-		s.config.MaxTokens,
 	)
 
 	if err != nil {
@@ -192,11 +191,9 @@ func (s *Server) handleMusicalRequest(msg *osc.Message, context, responsePath st
 			}
 		}
 
-		response, err := s.claudeClient.GenerateResponse(
+		response, err := s.llmClient.GenerateResponse( // Changed from claudeClient
 			prompt,
 			context,
-			s.config.ClaudeModel,
-			s.config.MaxTokens,
 		)
 
 		if err != nil {
