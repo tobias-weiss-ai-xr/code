@@ -1,35 +1,16 @@
 {
-  // --- Global Settings ---
-  // The API provider to use: "claude", "openai", or "ollama"
-  "api_provider": "claude", 
-
-  // --- OSC Communication Settings ---
+  "api_provider": "openai",
   "osc_receive_port": 7400,
   "osc_send_port": 7401,
   "osc_host": "127.0.0.1",
-
-  // --- General LLM Settings ---
-  "max_tokens": 2000, // Maximum tokens for the LLM response
-
-  // --- Logging and Caching ---
+  "max_tokens": 2000,
   "log_file": "claude-bridge.log",
   "enable_cache": true,
-  "cache_ttl_seconds": 300, // Cache Time-To-Live in seconds
-
-  // --- Claude Specific Settings (Used when "api_provider": "claude") ---
-  "claude_api_key": "YOUR_CLAUDE_API_KEY_HERE",
-  "claude_model": "claude-sonnet-4-20250514",
-
-  // --- OpenAI Compatible Settings (Used when "api_provider": "openai") ---
-  // This section is also used for Saia AI (if it's OpenAI compatible)
-  "openai_api_key": "YOUR_OPENAI_OR_SAIA_AI_API_KEY_HERE",
-  // Base URL for OpenAI API. For Saia AI, replace with Saia AI's API base URL.
-  // Default for OpenAI: "https://api.openai.com/v1"
-  "openai_base_url": "https://api.openai.com/v1", 
-
-  // --- Ollama Specific Settings (Used when "api_provider": "ollama") ---
-  // API Key is not required for Ollama.
-  // Base URL for your local Ollama instance (e.g., http://localhost:11434/v1)
-  "ollama_base_url": "http://localhost:11434/v1", 
-  "ollama_model": "llama3" // The specific Ollama model to use
+  "cache_ttl_seconds": 300,
+  "claude_api_key": "",
+  "claude_model": "meta-llama-3.1-8b-instruct",
+  "openai_api_key": "b137586ab0504fafe1e246173592cafd",
+  "openai_base_url": "https://chat-ai.academiccloud.de/v1",
+  "ollama_base_url": "http://localhost:11434/v1",
+  "ollama_model": "llama3"
 }

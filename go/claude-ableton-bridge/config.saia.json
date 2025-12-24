@@ -1,0 +1,45 @@
+{
+  "// --- SAIA AI Configuration Example": "",
+  "// This configuration file shows how to use SAIA AI with the Claude-Ableton Bridge",
+  "// Get your SAIA API key from: https://kisski.lmz.uni-freiburg.de/",
+
+  "api_provider": "openai",
+  "osc_receive_port": 7400,
+  "osc_send_port": 7401,
+  "osc_host": "127.0.0.1",
+  "max_tokens": 2000,
+  "log_file": "claude-bridge.log",
+  "enable_cache": true,
+  "cache_ttl_seconds": 300,
+
+  "// --- SAIA API Settings": "",
+  "openai_api_key": "YOUR_SAIA_API_KEY_HERE",
+  "openai_base_url": "https://chat-ai.academiccloud.de/v1",
+
+  "// --- Model Selection": "",
+  "// Choose one of the available SAIA models for 'claude_model' field": "",
+  "//": "",
+
+  "// Text Models (recommended for MIDI/music generation)": "",
+  "// "claude_model": "meta-llama-3.1-8b-instruct",       // Fast, good for MIDI",
+  "// "claude_model": "llama-3.3-70b-instruct",          // Larger, more creative",
+  "// "claude_model": "mistral-large-instruct",          // High quality",
+  "// "claude_model": "qwen3-32b",                       // Good for code/structure",
+  "// "claude_model": "gemma-3-27b-it",                  // Fast responses",
+  "// "claude_model": "openai-gpt-oss-120b",             // Very large model",
+
+  "// Reasoning Models (slower but more thoughtful)": "",
+  "// "claude_model": "qwen3-235b-a22b",                // Advanced reasoning",
+  "// "claude_model": "qwq-32b",                         // Math/reasoning focused",
+  "// "claude_model": "deepseek-r1",                     // Deep reasoning",
+
+  "// Code Models (if you need structured outputs)": "",
+  "// "claude_model": "qwen2.5-coder-32b-instruct",     // Code generation",
+  "// "claude_model": "codestral-22b",                   // Programming focused",
+
+  "// RAG/Arcana Models (if using knowledge bases)": "",
+  "// "claude_model": "meta-llama-3.1-8b-rag",          // With retrieval",
+
+  "// --- Currently Selected Model": "",
+  "claude_model": "meta-llama-3.1-8b-instruct"
+}
